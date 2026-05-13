@@ -56,21 +56,20 @@ srishti/
 
 ### Install dependencies
 
-```bash
-pip install pillow svgwrite
-```
-
-For RDKit, install via conda (recommended):
+Install all dependencies at once using the provided `requirements.txt`:
 
 ```bash
-conda install -c conda-forge rdkit
+pip install -r requirements.txt
 ```
 
-Or via pip:
-
-```bash
-pip install rdkit
-```
+> **Note on RDKit:** If `pip install rdkit` fails on your platform, use conda instead:
+> ```bash
+> conda install -c conda-forge rdkit
+> ```
+> Then install the remaining packages:
+> ```bash
+> pip install pillow svgwrite
+> ```
 
 ---
 

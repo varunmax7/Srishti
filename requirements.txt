@@ -1,0 +1,10 @@
+# Core image generation
+Pillow>=9.0.0
+
+# SVG generation for physics diagrams
+svgwrite>=1.4.1
+
+# Chemistry molecule rendering
+# Install via conda (recommended): conda install -c conda-forge rdkit
+# Or via pip:
+rdkit>=2022.3.1
