@@ -1,0 +1,20 @@
+{
+    "diagram": "benzene",
+    "type": "chemistry",
+    "title": "Benzene (C6H6)",
+    "molecule": {
+        "name": "Benzene",
+        "formula": "C6H6",
+        "smiles": "c1ccccc1",
+        "molecular_weight": 78.11,
+        "description": "Simplest aromatic hydrocarbon with a hexagonal ring structure"
+    },
+    "render": {
+        "engine": "rdkit",
+        "size": [
+            400,
+            300
+        ],
+        "format": "png"
+    }
+}

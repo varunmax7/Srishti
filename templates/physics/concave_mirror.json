@@ -1,0 +1,179 @@
+{
+    "diagram": "concave_mirror",
+    "type": "physics",
+    "title": "Concave Mirror - Ray Diagram",
+    "canvas": {
+        "width": 650,
+        "height": 400
+    },
+    "elements": [
+        {
+            "id": "principal_axis",
+            "type": "line",
+            "x1": 20,
+            "y1": 200,
+            "x2": 630,
+            "y2": 200,
+            "color": "#333333",
+            "width": 1,
+            "dashed": false
+        },
+        {
+            "id": "mirror",
+            "type": "arc",
+            "cx": 560,
+            "cy": 200,
+            "r": 180,
+            "start_angle": 120,
+            "end_angle": 240,
+            "color": "#1565C0",
+            "width": 4
+        },
+        {
+            "id": "center_mark",
+            "type": "line",
+            "x1": 560,
+            "y1": 185,
+            "x2": 560,
+            "y2": 215,
+            "color": "#333333",
+            "width": 1
+        },
+        {
+            "id": "ray1",
+            "type": "line",
+            "x1": 50,
+            "y1": 100,
+            "x2": 530,
+            "y2": 100,
+            "color": "#E53935",
+            "width": 2,
+            "dashed": false
+        },
+        {
+            "id": "ray1_reflected",
+            "type": "line",
+            "x1": 530,
+            "y1": 100,
+            "x2": 280,
+            "y2": 200,
+            "color": "#E53935",
+            "width": 2,
+            "dashed": false
+        },
+        {
+            "id": "ray2",
+            "type": "line",
+            "x1": 50,
+            "y1": 100,
+            "x2": 280,
+            "y2": 200,
+            "color": "#43A047",
+            "width": 2,
+            "dashed": false
+        },
+        {
+            "id": "ray2_extended",
+            "type": "line",
+            "x1": 280,
+            "y1": 200,
+            "x2": 150,
+            "y2": 350,
+            "color": "#43A047",
+            "width": 2,
+            "dashed": true
+        },
+        {
+            "id": "object",
+            "type": "arrow",
+            "x1": 200,
+            "y1": 200,
+            "x2": 200,
+            "y2": 100,
+            "color": "#FF6F00",
+            "width": 3
+        },
+        {
+            "id": "image",
+            "type": "arrow",
+            "x1": 280,
+            "y1": 200,
+            "x2": 280,
+            "y2": 320,
+            "color": "#6A1B9A",
+            "width": 3
+        }
+    ],
+    "labels": [
+        {
+            "id": "f_label",
+            "text": "F",
+            "x": 418,
+            "y": 215,
+            "color": "#333333",
+            "font_size": 14
+        },
+        {
+            "id": "c_label",
+            "text": "C",
+            "x": 555,
+            "y": 215,
+            "color": "#333333",
+            "font_size": 14
+        },
+        {
+            "id": "p_label",
+            "text": "P",
+            "x": 625,
+            "y": 215,
+            "color": "#333333",
+            "font_size": 14
+        },
+        {
+            "id": "obj_label",
+            "text": "Object",
+            "x": 155,
+            "y": 95,
+            "color": "#FF6F00",
+            "font_size": 12
+        },
+        {
+            "id": "img_label",
+            "text": "Image",
+            "x": 288,
+            "y": 335,
+            "color": "#6A1B9A",
+            "font_size": 12
+        },
+        {
+            "id": "axis_label",
+            "text": "Principal Axis",
+            "x": 25,
+            "y": 190,
+            "color": "#333333",
+            "font_size": 11
+        },
+        {
+            "id": "mirror_label",
+            "text": "Concave Mirror",
+            "x": 555,
+            "y": 90,
+            "color": "#1565C0",
+            "font_size": 12
+        }
+    ],
+    "points": [
+        {
+            "id": "focus",
+            "label": "F",
+            "x": 420,
+            "y": 200
+        },
+        {
+            "id": "center",
+            "label": "C",
+            "x": 560,
+            "y": 200
+        }
+    ]
+}

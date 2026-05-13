@@ -1,0 +1,415 @@
+{
+    "diagram": "plant_cell",
+    "type": "biology",
+    "title": "Plant Cell",
+    "canvas": {
+        "width": 750,
+        "height": 600
+    },
+    "parts": [
+        {
+            "id": "cell_wall",
+            "name": "Cell Wall",
+            "shape": "rect",
+            "x": 110,
+            "y": 70,
+            "w": 540,
+            "h": 460,
+            "color": "#A5D6A7",
+            "stroke": "#2E7D32",
+            "stroke_width": 7
+        },
+        {
+            "id": "cell_membrane",
+            "name": "Cell Membrane",
+            "shape": "rect",
+            "x": 125,
+            "y": 85,
+            "w": 510,
+            "h": 430,
+            "color": "#C8E6C9",
+            "stroke": "#388E3C",
+            "stroke_width": 3
+        },
+        {
+            "id": "tonoplast",
+            "name": "Tonoplast",
+            "shape": "ellipse",
+            "cx": 380,
+            "cy": 310,
+            "rx": 170,
+            "ry": 135,
+            "color": "none",
+            "stroke": "#0288D1",
+            "stroke_width": 2
+        },
+        {
+            "id": "vacuole",
+            "name": "Central Vacuole",
+            "shape": "ellipse",
+            "cx": 380,
+            "cy": 310,
+            "rx": 165,
+            "ry": 130,
+            "color": "#B3E5FC",
+            "stroke": "#0277BD",
+            "stroke_width": 3
+        },
+        {
+            "id": "nucleus",
+            "name": "Nucleus",
+            "shape": "ellipse",
+            "cx": 225,
+            "cy": 180,
+            "rx": 60,
+            "ry": 50,
+            "color": "#EF9A9A",
+            "stroke": "#C62828",
+            "stroke_width": 3
+        },
+        {
+            "id": "nucleolus",
+            "name": "Nucleolus",
+            "shape": "ellipse",
+            "cx": 225,
+            "cy": 178,
+            "rx": 22,
+            "ry": 18,
+            "color": "#E53935",
+            "stroke": "#B71C1C",
+            "stroke_width": 2
+        },
+        {
+            "id": "chloroplast1",
+            "name": "Chloroplast",
+            "shape": "ellipse",
+            "cx": 175,
+            "cy": 295,
+            "rx": 38,
+            "ry": 20,
+            "color": "#66BB6A",
+            "stroke": "#1B5E20",
+            "stroke_width": 2
+        },
+        {
+            "id": "chloroplast2",
+            "name": "Chloroplast",
+            "shape": "ellipse",
+            "cx": 565,
+            "cy": 165,
+            "rx": 38,
+            "ry": 20,
+            "color": "#66BB6A",
+            "stroke": "#1B5E20",
+            "stroke_width": 2
+        },
+        {
+            "id": "chloroplast3",
+            "name": "Chloroplast",
+            "shape": "ellipse",
+            "cx": 195,
+            "cy": 470,
+            "rx": 38,
+            "ry": 20,
+            "color": "#66BB6A",
+            "stroke": "#1B5E20",
+            "stroke_width": 2
+        },
+        {
+            "id": "mitochondria",
+            "name": "Mitochondria",
+            "shape": "ellipse",
+            "cx": 570,
+            "cy": 460,
+            "rx": 40,
+            "ry": 22,
+            "color": "#FFCC80",
+            "stroke": "#E65100",
+            "stroke_width": 2
+        },
+        {
+            "id": "mito_crista1",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 545 454 Q 558 446 572 454 Q 558 460 545 460",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "mito_crista2",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 560 454 Q 573 446 586 454 Q 573 460 560 460",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "mito_crista3",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 575 457 Q 588 450 600 457 Q 588 463 575 463",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "plasmodesmata1",
+            "name": "Plasmodesmata",
+            "shape": "path",
+            "d": "M 110 200 L 125 200",
+            "color": "none",
+            "stroke": "#81C784",
+            "stroke_width": 3
+        },
+        {
+            "id": "plasmodesmata2",
+            "name": "Plasmodesmata",
+            "shape": "path",
+            "d": "M 110 400 L 125 400",
+            "color": "none",
+            "stroke": "#81C784",
+            "stroke_width": 3
+        },
+        {
+            "id": "plasmodesmata3",
+            "name": "Plasmodesmata",
+            "shape": "path",
+            "d": "M 380 70 L 380 85",
+            "color": "none",
+            "stroke": "#81C784",
+            "stroke_width": 3
+        },
+        {
+            "id": "plasmodesmata4",
+            "name": "Plasmodesmata",
+            "shape": "path",
+            "d": "M 650 300 L 635 300",
+            "color": "none",
+            "stroke": "#81C784",
+            "stroke_width": 3
+        },
+        {
+            "id": "golgi_sac1",
+            "name": "Golgi Apparatus",
+            "shape": "path",
+            "d": "M 440 110 Q 480 98 520 110 Q 480 120 440 110 Z",
+            "color": "#E1BEE7",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "golgi_sac2",
+            "name": "Golgi Apparatus",
+            "shape": "path",
+            "d": "M 445 124 Q 480 114 515 124 Q 480 132 445 124 Z",
+            "color": "#CE93D8",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "golgi_sac3",
+            "name": "Golgi Apparatus",
+            "shape": "path",
+            "d": "M 450 137 Q 480 129 510 137 Q 480 144 450 137 Z",
+            "color": "#BA68C8",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "golgi_sac4",
+            "name": "Golgi Apparatus",
+            "shape": "path",
+            "d": "M 455 149 Q 480 143 505 149 Q 480 155 455 149 Z",
+            "color": "#AB47BC",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "er1",
+            "name": "Endoplasmic Reticulum",
+            "shape": "path",
+            "d": "M 285 165 C 305 155 320 175 340 168 C 360 160 375 180 395 172",
+            "color": "none",
+            "stroke": "#006064",
+            "stroke_width": 2.5
+        },
+        {
+            "id": "er2",
+            "name": "Endoplasmic Reticulum",
+            "shape": "path",
+            "d": "M 280 185 C 300 175 315 195 335 188 C 355 180 370 200 390 192",
+            "color": "none",
+            "stroke": "#006064",
+            "stroke_width": 2.5
+        },
+        {
+            "id": "er3",
+            "name": "Endoplasmic Reticulum",
+            "shape": "path",
+            "d": "M 275 205 C 295 195 310 215 330 208 C 350 200 365 220 385 212",
+            "color": "none",
+            "stroke": "#006064",
+            "stroke_width": 2.5
+        },
+        {
+            "id": "ribosome1",
+            "name": "Ribosome",
+            "shape": "ellipse",
+            "cx": 555,
+            "cy": 215,
+            "rx": 4,
+            "ry": 4,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "ribosome2",
+            "name": "Ribosome",
+            "shape": "ellipse",
+            "cx": 300,
+            "cy": 172,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "ribosome3",
+            "name": "Ribosome",
+            "shape": "ellipse",
+            "cx": 340,
+            "cy": 192,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        }
+    ],
+    "labels": [
+        {
+            "part_id": "cell_wall",
+            "text": "Cell Wall",
+            "lx": 30,
+            "ly": 60,
+            "tx": 115,
+            "ty": 72
+        },
+        {
+            "part_id": "cell_membrane",
+            "text": "Cell Membrane",
+            "lx": 30,
+            "ly": 95,
+            "tx": 128,
+            "ty": 92
+        },
+        {
+            "part_id": "tonoplast",
+            "text": "Tonoplast",
+            "lx": 660,
+            "ly": 280,
+            "tx": 548,
+            "ty": 295
+        },
+        {
+            "part_id": "vacuole",
+            "text": "Central Vacuole",
+            "lx": 660,
+            "ly": 340,
+            "tx": 543,
+            "ty": 320
+        },
+        {
+            "part_id": "nucleus",
+            "text": "Nucleus",
+            "lx": 30,
+            "ly": 175,
+            "tx": 168,
+            "ty": 175
+        },
+        {
+            "part_id": "nucleolus",
+            "text": "Nucleolus",
+            "lx": 30,
+            "ly": 200,
+            "tx": 205,
+            "ty": 180
+        },
+        {
+            "part_id": "chloroplast1",
+            "text": "Chloroplast",
+            "lx": 30,
+            "ly": 295,
+            "tx": 140,
+            "ty": 295
+        },
+        {
+            "part_id": "chloroplast2",
+            "text": "Chloroplast",
+            "lx": 660,
+            "ly": 165,
+            "tx": 605,
+            "ty": 165
+        },
+        {
+            "part_id": "chloroplast3",
+            "text": "Chloroplast",
+            "lx": 30,
+            "ly": 470,
+            "tx": 160,
+            "ty": 470
+        },
+        {
+            "part_id": "mitochondria",
+            "text": "Mitochondria",
+            "lx": 660,
+            "ly": 460,
+            "tx": 612,
+            "ty": 460
+        },
+        {
+            "part_id": "golgi_sac1",
+            "text": "Golgi Apparatus",
+            "lx": 530,
+            "ly": 105,
+            "tx": 520,
+            "ty": 110
+        },
+        {
+            "part_id": "er1",
+            "text": "Endoplasmic Reticulum",
+            "lx": 400,
+            "ly": 145,
+            "tx": 395,
+            "ty": 172
+        },
+        {
+            "part_id": "ribosome1",
+            "text": "Ribosome",
+            "lx": 660,
+            "ly": 215,
+            "tx": 560,
+            "ty": 215
+        },
+        {
+            "part_id": "cell_membrane",
+            "text": "Cytoplasm",
+            "lx": 30,
+            "ly": 380,
+            "tx": 145,
+            "ty": 370
+        },
+        {
+            "part_id": "plasmodesmata1",
+            "text": "Plasmodesmata",
+            "lx": 30,
+            "ly": 230,
+            "tx": 117,
+            "ty": 200
+        }
+    ]
+}

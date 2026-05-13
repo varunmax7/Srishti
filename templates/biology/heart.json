@@ -1,0 +1,287 @@
+{
+    "diagram": "heart",
+    "type": "biology",
+    "title": "Human Heart Structure",
+    "canvas": {
+        "width": 700,
+        "height": 650
+    },
+    "parts": [
+        {
+            "id": "heart_body",
+            "name": "Heart",
+            "shape": "ellipse",
+            "cx": 350,
+            "cy": 380,
+            "rx": 230,
+            "ry": 230,
+            "color": "#FFCDD2",
+            "stroke": "#B71C1C",
+            "stroke_width": 4
+        },
+        {
+            "id": "ra",
+            "name": "Right Atrium",
+            "shape": "ellipse",
+            "cx": 245,
+            "cy": 270,
+            "rx": 80,
+            "ry": 65,
+            "color": "#EF9A9A",
+            "stroke": "#C62828",
+            "stroke_width": 3
+        },
+        {
+            "id": "la",
+            "name": "Left Atrium",
+            "shape": "ellipse",
+            "cx": 455,
+            "cy": 270,
+            "rx": 75,
+            "ry": 60,
+            "color": "#E57373",
+            "stroke": "#B71C1C",
+            "stroke_width": 3
+        },
+        {
+            "id": "rv",
+            "name": "Right Ventricle",
+            "shape": "ellipse",
+            "cx": 245,
+            "cy": 455,
+            "rx": 85,
+            "ry": 95,
+            "color": "#FFAB91",
+            "stroke": "#BF360C",
+            "stroke_width": 3
+        },
+        {
+            "id": "lv",
+            "name": "Left Ventricle",
+            "shape": "ellipse",
+            "cx": 455,
+            "cy": 455,
+            "rx": 95,
+            "ry": 105,
+            "color": "#FF8A65",
+            "stroke": "#BF360C",
+            "stroke_width": 5
+        },
+        {
+            "id": "septum",
+            "name": "Septum",
+            "shape": "rect",
+            "x": 344,
+            "y": 215,
+            "w": 12,
+            "h": 330,
+            "color": "#B71C1C",
+            "stroke": "#880E4F",
+            "stroke_width": 1
+        },
+        {
+            "id": "tricuspid_valve",
+            "name": "Tricuspid Valve",
+            "shape": "path",
+            "d": "M 195 340 L 245 355 L 295 340",
+            "color": "none",
+            "stroke": "#880E4F",
+            "stroke_width": 3
+        },
+        {
+            "id": "mitral_valve",
+            "name": "Mitral Valve",
+            "shape": "path",
+            "d": "M 405 335 L 455 350 L 505 335",
+            "color": "none",
+            "stroke": "#880E4F",
+            "stroke_width": 3
+        },
+        {
+            "id": "aorta",
+            "name": "Aorta",
+            "shape": "path",
+            "d": "M 420 210 L 420 115 Q 420 55 370 55 L 340 55 Q 285 55 285 115 L 285 150 L 315 150 L 315 115 Q 315 85 340 85 L 370 85 Q 390 85 390 115 L 390 210 Z",
+            "color": "#EF5350",
+            "stroke": "#B71C1C",
+            "stroke_width": 2
+        },
+        {
+            "id": "aortic_valve",
+            "name": "Aortic Valve",
+            "shape": "path",
+            "d": "M 393 210 L 405 195 L 417 210",
+            "color": "none",
+            "stroke": "#880E4F",
+            "stroke_width": 2
+        },
+        {
+            "id": "pulm_artery",
+            "name": "Pulmonary Artery",
+            "shape": "path",
+            "d": "M 290 210 L 290 130 Q 290 95 320 90 L 360 88 Q 390 85 405 110 L 415 130 L 390 140 L 380 120 Q 375 110 360 112 L 320 115 Q 310 116 310 130 L 310 210 Z",
+            "color": "#90CAF9",
+            "stroke": "#1565C0",
+            "stroke_width": 2
+        },
+        {
+            "id": "pulm_valve",
+            "name": "Pulmonary Valve",
+            "shape": "path",
+            "d": "M 293 210 L 300 195 L 307 210",
+            "color": "none",
+            "stroke": "#1565C0",
+            "stroke_width": 2
+        },
+        {
+            "id": "vena_cava_sup",
+            "name": "Superior Vena Cava",
+            "shape": "rect",
+            "x": 195,
+            "y": 100,
+            "w": 28,
+            "h": 115,
+            "color": "#64B5F6",
+            "stroke": "#1565C0",
+            "stroke_width": 2
+        },
+        {
+            "id": "vena_cava_inf",
+            "name": "Inferior Vena Cava",
+            "shape": "rect",
+            "x": 195,
+            "y": 530,
+            "w": 28,
+            "h": 70,
+            "color": "#64B5F6",
+            "stroke": "#1565C0",
+            "stroke_width": 2
+        },
+        {
+            "id": "pulm_vein",
+            "name": "Pulmonary Vein",
+            "shape": "rect",
+            "x": 475,
+            "y": 130,
+            "w": 24,
+            "h": 85,
+            "color": "#EF9A9A",
+            "stroke": "#C62828",
+            "stroke_width": 2
+        }
+    ],
+    "labels": [
+        {
+            "part_id": "vena_cava_sup",
+            "text": "Superior Vena Cava",
+            "lx": 30,
+            "ly": 120,
+            "tx": 197,
+            "ty": 130
+        },
+        {
+            "part_id": "vena_cava_inf",
+            "text": "Inferior Vena Cava",
+            "lx": 30,
+            "ly": 570,
+            "tx": 197,
+            "ty": 560
+        },
+        {
+            "part_id": "pulm_artery",
+            "text": "Pulmonary Artery",
+            "lx": 420,
+            "ly": 75,
+            "tx": 380,
+            "ty": 100
+        },
+        {
+            "part_id": "pulm_vein",
+            "text": "Pulmonary Vein",
+            "lx": 560,
+            "ly": 150,
+            "tx": 500,
+            "ty": 160
+        },
+        {
+            "part_id": "aorta",
+            "text": "Aorta",
+            "lx": 270,
+            "ly": 48,
+            "tx": 310,
+            "ty": 65
+        },
+        {
+            "part_id": "ra",
+            "text": "Right Atrium",
+            "lx": 30,
+            "ly": 265,
+            "tx": 172,
+            "ty": 268
+        },
+        {
+            "part_id": "la",
+            "text": "Left Atrium",
+            "lx": 565,
+            "ly": 265,
+            "tx": 528,
+            "ty": 268
+        },
+        {
+            "part_id": "tricuspid_valve",
+            "text": "Tricuspid Valve",
+            "lx": 30,
+            "ly": 345,
+            "tx": 200,
+            "ty": 342
+        },
+        {
+            "part_id": "mitral_valve",
+            "text": "Mitral (Bicuspid) Valve",
+            "lx": 520,
+            "ly": 345,
+            "tx": 502,
+            "ty": 338
+        },
+        {
+            "part_id": "rv",
+            "text": "Right Ventricle",
+            "lx": 30,
+            "ly": 455,
+            "tx": 163,
+            "ty": 455
+        },
+        {
+            "part_id": "lv",
+            "text": "Left Ventricle",
+            "lx": 565,
+            "ly": 455,
+            "tx": 548,
+            "ty": 455
+        },
+        {
+            "part_id": "septum",
+            "text": "Septum",
+            "lx": 380,
+            "ly": 605,
+            "tx": 354,
+            "ty": 540
+        },
+        {
+            "part_id": "aortic_valve",
+            "text": "Aortic Valve",
+            "lx": 420,
+            "ly": 210,
+            "tx": 405,
+            "ty": 200
+        },
+        {
+            "part_id": "pulm_valve",
+            "text": "Pulmonary Valve",
+            "lx": 30,
+            "ly": 195,
+            "tx": 295,
+            "ty": 205
+        }
+    ]
+}

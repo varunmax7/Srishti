@@ -1,0 +1,20 @@
+{
+    "diagram": "methane",
+    "type": "chemistry",
+    "title": "Methane (CH4)",
+    "molecule": {
+        "name": "Methane",
+        "formula": "CH4",
+        "smiles": "C",
+        "molecular_weight": 16.04,
+        "description": "Simplest alkane, one carbon bonded to four hydrogens"
+    },
+    "render": {
+        "engine": "rdkit",
+        "size": [
+            400,
+            300
+        ],
+        "format": "png"
+    }
+}

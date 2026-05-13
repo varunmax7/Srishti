@@ -1,0 +1,251 @@
+{
+    "diagram": "digestive_system",
+    "type": "biology",
+    "title": "Human Digestive System",
+    "canvas": {
+        "width": 650,
+        "height": 850
+    },
+    "parts": [
+        {
+            "id": "mouth",
+            "name": "Mouth",
+            "shape": "ellipse",
+            "cx": 325,
+            "cy": 55,
+            "rx": 60,
+            "ry": 22,
+            "color": "#FFCCBC",
+            "stroke": "#BF360C",
+            "stroke_width": 2
+        },
+        {
+            "id": "throat",
+            "name": "Throat",
+            "shape": "rect",
+            "x": 313,
+            "y": 75,
+            "w": 24,
+            "h": 35,
+            "color": "#FFAB91",
+            "stroke": "#BF360C",
+            "stroke_width": 2
+        },
+        {
+            "id": "esophagus",
+            "name": "Esophagus",
+            "shape": "rect",
+            "x": 313,
+            "y": 110,
+            "w": 24,
+            "h": 155,
+            "color": "#FFAB91",
+            "stroke": "#BF360C",
+            "stroke_width": 2
+        },
+        {
+            "id": "liver",
+            "name": "Liver",
+            "shape": "ellipse",
+            "cx": 215,
+            "cy": 275,
+            "rx": 120,
+            "ry": 55,
+            "color": "#8D6E63",
+            "stroke": "#4E342E",
+            "stroke_width": 3
+        },
+        {
+            "id": "stomach_main",
+            "name": "Stomach",
+            "shape": "path",
+            "d": "M 325 265 Q 370 255 390 275 Q 415 300 420 340 Q 425 380 400 405 Q 370 430 330 420 Q 290 410 270 385 Q 250 355 255 320 Q 260 285 285 270 Q 305 262 325 265 Z",
+            "color": "#FF8A65",
+            "stroke": "#BF360C",
+            "stroke_width": 3
+        },
+        {
+            "id": "gallbladder",
+            "name": "Gallbladder",
+            "shape": "ellipse",
+            "cx": 270,
+            "cy": 330,
+            "rx": 18,
+            "ry": 28,
+            "color": "#9CCC65",
+            "stroke": "#33691E",
+            "stroke_width": 2
+        },
+        {
+            "id": "pancreas",
+            "name": "Pancreas",
+            "shape": "ellipse",
+            "cx": 320,
+            "cy": 400,
+            "rx": 90,
+            "ry": 16,
+            "color": "#FFCC80",
+            "stroke": "#E65100",
+            "stroke_width": 2
+        },
+        {
+            "id": "large_int",
+            "name": "Large Intestine",
+            "shape": "path",
+            "d": "M 455 430 L 480 430 Q 510 430 510 460 L 510 640 Q 510 670 480 670 L 170 670 Q 140 670 140 640 L 140 460 Q 140 430 170 430 L 195 430",
+            "color": "none",
+            "stroke": "#33691E",
+            "stroke_width": 18
+        },
+        {
+            "id": "large_int_fill",
+            "name": "Large Intestine",
+            "shape": "path",
+            "d": "M 455 430 L 480 430 Q 510 430 510 460 L 510 640 Q 510 670 480 670 L 170 670 Q 140 670 140 640 L 140 460 Q 140 430 170 430 L 195 430",
+            "color": "none",
+            "stroke": "#DCEDC8",
+            "stroke_width": 14
+        },
+        {
+            "id": "small_int",
+            "name": "Small Intestine",
+            "shape": "path",
+            "d": "M 370 400 Q 410 420 440 440 Q 460 455 430 475 Q 390 490 340 485 Q 290 480 250 490 Q 200 500 190 520 Q 180 540 220 550 Q 270 555 330 548 Q 400 540 440 550 Q 470 558 450 575 Q 430 590 380 595 Q 320 600 260 590 Q 210 582 195 600 Q 180 620 220 635 Q 270 645 325 640",
+            "color": "none",
+            "stroke": "#F57F17",
+            "stroke_width": 12
+        },
+        {
+            "id": "small_int_fill",
+            "name": "Small Intestine",
+            "shape": "path",
+            "d": "M 370 400 Q 410 420 440 440 Q 460 455 430 475 Q 390 490 340 485 Q 290 480 250 490 Q 200 500 190 520 Q 180 540 220 550 Q 270 555 330 548 Q 400 540 440 550 Q 470 558 450 575 Q 430 590 380 595 Q 320 600 260 590 Q 210 582 195 600 Q 180 620 220 635 Q 270 645 325 640",
+            "color": "none",
+            "stroke": "#FFF9C4",
+            "stroke_width": 8
+        },
+        {
+            "id": "appendix",
+            "name": "Appendix",
+            "shape": "path",
+            "d": "M 145 650 Q 130 670 120 700 Q 115 720 125 725",
+            "color": "none",
+            "stroke": "#33691E",
+            "stroke_width": 6
+        },
+        {
+            "id": "rectum",
+            "name": "Rectum",
+            "shape": "rect",
+            "x": 313,
+            "y": 670,
+            "w": 24,
+            "h": 65,
+            "color": "#C5E1A5",
+            "stroke": "#33691E",
+            "stroke_width": 2
+        },
+        {
+            "id": "anus",
+            "name": "Anus",
+            "shape": "ellipse",
+            "cx": 325,
+            "cy": 745,
+            "rx": 18,
+            "ry": 8,
+            "color": "#A5D6A7",
+            "stroke": "#33691E",
+            "stroke_width": 2
+        }
+    ],
+    "labels": [
+        {
+            "part_id": "mouth",
+            "text": "Mouth",
+            "lx": 430,
+            "ly": 55,
+            "tx": 385,
+            "ty": 55
+        },
+        {
+            "part_id": "esophagus",
+            "text": "Esophagus",
+            "lx": 410,
+            "ly": 180,
+            "tx": 337,
+            "ty": 180
+        },
+        {
+            "part_id": "liver",
+            "text": "Liver",
+            "lx": 30,
+            "ly": 240,
+            "tx": 92,
+            "ty": 270
+        },
+        {
+            "part_id": "gallbladder",
+            "text": "Gallbladder",
+            "lx": 30,
+            "ly": 335,
+            "tx": 252,
+            "ty": 330
+        },
+        {
+            "part_id": "stomach_main",
+            "text": "Stomach",
+            "lx": 510,
+            "ly": 290,
+            "tx": 435,
+            "ty": 315
+        },
+        {
+            "part_id": "pancreas",
+            "text": "Pancreas",
+            "lx": 460,
+            "ly": 400,
+            "tx": 410,
+            "ty": 400
+        },
+        {
+            "part_id": "large_int",
+            "text": "Large Intestine",
+            "lx": 545,
+            "ly": 540,
+            "tx": 510,
+            "ty": 550
+        },
+        {
+            "part_id": "small_int",
+            "text": "Small Intestine",
+            "lx": 30,
+            "ly": 530,
+            "tx": 195,
+            "ty": 530
+        },
+        {
+            "part_id": "appendix",
+            "text": "Appendix",
+            "lx": 30,
+            "ly": 710,
+            "tx": 125,
+            "ty": 710
+        },
+        {
+            "part_id": "rectum",
+            "text": "Rectum",
+            "lx": 430,
+            "ly": 700,
+            "tx": 340,
+            "ty": 700
+        },
+        {
+            "part_id": "anus",
+            "text": "Anus",
+            "lx": 430,
+            "ly": 745,
+            "tx": 345,
+            "ty": 745
+        }
+    ]
+}

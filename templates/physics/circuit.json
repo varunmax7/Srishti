@@ -1,0 +1,135 @@
+{
+    "diagram": "circuit",
+    "type": "physics",
+    "title": "Simple Electric Circuit",
+    "canvas": {
+        "width": 600,
+        "height": 400
+    },
+    "elements": [
+        {
+            "id": "wire_top",
+            "type": "line",
+            "x1": 100,
+            "y1": 80,
+            "x2": 500,
+            "y2": 80,
+            "color": "#333333",
+            "width": 3
+        },
+        {
+            "id": "wire_bottom",
+            "type": "line",
+            "x1": 100,
+            "y1": 320,
+            "x2": 500,
+            "y2": 320,
+            "color": "#333333",
+            "width": 3
+        },
+        {
+            "id": "wire_left",
+            "type": "line",
+            "x1": 100,
+            "y1": 80,
+            "x2": 100,
+            "y2": 320,
+            "color": "#333333",
+            "width": 3
+        },
+        {
+            "id": "wire_right",
+            "type": "line",
+            "x1": 500,
+            "y1": 80,
+            "x2": 500,
+            "y2": 320,
+            "color": "#333333",
+            "width": 3
+        },
+        {
+            "id": "battery",
+            "type": "battery",
+            "x": 80,
+            "y": 160,
+            "w": 40,
+            "h": 80,
+            "color": "#E53935"
+        },
+        {
+            "id": "bulb",
+            "type": "bulb",
+            "x": 270,
+            "y": 55,
+            "r": 28,
+            "color": "#FFD54F"
+        },
+        {
+            "id": "resistor",
+            "type": "resistor",
+            "x": 420,
+            "y": 160,
+            "w": 60,
+            "h": 30,
+            "color": "#5C6BC0"
+        },
+        {
+            "id": "switch",
+            "type": "switch",
+            "x1": 200,
+            "y1": 320,
+            "x2": 320,
+            "y2": 320,
+            "color": "#333333",
+            "open": false
+        }
+    ],
+    "labels": [
+        {
+            "id": "battery_label",
+            "text": "Battery (6V)",
+            "x": 20,
+            "y": 155,
+            "color": "#E53935",
+            "font_size": 12
+        },
+        {
+            "id": "bulb_label",
+            "text": "Bulb",
+            "x": 262,
+            "y": 28,
+            "color": "#F57F17",
+            "font_size": 12
+        },
+        {
+            "id": "resistor_label",
+            "text": "Resistor (10Ω)",
+            "x": 395,
+            "y": 145,
+            "color": "#5C6BC0",
+            "font_size": 12
+        },
+        {
+            "id": "switch_label",
+            "text": "Switch",
+            "x": 238,
+            "y": 340,
+            "color": "#333333",
+            "font_size": 12
+        },
+        {
+            "id": "current_label",
+            "text": "I →",
+            "x": 260,
+            "y": 65,
+            "color": "#333333",
+            "font_size": 13
+        }
+    ],
+    "properties": {
+        "voltage": "6V",
+        "resistance": "10Ω",
+        "current": "0.6A",
+        "circuit_type": "series"
+    }
+}

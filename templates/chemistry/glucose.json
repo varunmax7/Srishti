@@ -1,0 +1,20 @@
+{
+    "diagram": "glucose",
+    "type": "chemistry",
+    "title": "Glucose (C6H12O6)",
+    "molecule": {
+        "name": "Glucose",
+        "formula": "C6H12O6",
+        "smiles": "OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O",
+        "molecular_weight": 180.16,
+        "description": "Simple sugar, primary source of energy for living organisms"
+    },
+    "render": {
+        "engine": "rdkit",
+        "size": [
+            400,
+            300
+        ],
+        "format": "png"
+    }
+}

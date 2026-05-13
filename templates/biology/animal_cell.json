@@ -1,0 +1,518 @@
+{
+    "diagram": "animal_cell",
+    "type": "biology",
+    "title": "Animal Cell",
+    "canvas": {
+        "width": 650,
+        "height": 550
+    },
+    "parts": [
+        {
+            "id": "cell_membrane",
+            "name": "Cell Membrane",
+            "shape": "ellipse",
+            "cx": 325,
+            "cy": 275,
+            "rx": 290,
+            "ry": 245,
+            "color": "#FFE0B2",
+            "stroke": "#E65100",
+            "stroke_width": 5
+        },
+        {
+            "id": "nucleus",
+            "name": "Nucleus",
+            "shape": "ellipse",
+            "cx": 325,
+            "cy": 265,
+            "rx": 85,
+            "ry": 75,
+            "color": "#EF9A9A",
+            "stroke": "#C62828",
+            "stroke_width": 3
+        },
+        {
+            "id": "nucleolus",
+            "name": "Nucleolus",
+            "shape": "ellipse",
+            "cx": 325,
+            "cy": 260,
+            "rx": 30,
+            "ry": 25,
+            "color": "#E53935",
+            "stroke": "#B71C1C",
+            "stroke_width": 2
+        },
+        {
+            "id": "mitochondria1",
+            "name": "Mitochondria",
+            "shape": "ellipse",
+            "cx": 130,
+            "cy": 200,
+            "rx": 48,
+            "ry": 24,
+            "color": "#FFCC80",
+            "stroke": "#E65100",
+            "stroke_width": 2
+        },
+        {
+            "id": "mitochondria2",
+            "name": "Mitochondria",
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 380,
+            "rx": 48,
+            "ry": 24,
+            "color": "#FFCC80",
+            "stroke": "#E65100",
+            "stroke_width": 2
+        },
+        {
+            "id": "mito1_crista1",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 100 192 Q 115 185 130 192 Q 115 198 100 198",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "mito1_crista2",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 115 192 Q 130 185 145 192 Q 130 198 115 198",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "mito1_crista3",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 130 195 Q 145 188 160 195 Q 145 201 130 201",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "mito2_crista1",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 470 372 Q 485 365 500 372 Q 485 378 470 378",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "mito2_crista2",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 485 372 Q 500 365 515 372 Q 500 378 485 378",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "mito2_crista3",
+            "name": "Cristae",
+            "shape": "path",
+            "d": "M 500 375 Q 515 368 530 375 Q 515 381 500 381",
+            "color": "none",
+            "stroke": "#BF360C",
+            "stroke_width": 1.5
+        },
+        {
+            "id": "golgi_sac1",
+            "name": "Golgi Apparatus",
+            "shape": "path",
+            "d": "M 440 168 Q 480 155 520 168 Q 480 178 440 168 Z",
+            "color": "#E1BEE7",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "golgi_sac2",
+            "name": "Golgi Apparatus",
+            "shape": "path",
+            "d": "M 445 183 Q 480 172 515 183 Q 480 192 445 183 Z",
+            "color": "#CE93D8",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "golgi_sac3",
+            "name": "Golgi Apparatus",
+            "shape": "path",
+            "d": "M 450 197 Q 480 188 510 197 Q 480 205 450 197 Z",
+            "color": "#BA68C8",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "golgi_sac4",
+            "name": "Golgi Apparatus",
+            "shape": "path",
+            "d": "M 455 210 Q 480 203 505 210 Q 480 216 455 210 Z",
+            "color": "#AB47BC",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "golgi_vesicle1",
+            "name": "Golgi Vesicle",
+            "shape": "ellipse",
+            "cx": 528,
+            "cy": 195,
+            "rx": 6,
+            "ry": 6,
+            "color": "#CE93D8",
+            "stroke": "#6A1B9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "golgi_vesicle2",
+            "name": "Golgi Vesicle",
+            "shape": "ellipse",
+            "cx": 435,
+            "cy": 218,
+            "rx": 5,
+            "ry": 5,
+            "color": "#CE93D8",
+            "stroke": "#6A1B9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "er1",
+            "name": "Endoplasmic Reticulum",
+            "shape": "path",
+            "d": "M 410 220 C 430 210 445 235 465 225 C 485 215 500 240 520 230",
+            "color": "none",
+            "stroke": "#006064",
+            "stroke_width": 2.5
+        },
+        {
+            "id": "er2",
+            "name": "Endoplasmic Reticulum",
+            "shape": "path",
+            "d": "M 410 245 C 430 235 445 260 465 250 C 485 240 500 265 520 255",
+            "color": "none",
+            "stroke": "#006064",
+            "stroke_width": 2.5
+        },
+        {
+            "id": "er3",
+            "name": "Endoplasmic Reticulum",
+            "shape": "path",
+            "d": "M 410 270 C 430 260 445 285 465 275 C 485 265 500 290 520 280",
+            "color": "none",
+            "stroke": "#006064",
+            "stroke_width": 2.5
+        },
+        {
+            "id": "lysosome",
+            "name": "Lysosome",
+            "shape": "ellipse",
+            "cx": 175,
+            "cy": 390,
+            "rx": 28,
+            "ry": 25,
+            "color": "#F48FB1",
+            "stroke": "#880E4F",
+            "stroke_width": 2
+        },
+        {
+            "id": "centriole1",
+            "name": "Centriole",
+            "shape": "rect",
+            "x": 355,
+            "y": 370,
+            "w": 45,
+            "h": 16,
+            "color": "#80CBC4",
+            "stroke": "#004D40",
+            "stroke_width": 2
+        },
+        {
+            "id": "centriole2",
+            "name": "Centriole",
+            "shape": "rect",
+            "x": 365,
+            "y": 392,
+            "w": 45,
+            "h": 16,
+            "color": "#80CBC4",
+            "stroke": "#004D40",
+            "stroke_width": 2
+        },
+        {
+            "id": "ribosome_free1",
+            "name": "Ribosome",
+            "shape": "ellipse",
+            "cx": 230,
+            "cy": 155,
+            "rx": 4,
+            "ry": 4,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "ribosome_free2",
+            "name": "Ribosome",
+            "shape": "ellipse",
+            "cx": 180,
+            "cy": 300,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "ribosome_free3",
+            "name": "Ribosome",
+            "shape": "ellipse",
+            "cx": 280,
+            "cy": 420,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer1",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 420,
+            "cy": 218,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer2",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 440,
+            "cy": 228,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer3",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 465,
+            "cy": 222,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer4",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 490,
+            "cy": 232,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer5",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 510,
+            "cy": 227,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer6",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 425,
+            "cy": 243,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer7",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 450,
+            "cy": 248,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer8",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 478,
+            "cy": 253,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer9",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 258,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer10",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 430,
+            "cy": 268,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer11",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 455,
+            "cy": 273,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "rer12",
+            "name": "Rough ER Ribosome",
+            "shape": "ellipse",
+            "cx": 485,
+            "cy": 278,
+            "rx": 3,
+            "ry": 3,
+            "color": "#FFD54F",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        }
+    ],
+    "labels": [
+        {
+            "part_id": "cell_membrane",
+            "text": "Cell Membrane",
+            "lx": 490,
+            "ly": 45,
+            "tx": 580,
+            "ty": 160
+        },
+        {
+            "part_id": "nucleus",
+            "text": "Nucleus",
+            "lx": 420,
+            "ly": 310,
+            "tx": 400,
+            "ty": 290
+        },
+        {
+            "part_id": "nucleolus",
+            "text": "Nucleolus",
+            "lx": 420,
+            "ly": 335,
+            "tx": 355,
+            "ty": 258
+        },
+        {
+            "part_id": "mitochondria1",
+            "text": "Mitochondria",
+            "lx": 25,
+            "ly": 155,
+            "tx": 95,
+            "ty": 193
+        },
+        {
+            "part_id": "mitochondria2",
+            "text": "Mitochondria",
+            "lx": 490,
+            "ly": 430,
+            "tx": 510,
+            "ty": 395
+        },
+        {
+            "part_id": "golgi_sac1",
+            "text": "Golgi Apparatus",
+            "lx": 530,
+            "ly": 155,
+            "tx": 520,
+            "ty": 168
+        },
+        {
+            "part_id": "lysosome",
+            "text": "Lysosome",
+            "lx": 25,
+            "ly": 395,
+            "tx": 150,
+            "ty": 392
+        },
+        {
+            "part_id": "centriole",
+            "text": "Centriole",
+            "lx": 355,
+            "ly": 420,
+            "tx": 378,
+            "ty": 385
+        },
+        {
+            "part_id": "ribosome1",
+            "text": "Ribosome",
+            "lx": 150,
+            "ly": 120,
+            "tx": 228,
+            "ty": 155
+        },
+        {
+            "part_id": "er1",
+            "text": "Endoplasmic Reticulum (ER)",
+            "lx": 530,
+            "ly": 260,
+            "tx": 520,
+            "ty": 255
+        },
+        {
+            "part_id": "cell_membrane",
+            "text": "Cytoplasm",
+            "lx": 135,
+            "ly": 455,
+            "tx": 200,
+            "ty": 430
+        }
+    ]
+}
