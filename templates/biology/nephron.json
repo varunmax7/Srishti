@@ -1,0 +1,34 @@
+{
+    "diagram": "nephron",
+    "type": "biology",
+    "title": "Nephron - Functional Unit of Kidney",
+    "canvas": {"width": 700, "height": 650},
+    "parts": [
+        {"id": "bowmans_capsule", "name": "Bowman's Capsule", "shape": "ellipse", "cx": 200, "cy": 150, "rx": 75, "ry": 70, "color": "#FFCDD2", "stroke": "#C62828", "stroke_width": 3},
+        {"id": "glomerulus", "name": "Glomerulus", "shape": "path", "d": "M 180 120 Q 195 110 210 125 Q 220 140 205 150 Q 190 160 175 145 Q 165 130 180 120 M 190 130 Q 205 120 215 135 Q 225 150 210 155 Q 195 160 185 150 Q 175 140 190 130", "color": "#EF5350", "stroke": "#B71C1C", "stroke_width": 2},
+        {"id": "pct", "name": "Proximal Convoluted Tubule", "shape": "path", "d": "M 275 150 Q 320 140 350 160 Q 380 180 360 210 Q 340 240 300 230 Q 260 220 280 250 Q 300 280 340 270", "color": "none", "stroke": "#FF6F00", "stroke_width": 10},
+        {"id": "pct_fill", "name": "PCT", "shape": "path", "d": "M 275 150 Q 320 140 350 160 Q 380 180 360 210 Q 340 240 300 230 Q 260 220 280 250 Q 300 280 340 270", "color": "none", "stroke": "#FFE0B2", "stroke_width": 6},
+        {"id": "loop_desc", "name": "Loop of Henle (Descending)", "shape": "path", "d": "M 340 270 L 340 450 Q 340 520 380 520", "color": "none", "stroke": "#43A047", "stroke_width": 8},
+        {"id": "loop_desc_fill", "name": "Loop of Henle", "shape": "path", "d": "M 340 270 L 340 450 Q 340 520 380 520", "color": "none", "stroke": "#C8E6C9", "stroke_width": 5},
+        {"id": "loop_asc", "name": "Loop of Henle (Ascending)", "shape": "path", "d": "M 380 520 Q 420 520 420 450 L 420 300", "color": "none", "stroke": "#2E7D32", "stroke_width": 8},
+        {"id": "loop_asc_fill", "name": "Loop of Henle", "shape": "path", "d": "M 380 520 Q 420 520 420 450 L 420 300", "color": "none", "stroke": "#A5D6A7", "stroke_width": 5},
+        {"id": "dct", "name": "Distal Convoluted Tubule", "shape": "path", "d": "M 420 300 Q 450 280 480 300 Q 510 320 490 350 Q 470 380 440 360 Q 410 340 430 370 Q 450 400 480 380", "color": "none", "stroke": "#1565C0", "stroke_width": 10},
+        {"id": "dct_fill", "name": "DCT", "shape": "path", "d": "M 420 300 Q 450 280 480 300 Q 510 320 490 350 Q 470 380 440 360 Q 410 340 430 370 Q 450 400 480 380", "color": "none", "stroke": "#BBDEFB", "stroke_width": 6},
+        {"id": "collecting_duct", "name": "Collecting Duct", "shape": "rect", "x": 472, "y": 380, "w": 16, "h": 220, "color": "#E1BEE7", "stroke": "#6A1B9A", "stroke_width": 3},
+        {"id": "afferent", "name": "Afferent Arteriole", "shape": "path", "d": "M 80 100 L 140 130", "color": "none", "stroke": "#E53935", "stroke_width": 4},
+        {"id": "efferent", "name": "Efferent Arteriole", "shape": "path", "d": "M 140 170 L 80 200", "color": "none", "stroke": "#1565C0", "stroke_width": 4},
+        {"id": "peritubular", "name": "Peritubular Capillaries", "shape": "path", "d": "M 80 200 Q 60 300 100 400 Q 140 500 200 550 Q 300 600 400 580 Q 450 570 460 530", "color": "none", "stroke": "#EF9A9A", "stroke_width": 3}
+    ],
+    "labels": [
+        {"part_id": "bowmans_capsule", "text": "Bowman's Capsule", "lx": 30, "ly": 60, "tx": 135, "ty": 100},
+        {"part_id": "glomerulus", "text": "Glomerulus", "lx": 30, "ly": 150, "tx": 170, "ty": 140},
+        {"part_id": "pct", "text": "Proximal Convoluted Tubule (PCT)", "lx": 350, "ly": 130, "tx": 310, "ty": 170},
+        {"part_id": "loop_desc", "text": "Loop of Henle (Descending)", "lx": 150, "ly": 450, "tx": 335, "ty": 430},
+        {"part_id": "loop_asc", "text": "Loop of Henle (Ascending)", "lx": 500, "ly": 460, "tx": 425, "ty": 430},
+        {"part_id": "dct", "text": "Distal Convoluted Tubule (DCT)", "lx": 520, "ly": 300, "tx": 490, "ty": 330},
+        {"part_id": "collecting_duct", "text": "Collecting Duct", "lx": 540, "ly": 500, "tx": 492, "ty": 490},
+        {"part_id": "afferent", "text": "Afferent Arteriole", "lx": 30, "ly": 95, "tx": 90, "ty": 110},
+        {"part_id": "efferent", "text": "Efferent Arteriole", "lx": 30, "ly": 210, "tx": 90, "ty": 190},
+        {"part_id": "peritubular", "text": "Peritubular Capillaries", "lx": 30, "ly": 520, "tx": 150, "ty": 500}
+    ]
+}

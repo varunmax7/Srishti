@@ -1,0 +1,225 @@
+{
+    "diagram": "pendulum",
+    "type": "physics",
+    "title": "Simple Pendulum",
+    "canvas": {
+        "width": 500,
+        "height": 500
+    },
+    "elements": [
+        {
+            "id": "support",
+            "type": "line",
+            "x1": 150,
+            "y1": 50,
+            "x2": 350,
+            "y2": 50,
+            "color": "#4E342E",
+            "width": 6
+        },
+        {
+            "id": "pivot",
+            "type": "circle",
+            "cx": 250,
+            "cy": 50,
+            "r": 5,
+            "color": "#333333",
+            "stroke": "#333333",
+            "stroke_width": 1
+        },
+        {
+            "id": "string_center",
+            "type": "line",
+            "x1": 250,
+            "y1": 50,
+            "x2": 250,
+            "y2": 350,
+            "color": "#555555",
+            "width": 2,
+            "dashed": true
+        },
+        {
+            "id": "string_left",
+            "type": "line",
+            "x1": 250,
+            "y1": 50,
+            "x2": 155,
+            "y2": 320,
+            "color": "#888888",
+            "width": 1,
+            "dashed": true
+        },
+        {
+            "id": "string_right",
+            "type": "line",
+            "x1": 250,
+            "y1": 50,
+            "x2": 345,
+            "y2": 320,
+            "color": "#888888",
+            "width": 1,
+            "dashed": true
+        },
+        {
+            "id": "string_actual",
+            "type": "line",
+            "x1": 250,
+            "y1": 50,
+            "x2": 345,
+            "y2": 320,
+            "color": "#333333",
+            "width": 2
+        },
+        {
+            "id": "bob_center",
+            "type": "circle",
+            "cx": 250,
+            "cy": 365,
+            "r": 15,
+            "color": "#E0E0E0",
+            "stroke": "#9E9E9E",
+            "stroke_width": 2
+        },
+        {
+            "id": "bob_left",
+            "type": "circle",
+            "cx": 155,
+            "cy": 335,
+            "r": 15,
+            "color": "#E0E0E0",
+            "stroke": "#9E9E9E",
+            "stroke_width": 2
+        },
+        {
+            "id": "bob_actual",
+            "type": "circle",
+            "cx": 345,
+            "cy": 335,
+            "r": 18,
+            "color": "#1E88E5",
+            "stroke": "#0D47A1",
+            "stroke_width": 3
+        },
+        {
+            "id": "weight_arrow",
+            "type": "arrow",
+            "x1": 345,
+            "y1": 355,
+            "x2": 345,
+            "y2": 430,
+            "color": "#E53935",
+            "width": 3
+        },
+        {
+            "id": "tension_arrow",
+            "type": "arrow",
+            "x1": 345,
+            "y1": 320,
+            "x2": 305,
+            "y2": 200,
+            "color": "#43A047",
+            "width": 3
+        },
+        {
+            "id": "arc_path",
+            "type": "arc",
+            "cx": 250,
+            "cy": 50,
+            "r": 310,
+            "start_angle": 70,
+            "end_angle": 110,
+            "color": "#FF9800",
+            "width": 2
+        },
+        {
+            "id": "angle_arc",
+            "type": "arc",
+            "cx": 250,
+            "cy": 50,
+            "r": 60,
+            "start_angle": 90,
+            "end_angle": 110,
+            "color": "#FF6F00",
+            "width": 2
+        }
+    ],
+    "labels": [
+        {
+            "id": "pivot_label",
+            "text": "Pivot (Fixed Point)",
+            "x": 255,
+            "y": 30,
+            "color": "#333333",
+            "font_size": 12
+        },
+        {
+            "id": "bob_label",
+            "text": "Bob (mass m)",
+            "x": 370,
+            "y": 330,
+            "color": "#0D47A1",
+            "font_size": 12
+        },
+        {
+            "id": "weight_label",
+            "text": "Weight (mg)",
+            "x": 355,
+            "y": 440,
+            "color": "#E53935",
+            "font_size": 12
+        },
+        {
+            "id": "tension_label",
+            "text": "Tension (T)",
+            "x": 270,
+            "y": 185,
+            "color": "#43A047",
+            "font_size": 12
+        },
+        {
+            "id": "length_label",
+            "text": "Length (L)",
+            "x": 260,
+            "y": 190,
+            "color": "#555555",
+            "font_size": 11
+        },
+        {
+            "id": "angle_label",
+            "text": "θ",
+            "x": 270,
+            "y": 100,
+            "color": "#FF6F00",
+            "font_size": 18
+        },
+        {
+            "id": "mean_label",
+            "text": "Mean Position",
+            "x": 215,
+            "y": 380,
+            "color": "#555555",
+            "font_size": 11
+        },
+        {
+            "id": "extreme_label",
+            "text": "Extreme Position",
+            "x": 360,
+            "y": 355,
+            "color": "#0D47A1",
+            "font_size": 11
+        },
+        {
+            "id": "formula_label",
+            "text": "T = 2π√(L/g)",
+            "x": 30,
+            "y": 460,
+            "color": "#1565C0",
+            "font_size": 14
+        }
+    ],
+    "properties": {
+        "time_period": "T = 2π√(L/g)",
+        "frequency": "f = 1/T",
+        "restoring_force": "F = -mg sin θ"
+    }
+}

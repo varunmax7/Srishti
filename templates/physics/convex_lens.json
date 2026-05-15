@@ -1,0 +1,194 @@
+{
+    "diagram": "convex_lens",
+    "type": "physics",
+    "title": "Convex Lens - Ray Diagram",
+    "canvas": {
+        "width": 700,
+        "height": 400
+    },
+    "elements": [
+        {
+            "id": "principal_axis",
+            "type": "line",
+            "x1": 20,
+            "y1": 200,
+            "x2": 680,
+            "y2": 200,
+            "color": "#333333",
+            "width": 1,
+            "dashed": false
+        },
+        {
+            "id": "lens",
+            "type": "line",
+            "x1": 350,
+            "y1": 50,
+            "x2": 350,
+            "y2": 350,
+            "color": "#1565C0",
+            "width": 3
+        },
+        {
+            "id": "lens_top_arrow",
+            "type": "arrow",
+            "x1": 350,
+            "y1": 70,
+            "x2": 350,
+            "y2": 50,
+            "color": "#1565C0",
+            "width": 3
+        },
+        {
+            "id": "lens_bottom_arrow",
+            "type": "arrow",
+            "x1": 350,
+            "y1": 330,
+            "x2": 350,
+            "y2": 350,
+            "color": "#1565C0",
+            "width": 3
+        },
+        {
+            "id": "object",
+            "type": "arrow",
+            "x1": 150,
+            "y1": 200,
+            "x2": 150,
+            "y2": 100,
+            "color": "#FF6F00",
+            "width": 3
+        },
+        {
+            "id": "ray1_parallel",
+            "type": "line",
+            "x1": 150,
+            "y1": 100,
+            "x2": 350,
+            "y2": 100,
+            "color": "#E53935",
+            "width": 2
+        },
+        {
+            "id": "ray1_refracted",
+            "type": "line",
+            "x1": 350,
+            "y1": 100,
+            "x2": 550,
+            "y2": 300,
+            "color": "#E53935",
+            "width": 2
+        },
+        {
+            "id": "ray2_center",
+            "type": "line",
+            "x1": 150,
+            "y1": 100,
+            "x2": 550,
+            "y2": 300,
+            "color": "#43A047",
+            "width": 2
+        },
+        {
+            "id": "ray3_focal",
+            "type": "line",
+            "x1": 150,
+            "y1": 100,
+            "x2": 350,
+            "y2": 200,
+            "color": "#1E88E5",
+            "width": 2
+        },
+        {
+            "id": "ray3_refracted",
+            "type": "line",
+            "x1": 350,
+            "y1": 200,
+            "x2": 600,
+            "y2": 200,
+            "color": "#1E88E5",
+            "width": 2,
+            "dashed": true
+        },
+        {
+            "id": "image",
+            "type": "arrow",
+            "x1": 550,
+            "y1": 200,
+            "x2": 550,
+            "y2": 300,
+            "color": "#6A1B9A",
+            "width": 3
+        }
+    ],
+    "labels": [
+        {
+            "id": "f1_label",
+            "text": "F₁",
+            "x": 245,
+            "y": 215,
+            "color": "#333333",
+            "font_size": 14
+        },
+        {
+            "id": "f2_label",
+            "text": "F₂",
+            "x": 445,
+            "y": 215,
+            "color": "#333333",
+            "font_size": 14
+        },
+        {
+            "id": "2f1_label",
+            "text": "2F₁",
+            "x": 140,
+            "y": 215,
+            "color": "#333333",
+            "font_size": 14
+        },
+        {
+            "id": "2f2_label",
+            "text": "2F₂",
+            "x": 540,
+            "y": 215,
+            "color": "#333333",
+            "font_size": 14
+        },
+        {
+            "id": "o_label",
+            "text": "O",
+            "x": 345,
+            "y": 215,
+            "color": "#333333",
+            "font_size": 14
+        },
+        {
+            "id": "obj_label",
+            "text": "Object",
+            "x": 105,
+            "y": 90,
+            "color": "#FF6F00",
+            "font_size": 12
+        },
+        {
+            "id": "img_label",
+            "text": "Image (Real, Inverted)",
+            "x": 555,
+            "y": 310,
+            "color": "#6A1B9A",
+            "font_size": 11
+        },
+        {
+            "id": "lens_label",
+            "text": "Convex Lens",
+            "x": 355,
+            "y": 40,
+            "color": "#1565C0",
+            "font_size": 12
+        }
+    ],
+    "points": [
+        {"id": "focus1", "label": "F₁", "x": 250, "y": 200},
+        {"id": "focus2", "label": "F₂", "x": 450, "y": 200},
+        {"id": "center", "label": "O", "x": 350, "y": 200}
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "diagram": "butane",
+    "type": "chemistry",
+    "title": "Butane (C4H10)",
+    "molecule": {
+        "name": "Butane",
+        "formula": "C4H10",
+        "smiles": "CCCC",
+        "molecular_weight": 58.12,
+        "description": "Four-carbon alkane, used in lighters and as a fuel"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

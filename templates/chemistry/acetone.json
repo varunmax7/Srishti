@@ -1,0 +1,13 @@
+{
+    "diagram": "acetone",
+    "type": "chemistry",
+    "title": "Acetone (C3H6O)",
+    "molecule": {
+        "name": "Acetone",
+        "formula": "C3H6O",
+        "smiles": "CC(=O)C",
+        "molecular_weight": 58.08,
+        "description": "Simplest ketone, common solvent and nail polish remover"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

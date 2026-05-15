@@ -1,0 +1,31 @@
+{
+    "diagram": "human_brain",
+    "type": "biology",
+    "title": "Human Brain - Side View",
+    "canvas": {"width": 700, "height": 550},
+    "parts": [
+        {"id": "cerebrum", "name": "Cerebrum", "shape": "path", "d": "M 150 280 Q 150 100 350 80 Q 550 65 580 180 Q 600 250 550 300 Q 500 330 400 330 Q 300 340 200 320 Q 150 310 150 280 Z", "color": "#FFCDD2", "stroke": "#C62828", "stroke_width": 3},
+        {"id": "frontal_lobe", "name": "Frontal Lobe", "shape": "path", "d": "M 150 280 Q 150 150 250 110 Q 300 95 320 100 L 320 320 Q 250 320 200 310 Q 150 300 150 280 Z", "color": "#EF9A9A", "stroke": "#E53935", "stroke_width": 2},
+        {"id": "parietal_lobe", "name": "Parietal Lobe", "shape": "path", "d": "M 320 100 Q 400 80 480 100 L 480 280 L 320 320 Z", "color": "#F48FB1", "stroke": "#EC407A", "stroke_width": 2},
+        {"id": "occipital_lobe", "name": "Occipital Lobe", "shape": "path", "d": "M 480 100 Q 560 80 580 180 Q 590 240 560 280 L 480 280 Z", "color": "#CE93D8", "stroke": "#AB47BC", "stroke_width": 2},
+        {"id": "temporal_lobe", "name": "Temporal Lobe", "shape": "path", "d": "M 180 310 Q 250 330 400 340 Q 480 340 530 310 Q 550 300 560 280 L 480 280 L 320 320 Q 250 310 200 300 Z", "color": "#90CAF9", "stroke": "#42A5F5", "stroke_width": 2},
+        {"id": "cerebellum", "name": "Cerebellum", "shape": "ellipse", "cx": 560, "cy": 370, "rx": 75, "ry": 55, "color": "#A5D6A7", "stroke": "#2E7D32", "stroke_width": 3},
+        {"id": "brain_stem", "name": "Brain Stem", "shape": "path", "d": "M 490 370 Q 480 400 470 440 Q 460 480 465 510 L 495 510 Q 500 480 510 440 Q 520 400 520 370 Z", "color": "#FFCC80", "stroke": "#E65100", "stroke_width": 2},
+        {"id": "medulla", "name": "Medulla Oblongata", "shape": "ellipse", "cx": 480, "cy": 480, "rx": 22, "ry": 35, "color": "#FFE0B2", "stroke": "#EF6C00", "stroke_width": 2},
+        {"id": "pons", "name": "Pons", "shape": "ellipse", "cx": 495, "cy": 415, "rx": 30, "ry": 22, "color": "#FFF9C4", "stroke": "#F9A825", "stroke_width": 2},
+        {"id": "spinal_cord", "name": "Spinal Cord", "shape": "rect", "x": 470, "y": 505, "w": 20, "h": 40, "color": "#B0BEC5", "stroke": "#455A64", "stroke_width": 2},
+        {"id": "central_sulcus", "name": "Central Sulcus", "shape": "path", "d": "M 320 100 L 320 320", "color": "none", "stroke": "#880E4F", "stroke_width": 2}
+    ],
+    "labels": [
+        {"part_id": "frontal_lobe", "text": "Frontal Lobe", "lx": 30, "ly": 170, "tx": 220, "ty": 200},
+        {"part_id": "parietal_lobe", "text": "Parietal Lobe", "lx": 350, "ly": 50, "tx": 400, "ty": 170},
+        {"part_id": "occipital_lobe", "text": "Occipital Lobe", "lx": 610, "ly": 150, "tx": 530, "ty": 180},
+        {"part_id": "temporal_lobe", "text": "Temporal Lobe", "lx": 30, "ly": 360, "tx": 300, "ty": 330},
+        {"part_id": "cerebellum", "text": "Cerebellum", "lx": 620, "ly": 360, "tx": 580, "ty": 365},
+        {"part_id": "brain_stem", "text": "Brain Stem", "lx": 560, "ly": 440, "tx": 520, "ty": 430},
+        {"part_id": "medulla", "text": "Medulla Oblongata", "lx": 30, "ly": 480, "tx": 460, "ty": 480},
+        {"part_id": "pons", "text": "Pons", "lx": 560, "ly": 410, "tx": 525, "ty": 415},
+        {"part_id": "spinal_cord", "text": "Spinal Cord", "lx": 520, "ly": 520, "tx": 492, "ty": 520},
+        {"part_id": "central_sulcus", "text": "Central Sulcus", "lx": 270, "ly": 80, "tx": 320, "ty": 110}
+    ]
+}

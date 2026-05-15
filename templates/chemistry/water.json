@@ -1,0 +1,13 @@
+{
+    "diagram": "water",
+    "type": "chemistry",
+    "title": "Water (H2O)",
+    "molecule": {
+        "name": "Water",
+        "formula": "H2O",
+        "smiles": "O",
+        "molecular_weight": 18.02,
+        "description": "Universal solvent, essential for life"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

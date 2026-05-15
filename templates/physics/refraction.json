@@ -1,0 +1,27 @@
+{
+    "diagram": "refraction",
+    "type": "physics",
+    "title": "Refraction of Light",
+    "canvas": {"width": 550, "height": 450},
+    "elements": [
+        {"id": "medium1", "type": "rect", "x": 50, "y": 50, "w": 450, "h": 175, "color": "#E3F2FD", "stroke": "none", "stroke_width": 0},
+        {"id": "medium2", "type": "rect", "x": 50, "y": 225, "w": 450, "h": 175, "color": "#BBDEFB", "stroke": "none", "stroke_width": 0},
+        {"id": "interface", "type": "line", "x1": 50, "y1": 225, "x2": 500, "y2": 225, "color": "#1565C0", "width": 3},
+        {"id": "normal", "type": "line", "x1": 275, "y1": 70, "x2": 275, "y2": 380, "color": "#333333", "width": 1, "dashed": true},
+        {"id": "incident_ray", "type": "line", "x1": 120, "y1": 80, "x2": 275, "y2": 225, "color": "#E53935", "width": 3},
+        {"id": "refracted_ray", "type": "line", "x1": 275, "y1": 225, "x2": 380, "y2": 380, "color": "#E53935", "width": 3},
+        {"id": "angle_i_arc", "type": "arc", "cx": 275, "cy": 225, "r": 50, "start_angle": 245, "end_angle": 270, "color": "#FF6F00", "width": 2},
+        {"id": "angle_r_arc", "type": "arc", "cx": 275, "cy": 225, "r": 50, "start_angle": 270, "end_angle": 295, "color": "#43A047", "width": 2}
+    ],
+    "labels": [
+        {"id": "medium1_label", "text": "Medium 1 (Rarer - Air)", "x": 150, "y": 65, "color": "#1565C0", "font_size": 13},
+        {"id": "medium2_label", "text": "Medium 2 (Denser - Glass)", "x": 150, "y": 390, "color": "#0D47A1", "font_size": 13},
+        {"id": "incident_label", "text": "Incident Ray", "x": 80, "y": 100, "color": "#E53935", "font_size": 12},
+        {"id": "refracted_label", "text": "Refracted Ray", "x": 385, "y": 350, "color": "#E53935", "font_size": 12},
+        {"id": "normal_label", "text": "Normal", "x": 280, "y": 60, "color": "#333333", "font_size": 12},
+        {"id": "angle_i_label", "text": "∠i", "x": 240, "y": 175, "color": "#FF6F00", "font_size": 16},
+        {"id": "angle_r_label", "text": "∠r", "x": 285, "y": 260, "color": "#43A047", "font_size": 16},
+        {"id": "snell_label", "text": "Snell's Law: n₁ sin i = n₂ sin r", "x": 140, "y": 420, "color": "#1565C0", "font_size": 14}
+    ],
+    "properties": {"law": "Snell's Law", "formula": "n1 × sin(i) = n2 × sin(r)"}
+}

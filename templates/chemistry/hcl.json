@@ -1,0 +1,13 @@
+{
+    "diagram": "hcl",
+    "type": "chemistry",
+    "title": "Hydrochloric Acid (HCl)",
+    "molecule": {
+        "name": "Hydrochloric Acid",
+        "formula": "HCl",
+        "smiles": "Cl",
+        "molecular_weight": 36.46,
+        "description": "Strong acid found in gastric juice, widely used in industry"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

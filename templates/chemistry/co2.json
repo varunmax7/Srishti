@@ -1,0 +1,13 @@
+{
+    "diagram": "co2",
+    "type": "chemistry",
+    "title": "Carbon Dioxide (CO2)",
+    "molecule": {
+        "name": "Carbon Dioxide",
+        "formula": "CO2",
+        "smiles": "O=C=O",
+        "molecular_weight": 44.01,
+        "description": "Greenhouse gas produced by respiration and combustion"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

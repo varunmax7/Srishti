@@ -54,10 +54,19 @@ def export_diagram(request: dict) -> dict:
     if req_type == "biology":
 
         BIOLOGY_TEMPLATES = {
-            "plant_cell":        "templates/biology/plant_cell.json",
-            "animal_cell":       "templates/biology/animal_cell.json",
-            "heart":             "templates/biology/heart.json",
-            "digestive_system":  "templates/biology/digestive_system.json",
+            "plant_cell":          "templates/biology/plant_cell.json",
+            "animal_cell":         "templates/biology/animal_cell.json",
+            "heart":               "templates/biology/heart.json",
+            "digestive_system":    "templates/biology/digestive_system.json",
+            "human_eye":           "templates/biology/human_eye.json",
+            "human_brain":         "templates/biology/human_brain.json",
+            "nephron":             "templates/biology/nephron.json",
+            "neuron":              "templates/biology/neuron.json",
+            "respiratory_system":  "templates/biology/respiratory_system.json",
+            "flower_structure":    "templates/biology/flower_structure.json",
+            "leaf_cross_section":  "templates/biology/leaf_cross_section.json",
+            "dna_structure":       "templates/biology/dna_structure.json",
+            "human_excretory":     "templates/biology/human_excretory.json",
         }
 
         if name not in BIOLOGY_TEMPLATES:
@@ -193,29 +202,60 @@ def export_diagram(request: dict) -> dict:
 if __name__ == "__main__":
 
     tests = [
-        # Biology
+        # Biology (13 templates)
         {"type": "biology",          "name": "plant_cell"},
         {"type": "biology",          "name": "animal_cell"},
         {"type": "biology",          "name": "heart"},
         {"type": "biology",          "name": "digestive_system"},
+        {"type": "biology",          "name": "human_eye"},
+        {"type": "biology",          "name": "human_brain"},
+        {"type": "biology",          "name": "nephron"},
+        {"type": "biology",          "name": "neuron"},
+        {"type": "biology",          "name": "respiratory_system"},
+        {"type": "biology",          "name": "flower_structure"},
+        {"type": "biology",          "name": "leaf_cross_section"},
+        {"type": "biology",          "name": "dna_structure"},
+        {"type": "biology",          "name": "human_excretory"},
 
-        # Chemistry
+        # Chemistry (15 templates)
         {"type": "chemistry",        "name": "methane"},
         {"type": "chemistry",        "name": "benzene"},
         {"type": "chemistry",        "name": "glucose"},
         {"type": "chemistry",        "name": "ethanol"},
+        {"type": "chemistry",        "name": "ethane"},
+        {"type": "chemistry",        "name": "ethene"},
+        {"type": "chemistry",        "name": "ethyne"},
+        {"type": "chemistry",        "name": "acetic_acid"},
+        {"type": "chemistry",        "name": "water"},
+        {"type": "chemistry",        "name": "ammonia"},
+        {"type": "chemistry",        "name": "co2"},
+        {"type": "chemistry",        "name": "sulfuric_acid"},
+        {"type": "chemistry",        "name": "nitric_acid"},
+        {"type": "chemistry",        "name": "propane"},
+        {"type": "chemistry",        "name": "butane"},
+        {"type": "chemistry",        "name": "urea"},
+        {"type": "chemistry",        "name": "acetone"},
+        {"type": "chemistry",        "name": "methanol"},
+        {"type": "chemistry",        "name": "nacl"},
+        {"type": "chemistry",        "name": "hcl"},
 
-        # Physics graphs
+        # Physics graphs (4 templates)
         {"type": "physics_graph",    "name": "distance_time"},
         {"type": "physics_graph",    "name": "velocity_time"},
         {"type": "physics_graph",    "name": "wave"},
         {"type": "physics_graph",    "name": "motion"},
 
-        # Physics diagrams
+        # Physics diagrams (10 templates)
         {"type": "physics_diagram",  "name": "concave_mirror"},
         {"type": "physics_diagram",  "name": "circuit"},
         {"type": "physics_diagram",  "name": "force_diagram"},
         {"type": "physics_diagram",  "name": "convex_lens"},
+        {"type": "physics_diagram",  "name": "pendulum"},
+        {"type": "physics_diagram",  "name": "electromagnetic_spectrum"},
+        {"type": "physics_diagram",  "name": "ohms_law"},
+        {"type": "physics_diagram",  "name": "magnetic_field"},
+        {"type": "physics_diagram",  "name": "refraction"},
+        {"type": "physics_diagram",  "name": "prism_dispersion"},
     ]
 
     print("=" * 50)

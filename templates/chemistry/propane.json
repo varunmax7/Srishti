@@ -1,0 +1,13 @@
+{
+    "diagram": "propane",
+    "type": "chemistry",
+    "title": "Propane (C3H8)",
+    "molecule": {
+        "name": "Propane",
+        "formula": "C3H8",
+        "smiles": "CCC",
+        "molecular_weight": 44.10,
+        "description": "Three-carbon alkane used as LPG fuel"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

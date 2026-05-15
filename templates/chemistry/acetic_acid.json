@@ -1,0 +1,13 @@
+{
+    "diagram": "acetic_acid",
+    "type": "chemistry",
+    "title": "Acetic Acid (CH3COOH)",
+    "molecule": {
+        "name": "Acetic Acid",
+        "formula": "CH3COOH",
+        "smiles": "CC(=O)O",
+        "molecular_weight": 60.05,
+        "description": "Carboxylic acid found in vinegar"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

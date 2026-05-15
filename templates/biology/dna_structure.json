@@ -1,0 +1,36 @@
+{
+    "diagram": "dna_structure",
+    "type": "biology",
+    "title": "DNA Double Helix Structure",
+    "canvas": {"width": 500, "height": 650},
+    "parts": [
+        {"id": "backbone1", "name": "Sugar-Phosphate Backbone", "shape": "path", "d": "M 150 50 Q 180 100 150 150 Q 120 200 150 250 Q 180 300 150 350 Q 120 400 150 450 Q 180 500 150 550 Q 120 600 150 630", "color": "none", "stroke": "#1565C0", "stroke_width": 5},
+        {"id": "backbone2", "name": "Sugar-Phosphate Backbone", "shape": "path", "d": "M 350 50 Q 320 100 350 150 Q 380 200 350 250 Q 320 300 350 350 Q 380 400 350 450 Q 320 500 350 550 Q 380 600 350 630", "color": "none", "stroke": "#C62828", "stroke_width": 5},
+        {"id": "base_pair1", "name": "A-T Base Pair", "shape": "path", "d": "M 168 80 L 332 80", "color": "none", "stroke": "#43A047", "stroke_width": 3},
+        {"id": "base_pair2", "name": "G-C Base Pair", "shape": "path", "d": "M 138 150 L 362 150", "color": "none", "stroke": "#FF6F00", "stroke_width": 3},
+        {"id": "base_pair3", "name": "A-T Base Pair", "shape": "path", "d": "M 155 200 L 365 200", "color": "none", "stroke": "#43A047", "stroke_width": 3},
+        {"id": "base_pair4", "name": "G-C Base Pair", "shape": "path", "d": "M 168 250 L 332 250", "color": "none", "stroke": "#FF6F00", "stroke_width": 3},
+        {"id": "base_pair5", "name": "A-T Base Pair", "shape": "path", "d": "M 138 320 L 362 320", "color": "none", "stroke": "#43A047", "stroke_width": 3},
+        {"id": "base_pair6", "name": "G-C Base Pair", "shape": "path", "d": "M 155 380 L 365 380", "color": "none", "stroke": "#FF6F00", "stroke_width": 3},
+        {"id": "base_pair7", "name": "A-T Base Pair", "shape": "path", "d": "M 168 430 L 332 430", "color": "none", "stroke": "#43A047", "stroke_width": 3},
+        {"id": "base_pair8", "name": "G-C Base Pair", "shape": "path", "d": "M 138 500 L 362 500", "color": "none", "stroke": "#FF6F00", "stroke_width": 3},
+        {"id": "base_pair9", "name": "A-T Base Pair", "shape": "path", "d": "M 155 560 L 365 560", "color": "none", "stroke": "#43A047", "stroke_width": 3},
+        {"id": "a1", "name": "Adenine", "shape": "ellipse", "cx": 200, "cy": 80, "rx": 14, "ry": 10, "color": "#66BB6A", "stroke": "#2E7D32", "stroke_width": 2},
+        {"id": "t1", "name": "Thymine", "shape": "ellipse", "cx": 300, "cy": 80, "rx": 14, "ry": 10, "color": "#AED581", "stroke": "#33691E", "stroke_width": 2},
+        {"id": "g1", "name": "Guanine", "shape": "ellipse", "cx": 200, "cy": 150, "rx": 14, "ry": 10, "color": "#FFA726", "stroke": "#E65100", "stroke_width": 2},
+        {"id": "c1", "name": "Cytosine", "shape": "ellipse", "cx": 300, "cy": 150, "rx": 14, "ry": 10, "color": "#FFCC80", "stroke": "#EF6C00", "stroke_width": 2},
+        {"id": "hydrogen_bond", "name": "Hydrogen Bond", "shape": "path", "d": "M 215 80 L 285 80", "color": "none", "stroke": "#9E9E9E", "stroke_width": 1}
+    ],
+    "labels": [
+        {"part_id": "backbone1", "text": "5' Strand", "lx": 40, "ly": 50, "tx": 145, "ty": 50},
+        {"part_id": "backbone2", "text": "3' Strand", "lx": 400, "ly": 50, "tx": 355, "ty": 50},
+        {"part_id": "a1", "text": "A", "lx": 195, "ly": 75, "tx": 200, "ty": 80},
+        {"part_id": "t1", "text": "T", "lx": 295, "ly": 75, "tx": 300, "ty": 80},
+        {"part_id": "g1", "text": "G", "lx": 195, "ly": 145, "tx": 200, "ty": 150},
+        {"part_id": "c1", "text": "C", "lx": 295, "ly": 145, "tx": 300, "ty": 150},
+        {"part_id": "hydrogen_bond", "text": "Hydrogen Bonds", "lx": 400, "ly": 200, "tx": 365, "ty": 200},
+        {"part_id": "backbone1", "text": "Sugar-Phosphate Backbone", "lx": 40, "ly": 350, "tx": 130, "ty": 350},
+        {"part_id": "base_pair1", "text": "A-T Base Pair", "lx": 40, "ly": 80, "tx": 168, "ty": 80},
+        {"part_id": "base_pair2", "text": "G-C Base Pair", "lx": 40, "ly": 150, "tx": 138, "ty": 150}
+    ]
+}

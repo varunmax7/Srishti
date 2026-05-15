@@ -1,0 +1,13 @@
+{
+    "diagram": "ethene",
+    "type": "chemistry",
+    "title": "Ethene (C2H4)",
+    "molecule": {
+        "name": "Ethene",
+        "formula": "C2H4",
+        "smiles": "C=C",
+        "molecular_weight": 28.05,
+        "description": "Simplest alkene with a C=C double bond"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

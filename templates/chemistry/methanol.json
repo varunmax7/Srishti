@@ -1,0 +1,13 @@
+{
+    "diagram": "methanol",
+    "type": "chemistry",
+    "title": "Methanol (CH3OH)",
+    "molecule": {
+        "name": "Methanol",
+        "formula": "CH3OH",
+        "smiles": "CO",
+        "molecular_weight": 32.04,
+        "description": "Simplest alcohol, also known as wood alcohol, toxic"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

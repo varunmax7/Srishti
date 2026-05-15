@@ -1,0 +1,13 @@
+{
+    "diagram": "sulfuric_acid",
+    "type": "chemistry",
+    "title": "Sulfuric Acid (H2SO4)",
+    "molecule": {
+        "name": "Sulfuric Acid",
+        "formula": "H2SO4",
+        "smiles": "OS(=O)(=O)O",
+        "molecular_weight": 98.08,
+        "description": "Strong mineral acid, king of chemicals, widely used in industry"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

@@ -1,0 +1,13 @@
+{
+    "diagram": "ethanol",
+    "type": "chemistry",
+    "title": "Ethanol (C2H5OH)",
+    "molecule": {
+        "name": "Ethanol",
+        "formula": "C2H5OH",
+        "smiles": "CCO",
+        "molecular_weight": 46.07,
+        "description": "Primary alcohol, commonly known as drinking alcohol"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

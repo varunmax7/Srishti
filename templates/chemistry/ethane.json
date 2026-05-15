@@ -1,0 +1,13 @@
+{
+    "diagram": "ethane",
+    "type": "chemistry",
+    "title": "Ethane (C2H6)",
+    "molecule": {
+        "name": "Ethane",
+        "formula": "C2H6",
+        "smiles": "CC",
+        "molecular_weight": 30.07,
+        "description": "Second simplest alkane with a single C-C bond"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

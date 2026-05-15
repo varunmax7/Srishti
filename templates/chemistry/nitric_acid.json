@@ -1,0 +1,13 @@
+{
+    "diagram": "nitric_acid",
+    "type": "chemistry",
+    "title": "Nitric Acid (HNO3)",
+    "molecule": {
+        "name": "Nitric Acid",
+        "formula": "HNO3",
+        "smiles": "O[N+](=O)[O-]",
+        "molecular_weight": 63.01,
+        "description": "Strong mineral acid used in fertilizers and explosives"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

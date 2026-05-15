@@ -1,0 +1,282 @@
+{
+    "diagram": "electromagnetic_spectrum",
+    "type": "physics",
+    "title": "Electromagnetic Spectrum",
+    "canvas": {
+        "width": 750,
+        "height": 400
+    },
+    "elements": [
+        {
+            "id": "radio_band",
+            "type": "rect",
+            "x": 30,
+            "y": 120,
+            "w": 90,
+            "h": 80,
+            "color": "#EF5350",
+            "stroke": "#C62828",
+            "stroke_width": 2
+        },
+        {
+            "id": "microwave_band",
+            "type": "rect",
+            "x": 125,
+            "y": 120,
+            "w": 90,
+            "h": 80,
+            "color": "#FF7043",
+            "stroke": "#D84315",
+            "stroke_width": 2
+        },
+        {
+            "id": "infrared_band",
+            "type": "rect",
+            "x": 220,
+            "y": 120,
+            "w": 90,
+            "h": 80,
+            "color": "#FFA726",
+            "stroke": "#E65100",
+            "stroke_width": 2
+        },
+        {
+            "id": "visible_band",
+            "type": "rect",
+            "x": 315,
+            "y": 100,
+            "w": 90,
+            "h": 120,
+            "color": "#66BB6A",
+            "stroke": "#2E7D32",
+            "stroke_width": 3
+        },
+        {
+            "id": "visible_red",
+            "type": "rect",
+            "x": 315,
+            "y": 100,
+            "w": 15,
+            "h": 120,
+            "color": "#F44336",
+            "stroke": "none",
+            "stroke_width": 0
+        },
+        {
+            "id": "visible_orange",
+            "type": "rect",
+            "x": 330,
+            "y": 100,
+            "w": 15,
+            "h": 120,
+            "color": "#FF9800",
+            "stroke": "none",
+            "stroke_width": 0
+        },
+        {
+            "id": "visible_yellow",
+            "type": "rect",
+            "x": 345,
+            "y": 100,
+            "w": 15,
+            "h": 120,
+            "color": "#FFEB3B",
+            "stroke": "none",
+            "stroke_width": 0
+        },
+        {
+            "id": "visible_green",
+            "type": "rect",
+            "x": 360,
+            "y": 100,
+            "w": 15,
+            "h": 120,
+            "color": "#4CAF50",
+            "stroke": "none",
+            "stroke_width": 0
+        },
+        {
+            "id": "visible_blue",
+            "type": "rect",
+            "x": 375,
+            "y": 100,
+            "w": 15,
+            "h": 120,
+            "color": "#2196F3",
+            "stroke": "none",
+            "stroke_width": 0
+        },
+        {
+            "id": "visible_violet",
+            "type": "rect",
+            "x": 390,
+            "y": 100,
+            "w": 15,
+            "h": 120,
+            "color": "#9C27B0",
+            "stroke": "none",
+            "stroke_width": 0
+        },
+        {
+            "id": "uv_band",
+            "type": "rect",
+            "x": 410,
+            "y": 120,
+            "w": 90,
+            "h": 80,
+            "color": "#7E57C2",
+            "stroke": "#4527A0",
+            "stroke_width": 2
+        },
+        {
+            "id": "xray_band",
+            "type": "rect",
+            "x": 505,
+            "y": 120,
+            "w": 90,
+            "h": 80,
+            "color": "#42A5F5",
+            "stroke": "#1565C0",
+            "stroke_width": 2
+        },
+        {
+            "id": "gamma_band",
+            "type": "rect",
+            "x": 600,
+            "y": 120,
+            "w": 90,
+            "h": 80,
+            "color": "#26C6DA",
+            "stroke": "#00838F",
+            "stroke_width": 2
+        },
+        {
+            "id": "wavelength_arrow",
+            "type": "arrow",
+            "x1": 690,
+            "y1": 260,
+            "x2": 30,
+            "y2": 260,
+            "color": "#E53935",
+            "width": 2
+        },
+        {
+            "id": "frequency_arrow",
+            "type": "arrow",
+            "x1": 30,
+            "y1": 290,
+            "x2": 690,
+            "y2": 290,
+            "color": "#1565C0",
+            "width": 2
+        },
+        {
+            "id": "energy_arrow",
+            "type": "arrow",
+            "x1": 30,
+            "y1": 320,
+            "x2": 690,
+            "y2": 320,
+            "color": "#43A047",
+            "width": 2
+        }
+    ],
+    "labels": [
+        {
+            "id": "radio_label",
+            "text": "Radio\nWaves",
+            "x": 45,
+            "y": 145,
+            "color": "#FFFFFF",
+            "font_size": 11
+        },
+        {
+            "id": "micro_label",
+            "text": "Micro-\nwaves",
+            "x": 140,
+            "y": 145,
+            "color": "#FFFFFF",
+            "font_size": 11
+        },
+        {
+            "id": "ir_label",
+            "text": "Infrared",
+            "x": 235,
+            "y": 152,
+            "color": "#FFFFFF",
+            "font_size": 11
+        },
+        {
+            "id": "vis_label",
+            "text": "Visible\nLight",
+            "x": 335,
+            "y": 78,
+            "color": "#333333",
+            "font_size": 12
+        },
+        {
+            "id": "uv_label",
+            "text": "Ultra-\nviolet",
+            "x": 425,
+            "y": 145,
+            "color": "#FFFFFF",
+            "font_size": 11
+        },
+        {
+            "id": "xray_label",
+            "text": "X-Rays",
+            "x": 520,
+            "y": 152,
+            "color": "#FFFFFF",
+            "font_size": 11
+        },
+        {
+            "id": "gamma_label",
+            "text": "Gamma\nRays",
+            "x": 615,
+            "y": 145,
+            "color": "#FFFFFF",
+            "font_size": 11
+        },
+        {
+            "id": "wavelength_label",
+            "text": "Increasing Wavelength (λ) →",
+            "x": 250,
+            "y": 248,
+            "color": "#E53935",
+            "font_size": 12
+        },
+        {
+            "id": "freq_label",
+            "text": "← Increasing Frequency (f)",
+            "x": 250,
+            "y": 278,
+            "color": "#1565C0",
+            "font_size": 12
+        },
+        {
+            "id": "energy_label",
+            "text": "← Increasing Energy (E)",
+            "x": 260,
+            "y": 308,
+            "color": "#43A047",
+            "font_size": 12
+        },
+        {
+            "id": "title_label",
+            "text": "Electromagnetic Spectrum",
+            "x": 230,
+            "y": 30,
+            "color": "#1a1a2e",
+            "font_size": 18
+        },
+        {
+            "id": "formula_label",
+            "text": "c = f × λ    |    E = hf",
+            "x": 250,
+            "y": 360,
+            "color": "#333333",
+            "font_size": 14
+        }
+    ]
+}

@@ -84,15 +84,16 @@ def render_svg_to_pil(template: dict, scale: float = 2.0) -> Image.Image:
         stroke = part.get("stroke", "#333333")
         sw = max(1, int(part.get("stroke_width", 2) * scale))
 
-        # Handle "none" → no fill (transparent)
-        fill_color = None if color == "none" else color
+        # Handle "none" → no fill / no outline (transparent)
+        fill_color = None if color.lower() == "none" else color
+        stroke_color = None if stroke.lower() == "none" else stroke
 
         if shape == "rect":
             x = part["x"] * scale
             y = part["y"] * scale
             x2 = x + part["w"] * scale
             y2 = y + part["h"] * scale
-            draw.rectangle([x, y, x2, y2], fill=fill_color, outline=stroke, width=sw)
+            draw.rectangle([x, y, x2, y2], fill=fill_color, outline=stroke_color, width=sw)
 
         elif shape == "ellipse":
             cx = part["cx"] * scale
@@ -100,7 +101,7 @@ def render_svg_to_pil(template: dict, scale: float = 2.0) -> Image.Image:
             rx = part["rx"] * scale
             ry = part["ry"] * scale
             draw.ellipse([cx - rx, cy - ry, cx + rx, cy + ry],
-                         fill=fill_color, outline=stroke, width=sw)
+                         fill=fill_color, outline=stroke_color, width=sw)
 
         elif shape == "path":
             d = part.get("d", "")
@@ -108,9 +109,9 @@ def render_svg_to_pil(template: dict, scale: float = 2.0) -> Image.Image:
             if len(pts) >= 2:
                 is_closed = d.strip().upper().endswith('Z')
                 if is_closed and fill_color:
-                    draw.polygon(pts, fill=fill_color, outline=stroke)
+                    draw.polygon(pts, fill=fill_color, outline=stroke_color)
                 else:
-                    draw.line(pts, fill=stroke, width=sw)
+                    draw.line(pts, fill=stroke_color or "#333333", width=sw)
 
     return image
 

@@ -1,0 +1,31 @@
+{
+    "diagram": "respiratory_system",
+    "type": "biology",
+    "title": "Human Respiratory System",
+    "canvas": {"width": 650, "height": 750},
+    "parts": [
+        {"id": "nasal_cavity", "name": "Nasal Cavity", "shape": "ellipse", "cx": 325, "cy": 55, "rx": 40, "ry": 25, "color": "#FFCCBC", "stroke": "#BF360C", "stroke_width": 2},
+        {"id": "pharynx", "name": "Pharynx", "shape": "rect", "x": 310, "y": 80, "w": 30, "h": 40, "color": "#FFAB91", "stroke": "#BF360C", "stroke_width": 2},
+        {"id": "larynx", "name": "Larynx", "shape": "path", "d": "M 310 120 L 295 145 L 295 170 L 355 170 L 355 145 L 340 120 Z", "color": "#CE93D8", "stroke": "#6A1B9A", "stroke_width": 2},
+        {"id": "trachea", "name": "Trachea", "shape": "rect", "x": 308, "y": 170, "w": 34, "h": 120, "color": "#B3E5FC", "stroke": "#0277BD", "stroke_width": 2},
+        {"id": "left_bronchus", "name": "Left Bronchus", "shape": "path", "d": "M 310 290 Q 260 310 220 340", "color": "none", "stroke": "#0277BD", "stroke_width": 6},
+        {"id": "right_bronchus", "name": "Right Bronchus", "shape": "path", "d": "M 340 290 Q 390 310 430 340", "color": "none", "stroke": "#0277BD", "stroke_width": 6},
+        {"id": "left_lung", "name": "Left Lung", "shape": "path", "d": "M 240 300 Q 120 320 100 450 Q 90 550 140 620 Q 180 660 260 660 Q 310 650 310 580 Q 310 450 280 370 Q 260 320 240 300 Z", "color": "#FFCDD2", "stroke": "#C62828", "stroke_width": 3},
+        {"id": "right_lung", "name": "Right Lung", "shape": "path", "d": "M 410 300 Q 530 320 550 450 Q 560 550 510 620 Q 470 660 390 660 Q 340 650 340 580 Q 340 450 370 370 Q 390 320 410 300 Z", "color": "#FFCDD2", "stroke": "#C62828", "stroke_width": 3},
+        {"id": "alveoli_left", "name": "Alveoli", "shape": "ellipse", "cx": 165, "cy": 430, "rx": 20, "ry": 18, "color": "#F48FB1", "stroke": "#AD1457", "stroke_width": 2},
+        {"id": "alveoli_right", "name": "Alveoli", "shape": "ellipse", "cx": 490, "cy": 430, "rx": 20, "ry": 18, "color": "#F48FB1", "stroke": "#AD1457", "stroke_width": 2},
+        {"id": "diaphragm", "name": "Diaphragm", "shape": "path", "d": "M 70 680 Q 200 640 325 650 Q 450 640 580 680", "color": "none", "stroke": "#E65100", "stroke_width": 5}
+    ],
+    "labels": [
+        {"part_id": "nasal_cavity", "text": "Nasal Cavity", "lx": 420, "ly": 50, "tx": 368, "ty": 55},
+        {"part_id": "pharynx", "text": "Pharynx", "lx": 420, "ly": 95, "tx": 342, "ty": 95},
+        {"part_id": "larynx", "text": "Larynx", "lx": 420, "ly": 140, "tx": 360, "ty": 145},
+        {"part_id": "trachea", "text": "Trachea", "lx": 420, "ly": 220, "tx": 345, "ty": 230},
+        {"part_id": "left_bronchus", "text": "Left Bronchus", "lx": 50, "ly": 310, "tx": 240, "ty": 315},
+        {"part_id": "right_bronchus", "text": "Right Bronchus", "lx": 480, "ly": 310, "tx": 400, "ty": 315},
+        {"part_id": "left_lung", "text": "Left Lung", "lx": 30, "ly": 460, "tx": 155, "ty": 490},
+        {"part_id": "right_lung", "text": "Right Lung", "lx": 550, "ly": 460, "tx": 465, "ty": 490},
+        {"part_id": "alveoli_left", "text": "Alveoli", "lx": 30, "ly": 435, "tx": 145, "ty": 430},
+        {"part_id": "diaphragm", "text": "Diaphragm", "lx": 250, "ly": 710, "tx": 325, "ty": 660}
+    ]
+}

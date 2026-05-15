@@ -1,0 +1,38 @@
+{
+    "diagram": "neuron",
+    "type": "biology",
+    "title": "Neuron (Nerve Cell)",
+    "canvas": {"width": 800, "height": 400},
+    "parts": [
+        {"id": "cell_body", "name": "Cell Body (Soma)", "shape": "ellipse", "cx": 200, "cy": 200, "rx": 70, "ry": 65, "color": "#FFCDD2", "stroke": "#C62828", "stroke_width": 3},
+        {"id": "nucleus", "name": "Nucleus", "shape": "ellipse", "cx": 200, "cy": 200, "rx": 30, "ry": 28, "color": "#EF9A9A", "stroke": "#B71C1C", "stroke_width": 2},
+        {"id": "dendrite1", "name": "Dendrite", "shape": "path", "d": "M 140 160 Q 100 120 60 100 Q 40 90 30 80", "color": "none", "stroke": "#E53935", "stroke_width": 3},
+        {"id": "dendrite2", "name": "Dendrite", "shape": "path", "d": "M 140 190 Q 90 180 50 160 Q 30 150 20 140", "color": "none", "stroke": "#E53935", "stroke_width": 3},
+        {"id": "dendrite3", "name": "Dendrite", "shape": "path", "d": "M 145 230 Q 100 260 60 280 Q 40 290 25 300", "color": "none", "stroke": "#E53935", "stroke_width": 3},
+        {"id": "dendrite4", "name": "Dendrite", "shape": "path", "d": "M 150 250 Q 120 290 90 320 Q 70 340 55 350", "color": "none", "stroke": "#E53935", "stroke_width": 3},
+        {"id": "dendrite1_branch", "name": "Dendrite Branch", "shape": "path", "d": "M 60 100 Q 45 85 30 60", "color": "none", "stroke": "#E53935", "stroke_width": 2},
+        {"id": "dendrite2_branch", "name": "Dendrite Branch", "shape": "path", "d": "M 50 160 Q 25 155 15 165", "color": "none", "stroke": "#E53935", "stroke_width": 2},
+        {"id": "axon_hillock", "name": "Axon Hillock", "shape": "path", "d": "M 265 185 Q 280 190 285 200 Q 280 210 265 215", "color": "#FFAB91", "stroke": "#BF360C", "stroke_width": 2},
+        {"id": "axon", "name": "Axon", "shape": "line", "x1": 285, "y1": 200, "x2": 650, "y2": 200, "color": "#FF8A65", "stroke": "#E65100", "stroke_width": 5},
+        {"id": "myelin1", "name": "Myelin Sheath", "shape": "ellipse", "cx": 340, "cy": 200, "rx": 35, "ry": 20, "color": "#FFF9C4", "stroke": "#F9A825", "stroke_width": 2},
+        {"id": "myelin2", "name": "Myelin Sheath", "shape": "ellipse", "cx": 440, "cy": 200, "rx": 35, "ry": 20, "color": "#FFF9C4", "stroke": "#F9A825", "stroke_width": 2},
+        {"id": "myelin3", "name": "Myelin Sheath", "shape": "ellipse", "cx": 540, "cy": 200, "rx": 35, "ry": 20, "color": "#FFF9C4", "stroke": "#F9A825", "stroke_width": 2},
+        {"id": "node1", "name": "Node of Ranvier", "shape": "rect", "x": 387, "y": 194, "w": 6, "h": 12, "color": "#FF8A65", "stroke": "#BF360C", "stroke_width": 1},
+        {"id": "node2", "name": "Node of Ranvier", "shape": "rect", "x": 487, "y": 194, "w": 6, "h": 12, "color": "#FF8A65", "stroke": "#BF360C", "stroke_width": 1},
+        {"id": "terminal1", "name": "Axon Terminal", "shape": "ellipse", "cx": 670, "cy": 175, "rx": 12, "ry": 10, "color": "#A5D6A7", "stroke": "#2E7D32", "stroke_width": 2},
+        {"id": "terminal2", "name": "Axon Terminal", "shape": "ellipse", "cx": 680, "cy": 200, "rx": 12, "ry": 10, "color": "#A5D6A7", "stroke": "#2E7D32", "stroke_width": 2},
+        {"id": "terminal3", "name": "Axon Terminal", "shape": "ellipse", "cx": 670, "cy": 225, "rx": 12, "ry": 10, "color": "#A5D6A7", "stroke": "#2E7D32", "stroke_width": 2},
+        {"id": "schwann_cell", "name": "Schwann Cell", "shape": "ellipse", "cx": 440, "cy": 160, "rx": 20, "ry": 10, "color": "#E1BEE7", "stroke": "#6A1B9A", "stroke_width": 1}
+    ],
+    "labels": [
+        {"part_id": "cell_body", "text": "Cell Body (Soma)", "lx": 140, "ly": 90, "tx": 190, "ty": 140},
+        {"part_id": "nucleus", "text": "Nucleus", "lx": 220, "ly": 280, "tx": 210, "ty": 225},
+        {"part_id": "dendrite1", "text": "Dendrites", "lx": 20, "ly": 60, "tx": 55, "ty": 95},
+        {"part_id": "axon_hillock", "text": "Axon Hillock", "lx": 260, "ly": 280, "tx": 275, "ty": 220},
+        {"part_id": "axon", "text": "Axon", "lx": 380, "ly": 260, "tx": 390, "ty": 210},
+        {"part_id": "myelin1", "text": "Myelin Sheath", "lx": 300, "ly": 120, "tx": 340, "ty": 182},
+        {"part_id": "node1", "text": "Node of Ranvier", "lx": 370, "ly": 140, "tx": 390, "ty": 192},
+        {"part_id": "terminal1", "text": "Axon Terminals", "lx": 700, "ly": 170, "tx": 685, "ty": 180},
+        {"part_id": "schwann_cell", "text": "Schwann Cell", "lx": 420, "ly": 120, "tx": 440, "ty": 152}
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "diagram": "ethyne",
+    "type": "chemistry",
+    "title": "Ethyne (C2H2)",
+    "molecule": {
+        "name": "Ethyne",
+        "formula": "C2H2",
+        "smiles": "C#C",
+        "molecular_weight": 26.04,
+        "description": "Simplest alkyne with a C≡C triple bond, also called acetylene"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

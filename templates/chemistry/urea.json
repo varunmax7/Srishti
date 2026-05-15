@@ -1,0 +1,13 @@
+{
+    "diagram": "urea",
+    "type": "chemistry",
+    "title": "Urea (CH4N2O)",
+    "molecule": {
+        "name": "Urea",
+        "formula": "CH4N2O",
+        "smiles": "NC(=O)N",
+        "molecular_weight": 60.06,
+        "description": "Organic compound, key nitrogenous waste product and fertilizer"
+    },
+    "render": {"engine": "rdkit", "size": [400, 300], "format": "png"}
+}

@@ -1,0 +1,24 @@
+{
+    "diagram": "magnetic_field",
+    "type": "physics",
+    "title": "Magnetic Field Lines - Bar Magnet",
+    "canvas": {"width": 650, "height": 400},
+    "elements": [
+        {"id": "magnet_north", "type": "rect", "x": 225, "y": 170, "w": 100, "h": 60, "color": "#EF5350", "stroke": "#B71C1C", "stroke_width": 3},
+        {"id": "magnet_south", "type": "rect", "x": 325, "y": 170, "w": 100, "h": 60, "color": "#42A5F5", "stroke": "#0D47A1", "stroke_width": 3},
+        {"id": "field_line1", "type": "arc", "cx": 325, "cy": 200, "r": 60, "start_angle": 180, "end_angle": 360, "color": "#43A047", "width": 2},
+        {"id": "field_line2", "type": "arc", "cx": 325, "cy": 200, "r": 100, "start_angle": 180, "end_angle": 360, "color": "#43A047", "width": 2},
+        {"id": "field_line3", "type": "arc", "cx": 325, "cy": 200, "r": 140, "start_angle": 175, "end_angle": 365, "color": "#43A047", "width": 2},
+        {"id": "field_line4", "type": "arc", "cx": 325, "cy": 200, "r": 60, "start_angle": 0, "end_angle": 180, "color": "#43A047", "width": 2},
+        {"id": "field_line5", "type": "arc", "cx": 325, "cy": 200, "r": 100, "start_angle": 0, "end_angle": 180, "color": "#43A047", "width": 2},
+        {"id": "field_line6", "type": "arc", "cx": 325, "cy": 200, "r": 140, "start_angle": -5, "end_angle": 185, "color": "#43A047", "width": 2}
+    ],
+    "labels": [
+        {"id": "n_label", "text": "N", "x": 262, "y": 188, "color": "#FFFFFF", "font_size": 24},
+        {"id": "s_label", "text": "S", "x": 365, "y": 188, "color": "#FFFFFF", "font_size": 24},
+        {"id": "field_label", "text": "Magnetic Field Lines", "x": 230, "y": 30, "color": "#43A047", "font_size": 14},
+        {"id": "direction_label", "text": "Direction: N to S (outside)", "x": 210, "y": 370, "color": "#333333", "font_size": 12},
+        {"id": "bar_label", "text": "Bar Magnet", "x": 270, "y": 245, "color": "#333333", "font_size": 12}
+    ],
+    "properties": {"type": "Bar Magnet", "field_direction": "North to South (external)"}
+}

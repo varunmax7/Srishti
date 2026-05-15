@@ -1,0 +1,34 @@
+{
+    "diagram": "human_excretory",
+    "type": "biology",
+    "title": "Human Excretory System",
+    "canvas": {"width": 600, "height": 700},
+    "parts": [
+        {"id": "right_kidney", "name": "Right Kidney", "shape": "path", "d": "M 190 120 Q 140 160 130 230 Q 125 300 160 340 Q 190 370 220 340 Q 250 300 250 230 Q 245 160 190 120 Z", "color": "#EF9A9A", "stroke": "#C62828", "stroke_width": 3},
+        {"id": "left_kidney", "name": "Left Kidney", "shape": "path", "d": "M 410 100 Q 360 140 350 210 Q 345 280 380 320 Q 410 350 440 320 Q 470 280 470 210 Q 465 140 410 100 Z", "color": "#EF9A9A", "stroke": "#C62828", "stroke_width": 3},
+        {"id": "right_adrenal", "name": "Right Adrenal Gland", "shape": "path", "d": "M 170 115 Q 190 95 220 110", "color": "#FFE082", "stroke": "#F57F17", "stroke_width": 4},
+        {"id": "left_adrenal", "name": "Left Adrenal Gland", "shape": "path", "d": "M 390 95 Q 410 75 440 90", "color": "#FFE082", "stroke": "#F57F17", "stroke_width": 4},
+        {"id": "aorta", "name": "Aorta", "shape": "rect", "x": 295, "y": 50, "w": 14, "h": 250, "color": "#EF5350", "stroke": "#B71C1C", "stroke_width": 2},
+        {"id": "vena_cava", "name": "Vena Cava", "shape": "rect", "x": 280, "y": 50, "w": 14, "h": 250, "color": "#42A5F5", "stroke": "#0D47A1", "stroke_width": 2},
+        {"id": "right_renal_a", "name": "Right Renal Artery", "shape": "path", "d": "M 295 200 L 250 220", "color": "none", "stroke": "#E53935", "stroke_width": 3},
+        {"id": "left_renal_a", "name": "Left Renal Artery", "shape": "path", "d": "M 309 180 L 355 200", "color": "none", "stroke": "#E53935", "stroke_width": 3},
+        {"id": "right_renal_v", "name": "Right Renal Vein", "shape": "path", "d": "M 280 210 L 245 230", "color": "none", "stroke": "#1565C0", "stroke_width": 3},
+        {"id": "left_renal_v", "name": "Left Renal Vein", "shape": "path", "d": "M 294 190 L 350 210", "color": "none", "stroke": "#1565C0", "stroke_width": 3},
+        {"id": "right_ureter", "name": "Right Ureter", "shape": "path", "d": "M 200 350 Q 220 420 240 480 Q 260 530 270 550", "color": "none", "stroke": "#FF8A65", "stroke_width": 5},
+        {"id": "left_ureter", "name": "Left Ureter", "shape": "path", "d": "M 420 330 Q 400 400 380 480 Q 360 530 340 550", "color": "none", "stroke": "#FF8A65", "stroke_width": 5},
+        {"id": "bladder", "name": "Urinary Bladder", "shape": "ellipse", "cx": 300, "cy": 580, "rx": 70, "ry": 50, "color": "#FFF9C4", "stroke": "#F57F17", "stroke_width": 3},
+        {"id": "urethra", "name": "Urethra", "shape": "rect", "x": 295, "y": 630, "w": 12, "h": 50, "color": "#FFE082", "stroke": "#F57F17", "stroke_width": 2}
+    ],
+    "labels": [
+        {"part_id": "right_kidney", "text": "Right Kidney", "lx": 40, "ly": 220, "tx": 140, "ty": 230},
+        {"part_id": "left_kidney", "text": "Left Kidney", "lx": 490, "ly": 200, "tx": 465, "ty": 210},
+        {"part_id": "right_adrenal", "text": "Adrenal Gland", "lx": 40, "ly": 100, "tx": 170, "ty": 110},
+        {"part_id": "aorta", "text": "Aorta", "lx": 330, "ly": 60, "tx": 310, "ty": 80},
+        {"part_id": "vena_cava", "text": "Vena Cava", "lx": 200, "ly": 60, "tx": 278, "ty": 80},
+        {"part_id": "right_renal_a", "text": "Renal Artery", "lx": 40, "ly": 170, "tx": 250, "ty": 210},
+        {"part_id": "right_renal_v", "text": "Renal Vein", "lx": 40, "ly": 250, "tx": 245, "ty": 240},
+        {"part_id": "right_ureter", "text": "Ureter", "lx": 40, "ly": 430, "tx": 220, "ty": 430},
+        {"part_id": "bladder", "text": "Urinary Bladder", "lx": 400, "ly": 580, "tx": 370, "ty": 580},
+        {"part_id": "urethra", "text": "Urethra", "lx": 350, "ly": 660, "tx": 310, "ty": 655}
+    ]
+}

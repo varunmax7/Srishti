@@ -1,0 +1,39 @@
+{
+    "diagram": "human_eye",
+    "type": "biology",
+    "title": "Human Eye - Cross Section",
+    "canvas": {"width": 700, "height": 550},
+    "parts": [
+        {"id": "sclera", "name": "Sclera", "shape": "ellipse", "cx": 350, "cy": 275, "rx": 250, "ry": 220, "color": "#ECEFF1", "stroke": "#37474F", "stroke_width": 4},
+        {"id": "choroid", "name": "Choroid", "shape": "ellipse", "cx": 350, "cy": 275, "rx": 235, "ry": 205, "color": "#8D6E63", "stroke": "#4E342E", "stroke_width": 2},
+        {"id": "retina", "name": "Retina", "shape": "ellipse", "cx": 350, "cy": 275, "rx": 220, "ry": 190, "color": "#FFCCBC", "stroke": "#BF360C", "stroke_width": 2},
+        {"id": "vitreous_humor", "name": "Vitreous Humor", "shape": "ellipse", "cx": 370, "cy": 275, "rx": 180, "ry": 160, "color": "#E3F2FD", "stroke": "none", "stroke_width": 0},
+        {"id": "lens", "name": "Lens", "shape": "ellipse", "cx": 200, "cy": 275, "rx": 30, "ry": 55, "color": "#B3E5FC", "stroke": "#0277BD", "stroke_width": 3},
+        {"id": "cornea", "name": "Cornea", "shape": "path", "d": "M 110 220 Q 80 275 110 330", "color": "none", "stroke": "#0288D1", "stroke_width": 5},
+        {"id": "iris_top", "name": "Iris", "shape": "path", "d": "M 145 180 Q 165 220 170 240", "color": "none", "stroke": "#1B5E20", "stroke_width": 8},
+        {"id": "iris_bottom", "name": "Iris", "shape": "path", "d": "M 170 310 Q 165 330 145 370", "color": "none", "stroke": "#1B5E20", "stroke_width": 8},
+        {"id": "pupil", "name": "Pupil", "shape": "ellipse", "cx": 160, "cy": 275, "rx": 8, "ry": 30, "color": "#212121", "stroke": "#000000", "stroke_width": 1},
+        {"id": "aqueous_humor", "name": "Aqueous Humor", "shape": "ellipse", "cx": 155, "cy": 275, "rx": 40, "ry": 60, "color": "#E1F5FE", "stroke": "none", "stroke_width": 0},
+        {"id": "optic_nerve", "name": "Optic Nerve", "shape": "rect", "x": 580, "y": 260, "w": 70, "h": 30, "color": "#FFE082", "stroke": "#F57F17", "stroke_width": 2},
+        {"id": "blind_spot", "name": "Blind Spot", "shape": "ellipse", "cx": 580, "cy": 275, "rx": 10, "ry": 12, "color": "#FFD54F", "stroke": "#F57F17", "stroke_width": 2},
+        {"id": "fovea", "name": "Fovea", "shape": "ellipse", "cx": 540, "cy": 275, "rx": 8, "ry": 6, "color": "#FFAB91", "stroke": "#BF360C", "stroke_width": 2},
+        {"id": "ciliary_body", "name": "Ciliary Body", "shape": "ellipse", "cx": 170, "cy": 190, "rx": 18, "ry": 12, "color": "#A5D6A7", "stroke": "#2E7D32", "stroke_width": 2},
+        {"id": "suspensory_lig", "name": "Suspensory Ligament", "shape": "path", "d": "M 180 200 L 195 235", "color": "none", "stroke": "#66BB6A", "stroke_width": 2}
+    ],
+    "labels": [
+        {"part_id": "sclera", "text": "Sclera", "lx": 620, "ly": 120, "tx": 590, "ty": 150},
+        {"part_id": "choroid", "text": "Choroid", "lx": 620, "ly": 160, "tx": 575, "ty": 180},
+        {"part_id": "retina", "text": "Retina", "lx": 620, "ly": 200, "tx": 560, "ty": 200},
+        {"part_id": "cornea", "text": "Cornea", "lx": 20, "ly": 180, "tx": 95, "ty": 225},
+        {"part_id": "iris_top", "text": "Iris", "lx": 20, "ly": 220, "tx": 150, "ty": 215},
+        {"part_id": "pupil", "text": "Pupil", "lx": 20, "ly": 260, "tx": 150, "ty": 275},
+        {"part_id": "lens", "text": "Lens", "lx": 20, "ly": 330, "tx": 175, "ty": 315},
+        {"part_id": "aqueous_humor", "text": "Aqueous Humor", "lx": 20, "ly": 370, "tx": 120, "ty": 340},
+        {"part_id": "vitreous_humor", "text": "Vitreous Humor", "lx": 300, "ly": 470, "tx": 350, "ty": 350},
+        {"part_id": "optic_nerve", "text": "Optic Nerve", "lx": 620, "ly": 320, "tx": 600, "ty": 280},
+        {"part_id": "blind_spot", "text": "Blind Spot", "lx": 620, "ly": 360, "tx": 585, "ty": 290},
+        {"part_id": "fovea", "text": "Fovea (Yellow Spot)", "lx": 620, "ly": 400, "tx": 545, "ty": 283},
+        {"part_id": "ciliary_body", "text": "Ciliary Body", "lx": 20, "ly": 140, "tx": 155, "ty": 185},
+        {"part_id": "suspensory_lig", "text": "Suspensory Ligament", "lx": 20, "ly": 300, "tx": 185, "ty": 230}
+    ]
+}

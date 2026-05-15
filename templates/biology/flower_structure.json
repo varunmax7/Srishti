@@ -1,0 +1,36 @@
+{
+    "diagram": "flower_structure",
+    "type": "biology",
+    "title": "Structure of a Flower",
+    "canvas": {"width": 700, "height": 600},
+    "parts": [
+        {"id": "receptacle", "name": "Receptacle", "shape": "ellipse", "cx": 350, "cy": 420, "rx": 60, "ry": 25, "color": "#A5D6A7", "stroke": "#2E7D32", "stroke_width": 3},
+        {"id": "sepal1", "name": "Sepal", "shape": "path", "d": "M 290 420 Q 250 450 230 500 Q 225 515 240 510 Q 280 480 310 435", "color": "#66BB6A", "stroke": "#1B5E20", "stroke_width": 2},
+        {"id": "sepal2", "name": "Sepal", "shape": "path", "d": "M 410 420 Q 450 450 470 500 Q 475 515 460 510 Q 420 480 390 435", "color": "#66BB6A", "stroke": "#1B5E20", "stroke_width": 2},
+        {"id": "petal1", "name": "Petal", "shape": "path", "d": "M 330 400 Q 280 340 240 260 Q 230 230 260 240 Q 310 260 340 390", "color": "#F48FB1", "stroke": "#AD1457", "stroke_width": 2},
+        {"id": "petal2", "name": "Petal", "shape": "path", "d": "M 340 395 Q 330 300 340 220 Q 345 190 360 220 Q 370 300 360 395", "color": "#F48FB1", "stroke": "#AD1457", "stroke_width": 2},
+        {"id": "petal3", "name": "Petal", "shape": "path", "d": "M 370 400 Q 420 340 460 260 Q 470 230 440 240 Q 390 260 360 390", "color": "#F48FB1", "stroke": "#AD1457", "stroke_width": 2},
+        {"id": "stamen1", "name": "Stamen", "shape": "path", "d": "M 310 410 L 290 300", "color": "none", "stroke": "#F9A825", "stroke_width": 2},
+        {"id": "anther1", "name": "Anther", "shape": "ellipse", "cx": 290, "cy": 290, "rx": 10, "ry": 6, "color": "#FFD54F", "stroke": "#F57F17", "stroke_width": 2},
+        {"id": "stamen2", "name": "Stamen", "shape": "path", "d": "M 390 410 L 410 300", "color": "none", "stroke": "#F9A825", "stroke_width": 2},
+        {"id": "anther2", "name": "Anther", "shape": "ellipse", "cx": 410, "cy": 290, "rx": 10, "ry": 6, "color": "#FFD54F", "stroke": "#F57F17", "stroke_width": 2},
+        {"id": "pistil", "name": "Pistil", "shape": "path", "d": "M 350 415 L 350 280", "color": "none", "stroke": "#4CAF50", "stroke_width": 3},
+        {"id": "stigma", "name": "Stigma", "shape": "ellipse", "cx": 350, "cy": 270, "rx": 12, "ry": 8, "color": "#81C784", "stroke": "#2E7D32", "stroke_width": 2},
+        {"id": "ovary", "name": "Ovary", "shape": "ellipse", "cx": 350, "cy": 430, "rx": 30, "ry": 22, "color": "#C8E6C9", "stroke": "#2E7D32", "stroke_width": 3},
+        {"id": "ovule1", "name": "Ovule", "shape": "ellipse", "cx": 340, "cy": 430, "rx": 8, "ry": 6, "color": "#FFFFFF", "stroke": "#4CAF50", "stroke_width": 1},
+        {"id": "ovule2", "name": "Ovule", "shape": "ellipse", "cx": 360, "cy": 432, "rx": 8, "ry": 6, "color": "#FFFFFF", "stroke": "#4CAF50", "stroke_width": 1},
+        {"id": "pedicel", "name": "Pedicel", "shape": "rect", "x": 345, "y": 445, "w": 10, "h": 100, "color": "#66BB6A", "stroke": "#1B5E20", "stroke_width": 2}
+    ],
+    "labels": [
+        {"part_id": "petal1", "text": "Petal", "lx": 140, "ly": 260, "tx": 250, "ty": 270},
+        {"part_id": "sepal1", "text": "Sepal", "lx": 140, "ly": 490, "tx": 245, "ty": 490},
+        {"part_id": "anther1", "text": "Anther", "lx": 140, "ly": 290, "tx": 280, "ty": 290},
+        {"part_id": "stamen1", "text": "Filament", "lx": 140, "ly": 350, "tx": 290, "ty": 350},
+        {"part_id": "stigma", "text": "Stigma", "lx": 500, "ly": 260, "tx": 365, "ty": 270},
+        {"part_id": "pistil", "text": "Style", "lx": 500, "ly": 320, "tx": 358, "ty": 340},
+        {"part_id": "ovary", "text": "Ovary", "lx": 500, "ly": 430, "tx": 382, "ty": 430},
+        {"part_id": "ovule1", "text": "Ovule", "lx": 500, "ly": 460, "tx": 370, "ty": 440},
+        {"part_id": "receptacle", "text": "Receptacle", "lx": 500, "ly": 400, "tx": 412, "ty": 415},
+        {"part_id": "pedicel", "text": "Pedicel (Stalk)", "lx": 420, "ly": 530, "tx": 360, "ty": 510}
+    ]
+}

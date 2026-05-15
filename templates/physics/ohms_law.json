@@ -1,0 +1,208 @@
+{
+    "diagram": "ohms_law",
+    "type": "physics",
+    "title": "Ohm's Law - V = IR",
+    "canvas": {
+        "width": 600,
+        "height": 450
+    },
+    "elements": [
+        {
+            "id": "triangle",
+            "type": "path",
+            "d": "M 300 60 L 460 280 L 140 280 Z",
+            "color": "#E3F2FD",
+            "stroke": "#1565C0",
+            "stroke_width": 4
+        },
+        {
+            "id": "divider_h",
+            "type": "line",
+            "x1": 220,
+            "y1": 170,
+            "x2": 380,
+            "y2": 170,
+            "color": "#1565C0",
+            "width": 3
+        },
+        {
+            "id": "divider_v",
+            "type": "line",
+            "x1": 300,
+            "y1": 170,
+            "x2": 300,
+            "y2": 280,
+            "color": "#1565C0",
+            "width": 3
+        },
+        {
+            "id": "wire_top",
+            "type": "line",
+            "x1": 100,
+            "y1": 330,
+            "x2": 500,
+            "y2": 330,
+            "color": "#333333",
+            "width": 3
+        },
+        {
+            "id": "wire_bottom",
+            "type": "line",
+            "x1": 100,
+            "y1": 430,
+            "x2": 500,
+            "y2": 430,
+            "color": "#333333",
+            "width": 3
+        },
+        {
+            "id": "wire_left",
+            "type": "line",
+            "x1": 100,
+            "y1": 330,
+            "x2": 100,
+            "y2": 430,
+            "color": "#333333",
+            "width": 3
+        },
+        {
+            "id": "wire_right",
+            "type": "line",
+            "x1": 500,
+            "y1": 330,
+            "x2": 500,
+            "y2": 430,
+            "color": "#333333",
+            "width": 3
+        },
+        {
+            "id": "battery_sym",
+            "type": "battery",
+            "x": 80,
+            "y": 360,
+            "w": 40,
+            "h": 60,
+            "color": "#E53935"
+        },
+        {
+            "id": "resistor_sym",
+            "type": "resistor",
+            "x": 260,
+            "y": 320,
+            "w": 80,
+            "h": 25,
+            "color": "#FF6F00"
+        },
+        {
+            "id": "ammeter",
+            "type": "circle",
+            "cx": 300,
+            "cy": 430,
+            "r": 18,
+            "color": "#E8F5E9",
+            "stroke": "#2E7D32",
+            "stroke_width": 2
+        },
+        {
+            "id": "voltmeter",
+            "type": "circle",
+            "cx": 500,
+            "cy": 380,
+            "r": 18,
+            "color": "#FFF3E0",
+            "stroke": "#E65100",
+            "stroke_width": 2
+        }
+    ],
+    "labels": [
+        {
+            "id": "v_label",
+            "text": "V",
+            "x": 288,
+            "y": 100,
+            "color": "#E53935",
+            "font_size": 28
+        },
+        {
+            "id": "i_label",
+            "text": "I",
+            "x": 248,
+            "y": 210,
+            "color": "#43A047",
+            "font_size": 28
+        },
+        {
+            "id": "r_label",
+            "text": "R",
+            "x": 328,
+            "y": 210,
+            "color": "#FF6F00",
+            "font_size": 28
+        },
+        {
+            "id": "formula1",
+            "text": "V = I × R",
+            "x": 30,
+            "y": 30,
+            "color": "#E53935",
+            "font_size": 16
+        },
+        {
+            "id": "formula2",
+            "text": "I = V / R",
+            "x": 30,
+            "y": 55,
+            "color": "#43A047",
+            "font_size": 16
+        },
+        {
+            "id": "formula3",
+            "text": "R = V / I",
+            "x": 30,
+            "y": 80,
+            "color": "#FF6F00",
+            "font_size": 16
+        },
+        {
+            "id": "battery_label",
+            "text": "Battery (V)",
+            "x": 35,
+            "y": 345,
+            "color": "#E53935",
+            "font_size": 11
+        },
+        {
+            "id": "res_label",
+            "text": "Resistor (R)",
+            "x": 258,
+            "y": 308,
+            "color": "#FF6F00",
+            "font_size": 11
+        },
+        {
+            "id": "ammeter_label",
+            "text": "A",
+            "x": 294,
+            "y": 423,
+            "color": "#2E7D32",
+            "font_size": 14
+        },
+        {
+            "id": "voltmeter_label",
+            "text": "V",
+            "x": 494,
+            "y": 373,
+            "color": "#E65100",
+            "font_size": 14
+        }
+    ],
+    "properties": {
+        "law": "Ohm's Law",
+        "formula": "V = IR",
+        "units": {
+            "V": "Volts (V)",
+            "I": "Amperes (A)",
+            "R": "Ohms (Ω)"
+        }
+    }
+}
