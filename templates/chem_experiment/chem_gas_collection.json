@@ -1,0 +1,85 @@
+{
+  "diagram": "chem_gas_collection",
+  "type": "chemistry_experiment",
+  "title": "Gas Collection",
+  "canvas": {
+    "width": 900,
+    "height": 1000,
+    "background": "#FFFFFF"
+  },
+  "render_hints": {
+    "canvas": {"width": 900, "height": 1000, "background": "#FFFFFF"},
+    "stand": {
+      "rod_color": "#E8E8E8",
+      "rod_edge": "#9A9A9A",
+      "base_color": "#EDEDED",
+      "base_edge": "#1a1a1a",
+      "rod_x": 360,
+      "rod_top_y": 120,
+      "rod_bottom_y": 880,
+      "rod_width": 34,
+      "base_center": [430, 900],
+      "base_width": 320,
+      "base_height": 70
+    },
+    "clamp": {
+      "color": "#E0E0E0",
+      "edge": "#1a1a1a",
+      "boss_at": [400, 500],
+      "arm_to": [560, 500],
+      "knob_side": "left",
+      "grips": "reaction_tube"
+    },
+    "reaction_tube": {
+      "glass_color": "#F2F2F0",
+      "edge": "#1a1a1a",
+      "center_x": 560,
+      "top_y": 300,
+      "bottom_y": 880,
+      "width": 110,
+      "rounded_bottom": true,
+      "liquid_color": "#EDE7C2",
+      "liquid_level": 0.35,
+      "solid_color": "#D8D2C0",
+      "solid_at_bottom": true,
+      "bubbles": {"count": 6, "color": "#FFFFFF", "rising": true}
+    },
+    "cork": {
+      "color": "#B5731F",
+      "shade": "#8A5616",
+      "edge": "#1a1a1a",
+      "at": [560, 300],
+      "width": 120,
+      "height": 110
+    },
+    "delivery_tube": {
+      "color": "#F5F5F5",
+      "edge": "#1a1a1a",
+      "width": 18,
+      "path": [[600, 300], [600, 230], [760, 230], [800, 600], [760, 760]]
+    },
+    "stub_tube": {
+      "at": [535, 260],
+      "height": 90,
+      "width": 18,
+      "rounded_top": true
+    },
+    "collection_tube": {
+      "glass_color": "#F2F2F0",
+      "edge": "#1a1a1a",
+      "center": [770, 720],
+      "length": 300,
+      "width": 95,
+      "tilt_deg": 18,
+      "rounded_bottom": true,
+      "gas_collecting": true,
+      "faint_liquid_color": "#EDE7C2"
+    },
+    "hand": {
+      "skin_color": "#F5C5A0",
+      "outline": "#1a1a1a",
+      "at": [880, 760],
+      "holds": "collection_tube"
+    }
+  }
+}

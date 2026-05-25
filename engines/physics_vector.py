@@ -478,9 +478,182 @@ def render_ray_optics_convex(output_path):
     print(f"✅ Saved: {output_path}")
 
 
-# ═══════════════════════════════════════════════════════════════
-# SECTION 3 — TEMPLATE-BASED RENDERER (reads physics JSON)
-# ═══════════════════════════════════════════════════════════════
+def render_generic_physics_template(template_path: str, output_path: str):
+    """Render any physics diagram using its JSON template specification."""
+    with open(template_path) as f:
+        template = json.load(f)
+
+    canvas = template.get("canvas", {"width": 600, "height": 600})
+    canvas_w = canvas.get("width", 600)
+    canvas_h = canvas.get("height", 600)
+
+    dwg = svgwrite.Drawing(output_path, size=(canvas_w, canvas_h))
+    
+    # White background
+    dwg.add(dwg.rect(insert=(0, 0), size=("100%", "100%"), fill="white"))
+
+    # Render elements
+    for el in template.get("elements", []):
+        el_type = el.get("type")
+        
+        if el_type == "line":
+            x1 = el.get("x1")
+            y1 = el.get("y1")
+            x2 = el.get("x2")
+            y2 = el.get("y2")
+            color = el.get("color", "#333333")
+            width = el.get("width", 2)
+            dashed = el.get("dashed", False)
+            kwargs = {}
+            if dashed:
+                kwargs["stroke-dasharray"] = "6,4"
+            dwg.add(dwg.line((x1, y1), (x2, y2), stroke=color, stroke_width=width, **kwargs))
+            
+        elif el_type == "circle":
+            cx = el.get("cx")
+            cy = el.get("cy")
+            r = el.get("r")
+            color = el.get("color", "none")
+            stroke = el.get("stroke", "none")
+            stroke_width = el.get("stroke_width", 0)
+            dwg.add(dwg.circle(center=(cx, cy), r=r, fill=color, stroke=stroke, stroke_width=stroke_width))
+            
+        elif el_type == "rect":
+            x = el.get("x")
+            y = el.get("y")
+            w = el.get("w")
+            h = el.get("h")
+            color = el.get("color", "none")
+            stroke = el.get("stroke", "none")
+            stroke_width = el.get("stroke_width", 0)
+            dwg.add(dwg.rect(insert=(x, y), size=(w, h), fill=color, stroke=stroke, stroke_width=stroke_width))
+            
+        elif el_type == "arrow":
+            x1 = el.get("x1")
+            y1 = el.get("y1")
+            x2 = el.get("x2")
+            y2 = el.get("y2")
+            color = el.get("color", "#333333")
+            width = el.get("width", 2)
+            
+            # Line
+            dwg.add(dwg.line((x1, y1), (x2, y2), stroke=color, stroke_width=width))
+            
+            # Arrowhead
+            angle = math.atan2(y2 - y1, x2 - x1)
+            arrow_len = 10 + width
+            arrow_angle = 0.4  # radians
+            ax1 = x2 - arrow_len * math.cos(angle - arrow_angle)
+            ay1 = y2 - arrow_len * math.sin(angle - arrow_angle)
+            ax2 = x2 - arrow_len * math.cos(angle + arrow_angle)
+            ay2 = y2 - arrow_len * math.sin(angle + arrow_angle)
+            dwg.add(dwg.polygon([(x2, y2), (ax1, ay1), (ax2, ay2)], fill=color))
+            
+        elif el_type == "arc":
+            cx = el.get("cx")
+            cy = el.get("cy")
+            r = el.get("r")
+            start_angle = el.get("start_angle")
+            end_angle = el.get("end_angle")
+            color = el.get("color", "#333333")
+            width = el.get("width", 2)
+            
+            # Arc coordinates
+            start_rad = math.radians(start_angle)
+            end_rad = math.radians(end_angle)
+            x1 = cx + r * math.cos(start_rad)
+            y1 = cy + r * math.sin(start_rad)
+            x2 = cx + r * math.cos(end_rad)
+            y2 = cy + r * math.sin(end_rad)
+            
+            angle_diff = (end_angle - start_angle) % 360
+            large_arc = 1 if angle_diff > 180 else 0
+            sweep = 1 if end_angle >= start_angle else 0
+            
+            path_d = f"M {x1:.2f} {y1:.2f} A {r:.2f} {r:.2f} 0 {large_arc} {sweep} {x2:.2f} {y2:.2f}"
+            dwg.add(dwg.path(d=path_d, fill="none", stroke=color, stroke_width=width))
+            
+        elif el_type == "path":
+            d = el.get("d")
+            color = el.get("color", "none")
+            stroke = el.get("stroke", "none")
+            stroke_width = el.get("stroke_width", 0)
+            dwg.add(dwg.path(d=d, fill=color, stroke=stroke, stroke_width=stroke_width))
+            
+        elif el_type == "battery":
+            x = el.get("x")
+            y = el.get("y")
+            w = el.get("w")
+            h = el.get("h")
+            color = el.get("color", "#E53935")
+            
+            cx = x + w / 2
+            cy = y + h / 2
+            
+            if w < h:  # Vertical battery
+                for i in range(4):
+                    y_line = y + i * h / 3
+                    is_long = (i % 2 == 0)
+                    w_line = w if is_long else w / 2
+                    sw = 2 if is_long else 4
+                    dwg.add(dwg.line((cx - w_line/2, y_line), (cx + w_line/2, y_line), stroke=color, stroke_width=sw))
+            else:  # Horizontal battery
+                for i in range(4):
+                    x_line = x + i * w / 3
+                    is_long = (i % 2 == 0)
+                    h_line = h if is_long else h / 2
+                    sw = 2 if is_long else 4
+                    dwg.add(dwg.line((x_line, cy - h_line/2), (x_line, cy + h_line/2), stroke=color, stroke_width=sw))
+                    
+        elif el_type == "resistor":
+            x = el.get("x")
+            y = el.get("y")
+            w = el.get("w")
+            h = el.get("h")
+            color = el.get("color", "#FF6F00")
+            
+            dwg.add(dwg.rect(insert=(x, y), size=(w, h), fill="#FFFFFF", stroke=color, stroke_width=3, rx=4))
+            
+            if w >= h:  # Horizontal resistor
+                for i in range(1, 4):
+                    x_stripe = x + i * w / 4
+                    dwg.add(dwg.line((x_stripe, y + 2), (x_stripe, y + h - 2), stroke=color, stroke_width=1.5))
+            else:  # Vertical resistor
+                for i in range(1, 4):
+                    y_stripe = y + i * h / 4
+                    dwg.add(dwg.line((x + 2, y_stripe), (x + w - 2, y_stripe), stroke=color, stroke_width=1.5))
+
+    # Render labels
+    for label in template.get("labels", []):
+        text = label.get("text", "")
+        x = label.get("x")
+        y = label.get("y")
+        color = label.get("color", "#333333")
+        font_size = label.get("font_size", 12)
+        
+        lines = text.split("\n")
+        for i, line in enumerate(lines):
+            line_y = y + i * (font_size + 4)
+            dwg.add(dwg.text(line, insert=(x, line_y),
+                             font_size=font_size, fill=color, font_family="Arial"))
+
+    # Title handling
+    title = template.get("title", "")
+    has_title_label = False
+    for label in template.get("labels", []):
+        if title.lower() in label.get("text", "").lower():
+            has_title_label = True
+            break
+            
+    if title and not has_title_label:
+        dwg.add(dwg.text(title,
+                         insert=(canvas_w / 2, 28), text_anchor="middle",
+                         font_size=18, font_family="Arial",
+                         font_weight="bold", fill="#1a1a2e"))
+
+    dwg.save()
+    print(f"✅ Saved: {output_path}")
+
 
 def render_from_template(template_path: str, output_path: str):
     """Render physics diagram from JSON template."""
@@ -496,7 +669,7 @@ def render_from_template(template_path: str, output_path: str):
     elif diagram == "force_diagram":
         render_force_diagram(output_path)
     else:
-        print(f"❌ No renderer found for: {diagram}")
+        render_generic_physics_template(template_path, output_path)
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -540,5 +713,10 @@ if __name__ == "__main__":
     render_circuit("output/physics/circuit.svg")
     render_force_diagram("output/physics/force_diagram.svg")
     render_ray_optics_convex("output/physics/convex_lens.svg")
+
+    for diagram_name in ["pendulum", "electromagnetic_spectrum", "ohms_law", "magnetic_field", "refraction", "prism_dispersion"]:
+        template_file = f"templates/physics/{diagram_name}.json"
+        if os.path.exists(template_file):
+            render_from_template(template_file, f"output/physics/{diagram_name}.svg")
 
     print("\nDone. Open output/physics/ to view all diagrams.")

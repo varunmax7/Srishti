@@ -1,0 +1,55 @@
+{
+  "diagram": "chem_electrolysis_diagram",
+  "type": "chemistry_experiment",
+  "title": "Electrolysis of a Solution",
+  "canvas": {
+    "width": 800,
+    "height": 700,
+    "background": "#f5f5f5"
+  },
+  "tank": {
+    "style": "u_tank",
+    "wall_color": "#B8A98C",
+    "wall_edge_color": "#1a1a2e",
+    "wall_thickness": 26,
+    "rounded_bottom": true,
+    "open_top": true
+  },
+  "liquid": {
+    "gradient": true,
+    "top_color": "#E8F4FB",
+    "bottom_color": "#AEDCF0",
+    "fill_level": 0.82
+  },
+  "electrodes": {
+    "type": "plate",
+    "count": 2,
+    "plate_width": 50,
+    "plate_color": "#C9CDD2",
+    "edge_color": "#888888",
+    "highlight_color": "#E8EAEC",
+    "gap": 220,
+    "top_above_liquid": true,
+    "bottom_into_liquid": 0.70,
+    "flat_top": true,
+    "bracket_color": "#6B5B3E"
+  },
+  "deposit": {
+    "show": true,
+    "color": "#A8451E",
+    "shade_color": "#7A2F10",
+    "position": "floor_right"
+  },
+  "circuit": {
+    "wire_color": "#1a1a2e",
+    "wire_width": 2.5,
+    "switch": {
+      "closed": false,
+      "position": "top_left"
+    },
+    "battery": {
+      "cells": 2,
+      "position": "top_right"
+    }
+  }
+}

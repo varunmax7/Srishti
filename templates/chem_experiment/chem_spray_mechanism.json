@@ -1,0 +1,35 @@
+{
+  "diagram": "chem_spray_mechanism",
+  "type": "chemistry_experiment",
+  "title": "Gas Transfer Mechanism",
+  "canvas": {
+    "width": 900,
+    "height": 700,
+    "background": "#ffffff"
+  },
+  "trough": {
+    "outline_color": "#2E2E2E",
+    "outline_width": 3,
+    "liquid_color": "#87CEFA",
+    "liquid_level": 0.5
+  },
+  "bell_jar": {
+    "outline_color": "#2E2E2E",
+    "outline_width": 3,
+    "stopper_color": "#45B3A9",
+    "stopper_edge": "#2E2E2E",
+    "liquid_level": 0.4
+  },
+  "right_jar": {
+    "outline_color": "#2E2E2E",
+    "outline_width": 3,
+    "liquid_color": "#87CEFA",
+    "liquid_level": 0.7,
+    "bubbles": true
+  },
+  "tube": {
+    "color": "#E8E8E8",
+    "edge_color": "#2E2E2E",
+    "width": 14
+  }
+}

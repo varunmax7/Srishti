@@ -1,0 +1,34 @@
+{
+  "diagram": "chem_open_circuit",
+  "type": "chemistry_experiment",
+  "title": "Open Circuit Diagram",
+  "canvas": {
+    "width": 800,
+    "height": 600,
+    "background": "#ffffff"
+  },
+  "circuit": {
+    "wire_color": "#000000",
+    "wire_width": 4,
+    "rect_width": 500,
+    "rect_height": 300
+  },
+  "battery": {
+    "cells": 3,
+    "position": "top"
+  },
+  "bulb": {
+    "position": "left",
+    "glass_color": "#FEE12B",
+    "base_color": "#CCCCCC",
+    "edge_color": "#000000"
+  },
+  "resistor": {
+    "position": "bottom",
+    "zigzags": 3
+  },
+  "switch": {
+    "position": "right",
+    "closed": false
+  }
+}

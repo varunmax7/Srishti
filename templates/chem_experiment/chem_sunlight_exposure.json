@@ -1,0 +1,37 @@
+{
+  "diagram": "chem_sunlight_exposure",
+  "type": "chemistry_experiment",
+  "title": "Sunlight Exposure Experiment",
+  "canvas": {
+    "width": 900,
+    "height": 790,
+    "background": "#ffffff"
+  },
+  "window": {
+    "frame_color": "#C8A456",
+    "frame_outline": "#2E2E2E",
+    "frame_stroke_width": 2.5,
+    "frame_thickness": 18,
+    "glass_color": "#F4F8FF"
+  },
+  "sunlight_beam": {
+    "color_top": "#FFE533",
+    "color_bottom": "#FFF5AA",
+    "opacity_top": 0.92,
+    "opacity_bottom": 0.12
+  },
+  "table": {
+    "top_color": "#C8912A",
+    "side_color": "#9A6E1A",
+    "outline": "#2E2E2E",
+    "stroke_width": 2.5,
+    "thickness": 42
+  },
+  "dish": {
+    "fill": "#FFFFFF",
+    "inner_fill": "#EEEEEE",
+    "powder_fill": "#AAAAAA",
+    "stroke": "#2E2E2E",
+    "stroke_width": 2.5
+  }
+}

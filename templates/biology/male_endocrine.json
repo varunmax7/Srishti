@@ -1,0 +1,411 @@
+{
+    "diagram": "male_endocrine",
+    "type": "biology",
+    "title": "Male Endocrine System",
+    "canvas": {
+        "width": 900,
+        "height": 900
+    },
+    "parts": [
+        {
+            "id": "head",
+            "name": "Head",
+            "shape": "ellipse",
+            "cx": 300,
+            "cy": 75,
+            "rx": 60,
+            "ry": 60,
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 3
+        },
+        {
+            "id": "neck",
+            "name": "Neck",
+            "shape": "path",
+            "d": "M 270 128 L 270 170 L 330 170 L 330 128 Z",
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 2
+        },
+        {
+            "id": "torso",
+            "name": "Torso",
+            "shape": "path",
+            "d": "M 200 170 C 180 200 180 260 185 320 C 188 380 188 440 195 490 C 200 520 210 540 220 560 L 265 560 L 265 490 C 260 460 258 430 260 400 L 340 400 C 342 430 340 460 335 490 L 335 560 L 380 560 C 390 540 400 520 405 490 C 412 440 412 380 415 320 C 420 260 420 200 400 170 Z",
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 3
+        },
+        {
+            "id": "left_arm",
+            "name": "Left Arm",
+            "shape": "path",
+            "d": "M 200 170 C 175 200 170 280 175 360 L 195 360 C 192 280 195 200 220 175 Z",
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 2
+        },
+        {
+            "id": "right_arm",
+            "name": "Right Arm",
+            "shape": "path",
+            "d": "M 400 170 C 425 200 430 280 425 360 L 405 360 C 408 280 405 200 380 175 Z",
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 2
+        },
+        {
+            "id": "left_leg",
+            "name": "Left Leg",
+            "shape": "path",
+            "d": "M 220 560 L 220 800 L 265 800 L 265 560 Z",
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 2
+        },
+        {
+            "id": "right_leg",
+            "name": "Right Leg",
+            "shape": "path",
+            "d": "M 335 560 L 335 800 L 380 800 L 380 560 Z",
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 2
+        },
+        {
+            "id": "pineal_gland",
+            "name": "Pineal Gland",
+            "shape": "ellipse",
+            "cx": 300,
+            "cy": 60,
+            "rx": 7,
+            "ry": 7,
+            "color": "#CE93D8",
+            "stroke": "#7B1FA2",
+            "stroke_width": 2
+        },
+        {
+            "id": "hypothalamus",
+            "name": "Hypothalamus",
+            "shape": "ellipse",
+            "cx": 300,
+            "cy": 82,
+            "rx": 18,
+            "ry": 9,
+            "color": "#9FA8DA",
+            "stroke": "#3949AB",
+            "stroke_width": 2
+        },
+        {
+            "id": "pituitary_gland",
+            "name": "Pituitary Gland",
+            "shape": "ellipse",
+            "cx": 300,
+            "cy": 100,
+            "rx": 8,
+            "ry": 8,
+            "color": "#EF9A9A",
+            "stroke": "#C62828",
+            "stroke_width": 2
+        },
+        {
+            "id": "thyroid_left",
+            "name": "Thyroid Gland",
+            "shape": "path",
+            "d": "M 275 158 C 263 155 255 162 257 172 C 259 182 270 185 280 180 C 288 175 285 162 275 158 Z",
+            "color": "#80CBC4",
+            "stroke": "#00695C",
+            "stroke_width": 2
+        },
+        {
+            "id": "thyroid_right",
+            "name": "Thyroid Gland",
+            "shape": "path",
+            "d": "M 325 158 C 337 155 345 162 343 172 C 341 182 330 185 320 180 C 312 175 315 162 325 158 Z",
+            "color": "#80CBC4",
+            "stroke": "#00695C",
+            "stroke_width": 2
+        },
+        {
+            "id": "thyroid_isthmus",
+            "name": "Thyroid Isthmus",
+            "shape": "path",
+            "d": "M 280 170 L 320 170 L 320 175 L 280 175 Z",
+            "color": "#80CBC4",
+            "stroke": "#00695C",
+            "stroke_width": 1
+        },
+        {
+            "id": "parathyroid_1",
+            "name": "Parathyroid",
+            "shape": "ellipse",
+            "cx": 268,
+            "cy": 163,
+            "rx": 4,
+            "ry": 4,
+            "color": "#FFE082",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "parathyroid_2",
+            "name": "Parathyroid",
+            "shape": "ellipse",
+            "cx": 268,
+            "cy": 175,
+            "rx": 4,
+            "ry": 4,
+            "color": "#FFE082",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "parathyroid_3",
+            "name": "Parathyroid",
+            "shape": "ellipse",
+            "cx": 332,
+            "cy": 163,
+            "rx": 4,
+            "ry": 4,
+            "color": "#FFE082",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "parathyroid_4",
+            "name": "Parathyroid",
+            "shape": "ellipse",
+            "cx": 332,
+            "cy": 175,
+            "rx": 4,
+            "ry": 4,
+            "color": "#FFE082",
+            "stroke": "#F57F17",
+            "stroke_width": 1
+        },
+        {
+            "id": "thymus_left",
+            "name": "Thymus",
+            "shape": "ellipse",
+            "cx": 288,
+            "cy": 225,
+            "rx": 15,
+            "ry": 25,
+            "color": "#A5D6A7",
+            "stroke": "#2E7D32",
+            "stroke_width": 2
+        },
+        {
+            "id": "thymus_right",
+            "name": "Thymus",
+            "shape": "ellipse",
+            "cx": 312,
+            "cy": 225,
+            "rx": 15,
+            "ry": 25,
+            "color": "#A5D6A7",
+            "stroke": "#2E7D32",
+            "stroke_width": 2
+        },
+        {
+            "id": "heart_outline",
+            "name": "Heart",
+            "shape": "path",
+            "d": "M 300 260 C 280 240 255 250 255 270 C 255 290 275 310 300 330 C 325 310 345 290 345 270 C 345 250 320 240 300 260 Z",
+            "color": "#FFCDD2",
+            "stroke": "#EF9A9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "adrenal_left",
+            "name": "Adrenal Gland",
+            "shape": "path",
+            "d": "M 240 330 C 230 320 225 330 230 345 C 235 355 248 355 252 345 C 256 335 248 322 240 330 Z",
+            "color": "#FFCC80",
+            "stroke": "#E65100",
+            "stroke_width": 2
+        },
+        {
+            "id": "adrenal_right",
+            "name": "Adrenal Gland",
+            "shape": "path",
+            "d": "M 360 330 C 370 320 375 330 370 345 C 365 355 352 355 348 345 C 344 335 352 322 360 330 Z",
+            "color": "#FFCC80",
+            "stroke": "#E65100",
+            "stroke_width": 2
+        },
+        {
+            "id": "kidney_left",
+            "name": "Kidney",
+            "shape": "ellipse",
+            "cx": 238,
+            "cy": 360,
+            "rx": 18,
+            "ry": 28,
+            "color": "#FFCCBC",
+            "stroke": "#BF360C",
+            "stroke_width": 2
+        },
+        {
+            "id": "kidney_right",
+            "name": "Kidney",
+            "shape": "ellipse",
+            "cx": 362,
+            "cy": 360,
+            "rx": 18,
+            "ry": 28,
+            "color": "#FFCCBC",
+            "stroke": "#BF360C",
+            "stroke_width": 2
+        },
+        {
+            "id": "pancreas",
+            "name": "Pancreas",
+            "shape": "path",
+            "d": "M 255 310 C 265 305 300 305 340 308 C 350 310 355 318 345 322 C 310 325 270 325 258 320 C 252 318 252 312 255 310 Z",
+            "color": "#FFF59D",
+            "stroke": "#F9A825",
+            "stroke_width": 2
+        },
+        {
+            "id": "scrotum",
+            "name": "Scrotum",
+            "shape": "path",
+            "d": "M 285 450 C 275 480 280 520 300 525 C 320 520 325 480 315 450 Z",
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 2
+        },
+        {
+            "id": "testis_left",
+            "name": "Testis",
+            "shape": "ellipse",
+            "cx": 290,
+            "cy": 490,
+            "rx": 10,
+            "ry": 15,
+            "color": "#E1BEE7",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "testis_right",
+            "name": "Testis",
+            "shape": "ellipse",
+            "cx": 310,
+            "cy": 490,
+            "rx": 10,
+            "ry": 15,
+            "color": "#E1BEE7",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        }
+    ],
+    "labels": [
+        {
+            "part_id": "pineal_gland",
+            "text": "Pineal Gland",
+            "lx": 620,
+            "ly": 45,
+            "tx": 307,
+            "ty": 60
+        },
+        {
+            "part_id": "hypothalamus",
+            "text": "Hypothalamus",
+            "lx": 620,
+            "ly": 85,
+            "tx": 318,
+            "ty": 82
+        },
+        {
+            "part_id": "pituitary_gland",
+            "text": "Pituitary Gland",
+            "lx": 620,
+            "ly": 125,
+            "tx": 308,
+            "ty": 100
+        },
+        {
+            "part_id": "thymus_right",
+            "text": "Thymus",
+            "lx": 620,
+            "ly": 215,
+            "tx": 325,
+            "ty": 225
+        },
+        {
+            "part_id": "pancreas",
+            "text": "Pancreas",
+            "lx": 620,
+            "ly": 300,
+            "tx": 340,
+            "ty": 315
+        },
+        {
+            "part_id": "adrenal_right",
+            "text": "Adrenal Gland",
+            "lx": 620,
+            "ly": 340,
+            "tx": 370,
+            "ty": 335
+        },
+        {
+            "part_id": "kidney_right",
+            "text": "Kidney",
+            "lx": 620,
+            "ly": 380,
+            "tx": 380,
+            "ty": 360
+        },
+        {
+            "part_id": "testis_right",
+            "text": "Testis",
+            "lx": 620,
+            "ly": 490,
+            "tx": 310,
+            "ty": 490
+        },
+        {
+            "part_id": "thyroid_left",
+            "text": "Thyroid Gland",
+            "lx": 80,
+            "ly": 150,
+            "tx": 257,
+            "ty": 170
+        },
+        {
+            "part_id": "parathyroid_1",
+            "text": "Parathyroid Glands",
+            "lx": 80,
+            "ly": 190,
+            "tx": 268,
+            "ty": 175
+        },
+        {
+            "part_id": "adrenal_left",
+            "text": "Adrenal Gland",
+            "lx": 80,
+            "ly": 325,
+            "tx": 230,
+            "ty": 335
+        },
+        {
+            "part_id": "kidney_left",
+            "text": "Kidney",
+            "lx": 80,
+            "ly": 365,
+            "tx": 220,
+            "ty": 360
+        },
+        {
+            "part_id": "testis_left",
+            "text": "Testis",
+            "lx": 80,
+            "ly": 490,
+            "tx": 290,
+            "ty": 490
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "diagram": "chem_hydrogen_test",
+  "type": "chemistry_experiment",
+  "title": "Hydrogen Gas Test (Squeaky Pop)",
+  "canvas": {
+    "width": 900,
+    "height": 820,
+    "background": "#FFFFFF"
+  },
+  "render_hints": {
+    "canvas": {"width": 900, "height": 820, "background": "#FFFFFF"},
+    "test_tube": {
+      "glass_color": "#F8F8F6",
+      "edge": "#1a1a1a",
+      "tilt_deg": 48,
+      "center": [396, 540],
+      "length": 430,
+      "width": 84,
+      "rounded_bottom": true,
+      "gas_content": "hydrogen",
+      "gas_color": "#FFFFFF"
+    },
+    "splint": {
+      "color": "#C8A870",
+      "edge": "#9A7840",
+      "angle_deg": 28,
+      "width": 14,
+      "length": 450
+    },
+    "flame": {
+      "color_outer": "#E07820",
+      "color_inner": "#F5D040",
+      "at": "tube_mouth"
+    },
+    "pop_marks": {
+      "color": "#F0A0B4",
+      "count": 3,
+      "angles_deg": [128, 72, 345]
+    }
+  }
+}

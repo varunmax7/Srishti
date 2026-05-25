@@ -1,0 +1,539 @@
+{
+    "diagram": "human_ear",
+    "type": "biology",
+    "title": "Human Ear Anatomy",
+    "canvas": {
+        "width": 1100,
+        "height": 700
+    },
+    "parts": [
+        {
+            "id": "temporal_bone",
+            "name": "Temporal Bone",
+            "shape": "path",
+            "d": "M 350 50 L 850 50 L 850 650 L 600 650 C 550 550 500 450 480 450 C 450 450 420 500 350 500 C 400 450 400 350 350 350 C 450 350 500 250 450 150 C 400 100 350 100 350 50 Z",
+            "color": "#EBE3D5",
+            "stroke": "#111",
+            "stroke_width": 3
+        },
+        {
+            "id": "bone_tex_0",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 420,
+            "cy": 100,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_1",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 450,
+            "cy": 120,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_2",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 80,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_3",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 600,
+            "cy": 100,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_4",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 700,
+            "cy": 150,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_5",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 750,
+            "cy": 80,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_6",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 800,
+            "cy": 180,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_7",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 650,
+            "cy": 120,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_8",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 550,
+            "cy": 70,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_9",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 780,
+            "cy": 120,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_10",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 800,
+            "cy": 400,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_11",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 750,
+            "cy": 450,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_12",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 820,
+            "cy": 500,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_13",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 700,
+            "cy": 550,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_14",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 650,
+            "cy": 600,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_15",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 750,
+            "cy": 600,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_16",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 800,
+            "cy": 620,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_17",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 400,
+            "cy": 480,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_18",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 420,
+            "cy": 450,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "bone_tex_19",
+            "name": "Bone Texture",
+            "shape": "ellipse",
+            "cx": 440,
+            "cy": 490,
+            "rx": 4,
+            "ry": 4,
+            "color": "#D3C8B8",
+            "stroke": "#B8AA9A",
+            "stroke_width": 1
+        },
+        {
+            "id": "pinna_base",
+            "name": "Pinna",
+            "shape": "path",
+            "d": "M 150 350 C 100 200 150 50 250 50 C 350 50 350 150 300 250 C 280 290 320 280 350 280 L 350 420 C 320 420 280 380 250 450 C 250 550 150 500 150 350 Z",
+            "color": "#FCE3D2",
+            "stroke": "#111",
+            "stroke_width": 3
+        },
+        {
+            "id": "pinna_detail_1",
+            "name": "Cartilage Ridge",
+            "shape": "path",
+            "d": "M 200 120 C 150 150 150 250 200 350",
+            "color": "none",
+            "stroke": "#E5A988",
+            "stroke_width": 4
+        },
+        {
+            "id": "pinna_detail_2",
+            "name": "Cartilage Ridge",
+            "shape": "path",
+            "d": "M 250 100 C 200 150 200 200 250 200 C 300 200 250 300 220 350",
+            "color": "none",
+            "stroke": "#E5A988",
+            "stroke_width": 3
+        },
+        {
+            "id": "pinna_detail_3",
+            "name": "Cartilage Ridge",
+            "shape": "path",
+            "d": "M 300 250 C 270 280 270 320 300 350",
+            "color": "none",
+            "stroke": "#E5A988",
+            "stroke_width": 3
+        },
+        {
+            "id": "ear_canal",
+            "name": "Ear Canal",
+            "shape": "path",
+            "d": "M 350 280 C 400 280 450 310 500 310 L 500 370 C 450 370 400 420 350 420 C 380 380 380 320 350 280 Z",
+            "color": "#E5A988",
+            "stroke": "#111",
+            "stroke_width": 2
+        },
+        {
+            "id": "middle_ear_cavity",
+            "name": "Middle Ear Cavity",
+            "shape": "path",
+            "d": "M 500 310 C 520 250 580 250 580 320 C 580 380 540 400 540 420 L 500 420 C 520 380 520 350 500 310 Z",
+            "color": "#F9F2F2",
+            "stroke": "#111",
+            "stroke_width": 2
+        },
+        {
+            "id": "eustachian_tube",
+            "name": "Eustachian Tube",
+            "shape": "path",
+            "d": "M 540 420 C 550 450 600 550 650 650 L 680 650 C 620 530 580 480 580 420 Z",
+            "color": "#F9F2F2",
+            "stroke": "#111",
+            "stroke_width": 2
+        },
+        {
+            "id": "eardrum",
+            "name": "Tympanic Membrane",
+            "shape": "path",
+            "d": "M 500 310 Q 515 340 500 370 Q 495 340 500 310 Z",
+            "color": "#B2DFDB",
+            "stroke": "#111",
+            "stroke_width": 2
+        },
+        {
+            "id": "malleus",
+            "name": "Malleus",
+            "shape": "path",
+            "d": "M 505 340 L 525 280 L 540 280 L 530 310 L 505 340 Z",
+            "color": "#E0E0E0",
+            "stroke": "#111",
+            "stroke_width": 2
+        },
+        {
+            "id": "incus",
+            "name": "Incus",
+            "shape": "path",
+            "d": "M 535 280 C 560 270 560 300 550 310 L 540 330 L 530 310 Z",
+            "color": "#E0E0E0",
+            "stroke": "#111",
+            "stroke_width": 2
+        },
+        {
+            "id": "stapes",
+            "name": "Stapes",
+            "shape": "path",
+            "d": "M 540 330 L 560 320 L 570 330 L 560 340 Z",
+            "color": "none",
+            "stroke": "#111",
+            "stroke_width": 3
+        },
+        {
+            "id": "stapes_base",
+            "name": "Stapes Footplate",
+            "shape": "path",
+            "d": "M 565 315 L 575 345",
+            "color": "none",
+            "stroke": "#111",
+            "stroke_width": 4
+        },
+        {
+            "id": "cochlea",
+            "name": "Cochlea",
+            "shape": "path",
+            "d": "M 570 330 C 600 400 680 380 660 320 C 640 260 580 300 600 340 C 620 370 650 340 630 310 C 610 290 600 320 620 330 ",
+            "color": "#D1C4E9",
+            "stroke": "#111",
+            "stroke_width": 3
+        },
+        {
+            "id": "canal_base",
+            "name": "Vestibule",
+            "shape": "path",
+            "d": "M 570 330 C 560 280 600 270 620 300",
+            "color": "#D1C4E9",
+            "stroke": "none",
+            "stroke_width": 0
+        },
+        {
+            "id": "sc_canal_1_out",
+            "name": "Canal Outline",
+            "shape": "path",
+            "d": "M 570 280 C 550 180 650 180 620 280",
+            "color": "none",
+            "stroke": "#111",
+            "stroke_width": 12
+        },
+        {
+            "id": "sc_canal_1_in",
+            "name": "Canal Inner",
+            "shape": "path",
+            "d": "M 570 280 C 550 180 650 180 620 280",
+            "color": "none",
+            "stroke": "#D1C4E9",
+            "stroke_width": 8
+        },
+        {
+            "id": "sc_canal_2_out",
+            "name": "Canal Outline",
+            "shape": "path",
+            "d": "M 590 270 C 650 200 700 250 620 300",
+            "color": "none",
+            "stroke": "#111",
+            "stroke_width": 12
+        },
+        {
+            "id": "sc_canal_2_in",
+            "name": "Canal Inner",
+            "shape": "path",
+            "d": "M 590 270 C 650 200 700 250 620 300",
+            "color": "none",
+            "stroke": "#D1C4E9",
+            "stroke_width": 8
+        },
+        {
+            "id": "sc_canal_3_out",
+            "name": "Canal Outline",
+            "shape": "path",
+            "d": "M 575 300 C 600 240 680 250 630 320",
+            "color": "none",
+            "stroke": "#111",
+            "stroke_width": 12
+        },
+        {
+            "id": "sc_canal_3_in",
+            "name": "Canal Inner",
+            "shape": "path",
+            "d": "M 575 300 C 600 240 680 250 630 320",
+            "color": "none",
+            "stroke": "#D1C4E9",
+            "stroke_width": 8
+        },
+        {
+            "id": "auditory_nerve",
+            "name": "Auditory Nerve",
+            "shape": "path",
+            "d": "M 650 330 C 700 350 750 320 800 330 L 800 370 C 750 360 700 380 650 360 Z",
+            "color": "#FFF59D",
+            "stroke": "#111",
+            "stroke_width": 2
+        }
+    ],
+    "labels": [
+        {
+            "part_id": "pinna_base",
+            "text": "Auricle (Pinna)",
+            "lx": 10,
+            "ly": 120,
+            "tx": 200,
+            "ty": 280
+        },
+        {
+            "part_id": "ear_canal",
+            "text": "Ear Canal",
+            "lx": 10,
+            "ly": 200,
+            "tx": 425,
+            "ty": 325
+        },
+        {
+            "part_id": "eardrum",
+            "text": "Tympanic Membrane",
+            "lx": 10,
+            "ly": 280,
+            "tx": 500,
+            "ty": 340
+        },
+        {
+            "part_id": "eustachian_tube",
+            "text": "Eustachian Tube",
+            "lx": 10,
+            "ly": 560,
+            "tx": 610,
+            "ty": 535
+        },
+        {
+            "part_id": "malleus",
+            "text": "Malleus",
+            "lx": 820,
+            "ly": 100,
+            "tx": 520,
+            "ty": 310
+        },
+        {
+            "part_id": "incus",
+            "text": "Incus",
+            "lx": 820,
+            "ly": 150,
+            "tx": 548,
+            "ty": 300
+        },
+        {
+            "part_id": "stapes_base",
+            "text": "Stapes",
+            "lx": 820,
+            "ly": 200,
+            "tx": 570,
+            "ty": 330
+        },
+        {
+            "part_id": "middle_ear_cavity",
+            "text": "Middle Ear Cavity",
+            "lx": 820,
+            "ly": 250,
+            "tx": 540,
+            "ty": 340
+        },
+        {
+            "part_id": "sc_canal_1_out",
+            "text": "Semicircular Canals",
+            "lx": 820,
+            "ly": 300,
+            "tx": 600,
+            "ty": 215
+        },
+        {
+            "part_id": "cochlea",
+            "text": "Cochlea",
+            "lx": 820,
+            "ly": 400,
+            "tx": 625,
+            "ty": 355
+        },
+        {
+            "part_id": "auditory_nerve",
+            "text": "Auditory Nerve",
+            "lx": 820,
+            "ly": 450,
+            "tx": 725,
+            "ty": 350
+        }
+    ]
+}

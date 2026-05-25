@@ -3,7 +3,6 @@ import json
 
 
 # ── Import all engines ───────────────────────────────────────
-from engines.svg_biology    import render_biology
 from engines.label_engine   import add_labels
 from engines.rdkit_chemistry import render_molecule
 from engines.physics_vector import (
@@ -17,6 +16,7 @@ from engines.physics_vector import (
     render_ray_optics_convex,
     render_from_template,
 )
+from engines.svg_chem_experiment import render_experiment as render_chem_experiment
 
 
 # ── Output directory ─────────────────────────────────────────
@@ -29,8 +29,9 @@ def export_diagram(request: dict) -> dict:
 
     Request format:
     {
-        "type":     "biology" | "chemistry" | "physics_graph" | "physics_diagram",
-        "name":     "plant_cell" | "methane" | "concave_mirror" | ...,
+        "type":     "biology" | "chemistry" | "chem_experiment" |
+                    "physics_graph" | "physics_diagram",
+        "name":     "plant_cell" | "methane" | "chem_conductivity_test" | ...,
         "format":   "png" | "svg"   (optional, default: png),
         "output":   "custom/path/file.png"  (optional)
     }
@@ -47,7 +48,6 @@ def export_diagram(request: dict) -> dict:
 
     req_type   = request.get("type", "").lower().strip()
     name       = request.get("name", "").lower().strip().replace(" ", "_")
-    fmt        = request.get("format", "png").lower()
     custom_out = request.get("output", None)
 
     # ── BIOLOGY ─────────────────────────────────────────────
@@ -67,6 +67,12 @@ def export_diagram(request: dict) -> dict:
             "leaf_cross_section":  "templates/biology/leaf_cross_section.json",
             "dna_structure":       "templates/biology/dna_structure.json",
             "human_excretory":     "templates/biology/human_excretory.json",
+            "alveoli":             "templates/biology/alveoli.json",
+            "human_ear":           "templates/biology/human_ear.json",
+            "female_endocrine":    "templates/biology/female_endocrine.json",
+            "female_reproductive": "templates/biology/female_reproductive.json",
+            "male_endocrine":      "templates/biology/male_endocrine.json",
+            "male_reproductive":   "templates/biology/male_reproductive.json",
         }
 
         if name not in BIOLOGY_TEMPLATES:
@@ -91,7 +97,7 @@ def export_diagram(request: dict) -> dict:
             return {"success": False, "error": str(e)}
 
 
-    # ── CHEMISTRY ───────────────────────────────────────────
+    # ── CHEMISTRY (molecules via RDKit) ─────────────────────
     elif req_type == "chemistry":
 
         os.makedirs(f"{OUTPUT_DIR}/chemistry", exist_ok=True)
@@ -105,6 +111,41 @@ def export_diagram(request: dict) -> dict:
                 return {"success": False, "error": f"Molecule '{name}' not found in library"}
         except Exception as e:
             return {"success": False, "error": str(e)}
+
+
+    # ── CHEMISTRY EXPERIMENTS (lab apparatus via SVG) ───────
+    elif req_type == "chem_experiment":
+
+        os.makedirs(f"{OUTPUT_DIR}/chem_experiment", exist_ok=True)
+
+        template_path = f"templates/chem_experiment/{name}.json"
+        if not os.path.exists(template_path):
+            return {
+                "success": False,
+                "error":   f"Template file missing: {template_path}"
+            }
+
+        try:
+            with open(template_path, "r", encoding="utf-8") as f:
+                spec = json.load(f)
+            diagram_key = spec.get("diagram", name)
+            out_path = custom_out or f"{OUTPUT_DIR}/chem_experiment/{diagram_key}.svg"
+
+            success = render_chem_experiment(
+                template_path,
+                output_dir=f"{OUTPUT_DIR}/chem_experiment"
+            )
+            if success:
+                return {"success": True, "path": out_path}
+            else:
+                return {
+                    "success": False,
+                    "error":   f"No renderer registered for diagram '{diagram_key}'"
+                }
+        except Exception as e:
+            return {"success": False, "error": str(e)}
+
+
 
 
     # ── PHYSICS GRAPHS ──────────────────────────────────────
@@ -191,7 +232,8 @@ def export_diagram(request: dict) -> dict:
         return {
             "success": False,
             "error":   f"Unknown type '{req_type}'. "
-                       f"Use: biology, chemistry, physics_graph, physics_diagram"
+                       f"Use: biology, chemistry, chem_experiment, "
+                       f"physics_graph, physics_diagram"
         }
 
 
@@ -216,8 +258,21 @@ if __name__ == "__main__":
         {"type": "biology",          "name": "leaf_cross_section"},
         {"type": "biology",          "name": "dna_structure"},
         {"type": "biology",          "name": "human_excretory"},
+        {"type": "biology",          "name": "alveoli"},
+        {"type": "biology",          "name": "human_ear"},
+        {"type": "biology",          "name": "female_endocrine"},
+        {"type": "biology",          "name": "female_reproductive"},
+        {"type": "biology",          "name": "male_endocrine"},
+        {"type": "biology",          "name": "male_reproductive"},
 
-        # Chemistry (15 templates)
+
+
+
+
+
+
+
+        # Chemistry (20 molecules)
         {"type": "chemistry",        "name": "methane"},
         {"type": "chemistry",        "name": "benzene"},
         {"type": "chemistry",        "name": "glucose"},
@@ -239,7 +294,31 @@ if __name__ == "__main__":
         {"type": "chemistry",        "name": "nacl"},
         {"type": "chemistry",        "name": "hcl"},
 
-        # Physics graphs (4 templates)
+        # Chemistry experiments (lab apparatus)
+        {"type": "chem_experiment",  "name": "chem_conductivity_test"},
+        {"type": "chem_experiment",  "name": "chem_electrolysis_diagram"},
+        {"type": "chem_experiment",  "name": "chem_gas_collection_spoon"},
+        {"type": "chem_experiment",  "name": "chem_heat_conduction"},
+        {"type": "chem_experiment",  "name": "chem_open_circuit"},
+        {"type": "chem_experiment",  "name": "chem_rusting_conditions"},
+        {"type": "chem_experiment",  "name": "chem_spray_mechanism"},
+        {"type": "chem_experiment",  "name": "chem_star_polymer"},
+        {"type": "chem_experiment",  "name": "chem_sunlight_exposure"},
+        {"type": "chem_experiment",  "name": "chem_test_tube_rack"},
+        {"type": "chem_experiment",  "name": "chem_thermal_decomposition"},
+        {"type": "chem_experiment",  "name": "chem_zinc_reaction"},
+
+
+
+        {"type": "chem_experiment",  "name": "chem_conductivity_stand"},
+        {"type": "chem_experiment",  "name": "chem_electrolysis_water"},
+        {"type": "chem_experiment",  "name": "chem_evaporation_setup"},
+        {"type": "chem_experiment",  "name": "chem_flame_test"},
+        {"type": "chem_experiment",  "name": "chem_gas_collection"},
+        {"type": "chem_experiment",  "name": "chem_hydrogen_test"},
+
+
+        # physics graphs (4 templates)
         {"type": "physics_graph",    "name": "distance_time"},
         {"type": "physics_graph",    "name": "velocity_time"},
         {"type": "physics_graph",    "name": "wave"},
@@ -268,10 +347,10 @@ if __name__ == "__main__":
     for test in tests:
         result = export_diagram(test)
         if result["success"]:
-            print(f"✅  {test['type']:<18} {test['name']:<20} → {result['path']}")
+            print(f"✅  {test['type']:<18} {test['name']:<25} → {result['path']}")
             passed += 1
         else:
-            print(f"❌  {test['type']:<18} {test['name']:<20} → {result['error']}")
+            print(f"❌  {test['type']:<18} {test['name']:<25} → {result['error']}")
             failed += 1
 
     print("=" * 50)

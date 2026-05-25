@@ -1,0 +1,30 @@
+{
+  "diagram": "chem_star_polymer",
+  "type": "chemistry_experiment",
+  "title": "Star Polymer Structure",
+  "canvas": {
+    "width": 860,
+    "height": 860,
+    "background": "#ffffff"
+  },
+  "core": {
+    "radius": 30,
+    "fill": "#F5C842",
+    "stroke": "#2E2E2E",
+    "stroke_width": 2.5
+  },
+  "arms": {
+    "count": 13,
+    "length": 230,
+    "color": "#2E2E2E",
+    "stroke_width": 2.2,
+    "zigzag_amplitude": 11,
+    "zigzag_segments": 16
+  },
+  "end_groups": {
+    "radius": 30,
+    "fill": "#9EA3C0",
+    "stroke": "#2E2E2E",
+    "stroke_width": 2.5
+  }
+}

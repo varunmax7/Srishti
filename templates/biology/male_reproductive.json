@@ -1,0 +1,263 @@
+{
+    "diagram": "male_reproductive",
+    "type": "biology",
+    "title": "Male Reproductive System (Frontal View)",
+    "canvas": {
+        "width": 1000,
+        "height": 800
+    },
+    "parts": [
+        {
+            "id": "bladder",
+            "name": "Urinary Bladder",
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 250,
+            "rx": 70,
+            "ry": 50,
+            "color": "#FFCCBC",
+            "stroke": "#BF360C",
+            "stroke_width": 2
+        },
+        {
+            "id": "seminal_vesicle_left",
+            "name": "Seminal Vesicle",
+            "shape": "path",
+            "d": "M 430 250 C 400 230 380 270 410 300 C 420 310 440 280 445 280 Z",
+            "color": "#FFF59D",
+            "stroke": "#F9A825",
+            "stroke_width": 2
+        },
+        {
+            "id": "seminal_vesicle_right",
+            "name": "Seminal Vesicle",
+            "shape": "path",
+            "d": "M 570 250 C 600 230 620 270 590 300 C 580 310 560 280 555 280 Z",
+            "color": "#FFF59D",
+            "stroke": "#F9A825",
+            "stroke_width": 2
+        },
+        {
+            "id": "prostate",
+            "name": "Prostate Gland",
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 320,
+            "rx": 45,
+            "ry": 35,
+            "color": "#E1BEE7",
+            "stroke": "#6A1B9A",
+            "stroke_width": 2
+        },
+        {
+            "id": "bulbourethral_left",
+            "name": "Bulbourethral Gland",
+            "shape": "ellipse",
+            "cx": 480,
+            "cy": 370,
+            "rx": 6,
+            "ry": 6,
+            "color": "#C5E1A5",
+            "stroke": "#558B2F",
+            "stroke_width": 2
+        },
+        {
+            "id": "bulbourethral_right",
+            "name": "Bulbourethral Gland",
+            "shape": "ellipse",
+            "cx": 520,
+            "cy": 370,
+            "rx": 6,
+            "ry": 6,
+            "color": "#C5E1A5",
+            "stroke": "#558B2F",
+            "stroke_width": 2
+        },
+        {
+            "id": "urethra",
+            "name": "Urethra",
+            "shape": "path",
+            "d": "M 500 295 L 500 620",
+            "color": "none",
+            "stroke": "#F44336",
+            "stroke_width": 4
+        },
+        {
+            "id": "penis",
+            "name": "Penis",
+            "shape": "path",
+            "d": "M 470 380 C 465 450 470 550 480 600 C 485 625 515 625 520 600 C 530 550 535 450 530 380 Z",
+            "color": "#F8BBD0",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "glans_penis",
+            "name": "Glans Penis",
+            "shape": "path",
+            "d": "M 475 600 C 460 620 485 650 500 650 C 515 650 540 620 525 600 Z",
+            "color": "#F48FB1",
+            "stroke": "#880E4F",
+            "stroke_width": 2
+        },
+        {
+            "id": "scrotum",
+            "name": "Scrotum",
+            "shape": "path",
+            "d": "M 460 450 C 370 480 380 640 430 660 C 480 670 500 650 500 650 C 500 650 520 670 570 660 C 620 640 630 480 540 450 Z",
+            "color": "#FDDBB4",
+            "stroke": "#C8956C",
+            "stroke_width": 2
+        },
+        {
+            "id": "testis_left",
+            "name": "Testis",
+            "shape": "ellipse",
+            "cx": 430,
+            "cy": 580,
+            "rx": 35,
+            "ry": 50,
+            "color": "#CE93D8",
+            "stroke": "#4A148C",
+            "stroke_width": 2
+        },
+        {
+            "id": "testis_right",
+            "name": "Testis",
+            "shape": "ellipse",
+            "cx": 570,
+            "cy": 580,
+            "rx": 35,
+            "ry": 50,
+            "color": "#CE93D8",
+            "stroke": "#4A148C",
+            "stroke_width": 2
+        },
+        {
+            "id": "epididymis_left",
+            "name": "Epididymis",
+            "shape": "path",
+            "d": "M 400 580 C 385 530 420 510 440 520 C 460 530 460 550 460 550",
+            "color": "none",
+            "stroke": "#4DB6AC",
+            "stroke_width": 8
+        },
+        {
+            "id": "epididymis_right",
+            "name": "Epididymis",
+            "shape": "path",
+            "d": "M 600 580 C 615 530 580 510 560 520 C 540 530 540 550 540 550",
+            "color": "none",
+            "stroke": "#4DB6AC",
+            "stroke_width": 8
+        },
+        {
+            "id": "vas_deferens_left",
+            "name": "Vas Deferens",
+            "shape": "path",
+            "d": "M 440 520 C 440 450 350 400 350 300 C 350 200 450 200 480 280",
+            "color": "none",
+            "stroke": "#FFB74D",
+            "stroke_width": 3
+        },
+        {
+            "id": "vas_deferens_right",
+            "name": "Vas Deferens",
+            "shape": "path",
+            "d": "M 560 520 C 560 450 650 400 650 300 C 650 200 550 200 520 280",
+            "color": "none",
+            "stroke": "#FFB74D",
+            "stroke_width": 3
+        }
+    ],
+    "labels": [
+        {
+            "part_id": "bladder",
+            "text": "Urinary Bladder",
+            "lx": 50,
+            "ly": 250,
+            "tx": 450,
+            "ty": 250
+        },
+        {
+            "part_id": "vas_deferens_left",
+            "text": "Vas Deferens",
+            "lx": 50,
+            "ly": 300,
+            "tx": 350,
+            "ty": 300
+        },
+        {
+            "part_id": "penis",
+            "text": "Penis",
+            "lx": 50,
+            "ly": 450,
+            "tx": 472,
+            "ty": 450
+        },
+        {
+            "part_id": "urethra",
+            "text": "Urethra",
+            "lx": 50,
+            "ly": 520,
+            "tx": 500,
+            "ty": 520
+        },
+        {
+            "part_id": "glans_penis",
+            "text": "Glans Penis",
+            "lx": 50,
+            "ly": 620,
+            "tx": 485,
+            "ty": 620
+        },
+        {
+            "part_id": "seminal_vesicle_right",
+            "text": "Seminal Vesicle",
+            "lx": 800,
+            "ly": 260,
+            "tx": 580,
+            "ty": 270
+        },
+        {
+            "part_id": "prostate",
+            "text": "Prostate Gland",
+            "lx": 800,
+            "ly": 320,
+            "tx": 540,
+            "ty": 320
+        },
+        {
+            "part_id": "bulbourethral_right",
+            "text": "Bulbourethral Gland",
+            "lx": 800,
+            "ly": 370,
+            "tx": 525,
+            "ty": 370
+        },
+        {
+            "part_id": "epididymis_right",
+            "text": "Epididymis",
+            "lx": 800,
+            "ly": 520,
+            "tx": 585,
+            "ty": 525
+        },
+        {
+            "part_id": "testis_right",
+            "text": "Testis",
+            "lx": 800,
+            "ly": 580,
+            "tx": 590,
+            "ty": 580
+        },
+        {
+            "part_id": "scrotum",
+            "text": "Scrotum",
+            "lx": 800,
+            "ly": 650,
+            "tx": 550,
+            "ty": 655
+        }
+    ]
+}

@@ -1,0 +1,276 @@
+{
+  "diagram": "chem_flame_test",
+  "type": "chemistry_experiment",
+  "title": "Flame Test",
+  "experiment": {
+    "name": "Flame Test for Identifying Metal Ions",
+    "category": "Qualitative Analysis / Metals and their Compounds",
+    "class_level": "Class 10 — Metals and Non-metals (NCERT)",
+    "objective": "To identify the metal ion present in a salt sample by observing the characteristic colour it imparts to a non-luminous (blue) Bunsen flame when a small amount of the salt is introduced into the flame.",
+    "description": "A Bunsen/blow torch is mounted on a stand and lit with a non-luminous blue flame, held steady by one hand. With the other hand, a small amount of the salt sample is held in a pair of tongs (or on a wire loop) and introduced into the hot blue flame. The heat excites the electrons of the metal ions; as they fall back to lower energy levels they emit light of a characteristic colour. A watch glass holding the powdered sample sits on the wooden bench below, and fine particles/vapour stream down from the flame toward it. The colour seen in the flame identifies the metal ion."
+  },
+  "apparatus": [
+    {
+      "id": "board",
+      "component": "Wooden bench / board",
+      "material": "Wood",
+      "purpose": "Heat-resistant working surface for the apparatus"
+    },
+    {
+      "id": "torch",
+      "component": "Bunsen burner / blow torch on stand",
+      "material": "Metal",
+      "purpose": "Provides a hot, non-luminous blue flame for the test"
+    },
+    {
+      "id": "flame",
+      "component": "Non-luminous blue flame",
+      "purpose": "The hot flame that excites the metal ions and reveals their characteristic colour"
+    },
+    {
+      "id": "tongs",
+      "component": "Tongs (sample holder)",
+      "material": "Metal (brass / steel)",
+      "purpose": "Hold the salt sample and introduce it into the flame"
+    },
+    {
+      "id": "dish",
+      "component": "Watch glass / dish with sample",
+      "material": "Glass",
+      "contents": "Powdered salt sample",
+      "purpose": "Holds the sample being tested"
+    },
+    {
+      "id": "sample",
+      "component": "Salt sample",
+      "examples": [
+        "Sodium salt (yellow flame)",
+        "Potassium salt (lilac flame)",
+        "Calcium salt (brick-red flame)",
+        "Copper salt (green/blue flame)"
+      ],
+      "purpose": "The substance whose metal ion is being identified"
+    },
+    {
+      "id": "hands",
+      "component": "Hands of the experimenter",
+      "purpose": "One steadies the torch, the other holds the tongs with the sample"
+    }
+  ],
+  "procedure": [
+    "Place the apparatus on a heat-resistant wooden bench.",
+    "Light the Bunsen burner / torch and adjust it to give a non-luminous blue flame.",
+    "Take a small amount of the salt sample from the watch glass using clean tongs (or a wire loop).",
+    "Introduce the sample into the hottest part of the blue flame.",
+    "Observe the colour imparted to the flame.",
+    "Match the observed colour with the characteristic flame colour of known metal ions to identify the ion present.",
+    "Clean the tongs / loop before testing another sample to avoid contamination."
+  ],
+  "principle": {
+    "concept": "Excitation and emission of light by metal ions (atomic emission)",
+    "explanation": "When a metal salt is heated in a hot flame, the thermal energy excites the outer electrons of the metal ions to higher energy levels. These excited electrons are unstable and fall back to lower energy levels, releasing the absorbed energy as light of specific wavelengths. The combination of wavelengths gives each metal ion a characteristic flame colour, which can be used to identify it.",
+    "key_difference": "Different metal ions have different electron energy-level spacings, so each emits light of a characteristic colour — this is what makes the flame test diagnostic."
+  },
+  "observations": [
+    {
+      "sample": "Sodium salt",
+      "flame_colour": "Golden yellow",
+      "inference": "Presence of sodium (Na+) ions"
+    },
+    {
+      "sample": "Potassium salt",
+      "flame_colour": "Lilac / violet",
+      "inference": "Presence of potassium (K+) ions"
+    },
+    {
+      "sample": "Calcium salt",
+      "flame_colour": "Brick red",
+      "inference": "Presence of calcium (Ca2+) ions"
+    },
+    {
+      "sample": "Copper salt",
+      "flame_colour": "Bluish green",
+      "inference": "Presence of copper (Cu2+) ions"
+    },
+    {
+      "sample": "Barium salt",
+      "flame_colour": "Apple green",
+      "inference": "Presence of barium (Ba2+) ions"
+    }
+  ],
+  "conclusion": "The colour imparted to a non-luminous flame by a heated salt is characteristic of the metal ion it contains, because excited electrons emit light of specific wavelengths as they return to lower energy levels. The flame test is therefore a simple qualitative method to identify metal ions in a sample.",
+  "properties_demonstrated": [
+    "Characteristic flame colours of metal ions",
+    "Excitation and emission of light by atoms",
+    "Qualitative identification of metals by flame colour"
+  ],
+  "precautions": [
+    "Always use a non-luminous (blue) flame so the flame's own colour does not mask the sample colour.",
+    "Use clean tongs or a clean wire loop for each sample to avoid contamination (especially by sodium, which masks other colours).",
+    "Hold the sample in the hottest part of the flame for a clear colour.",
+    "Do not look directly into the flame for long; observe the colour from the side.",
+    "Keep the sample amount small and handle the hot apparatus with care."
+  ],
+  "related_concepts": [
+    "Atomic emission spectra and energy levels",
+    "Why sodium gives a strong yellow that can mask other ions",
+    "Use of cobalt-blue glass to filter the sodium colour",
+    "Link between flame tests and flame photometry / atomic spectroscopy"
+  ],
+  "visual_style": {
+    "type": "illustrated lab scene with realistic shading",
+    "theme": "two hands performing a flame test over a wooden bench — torch on a stand with a blue flame, tongs holding a sample, a watch glass with powder, and a faint particle/vapour stream",
+    "palette": {
+      "background": "#FFFFFF",
+      "board_top": "#D4A030 (golden wood top)",
+      "board_side": "#A87820 (darker wood edge)",
+      "board_highlight": "#F0C860",
+      "outline": "#2E2E2E",
+      "torch_barrel": "#D0D0D0 (light steel)",
+      "torch_dark": "#AAAAAA",
+      "flame_base": "#3366FF (deep blue base)",
+      "flame_outer": "#66AAFF",
+      "flame_inner": "#99CCFF",
+      "flame_tip": "#FFFFFF (white hot tip)",
+      "particles": "#CCCCCC (fine grey vapour)",
+      "dish": "#FFFFFF with #F0F0F0 inner",
+      "powder": "#D8D8D8",
+      "tongs": "#B8A020 (brass) with #E8D040 highlight",
+      "hands": "#F5C5A0 (skin tone)"
+    },
+    "elements": {
+      "board": "thick wooden board drawn in perspective across the bottom of the scene",
+      "torch": "blow torch / Bunsen on a round stand at the left, barrel tilted up toward the upper right, held by a left hand at its collar",
+      "flame": "non-luminous blue flame coming out of the torch nozzle, pointing up and to the right, white-hot at the tip",
+      "tongs": "brass tongs held by a right hand at the top right, lowering the sample into the flame tip",
+      "particle_stream": "faint vertical stream of fine grey particles/vapour falling from the flame down into the watch glass",
+      "dish": "shallow glass watch glass on the board to the right of the torch, with a small heap of grey powder inside"
+    }
+  },
+  "render_hints": {
+    "_comment": "Illustrated scene (not a schematic). Coordinates are on an 900x720 canvas, origin top-left. Use these positions/angles to place each element to match the reference image.",
+    "canvas": {
+      "width": 900,
+      "height": 720,
+      "background": "#FFFFFF"
+    },
+    "board": {
+      "style": "wood_slab_perspective",
+      "top_color": "#D4A030",
+      "side_color": "#A87820",
+      "highlight": "#F0C860",
+      "outline": "#2E2E2E",
+      "stroke_width": 2.5,
+      "thickness": 52,
+      "top_y": 470,
+      "left_x": 120,
+      "right_x": 840,
+      "perspective_skew": 28
+    },
+    "torch": {
+      "barrel_fill": "#D0D0D0",
+      "barrel_dark": "#AAAAAA",
+      "collar_fill": "#B8B8B8",
+      "base_fill": "#C8C8C8",
+      "outline": "#2E2E2E",
+      "stroke_width": 2,
+      "stand_center": [
+        310,
+        480
+      ],
+      "stand_radius": 70,
+      "barrel_angle_deg": 58,
+      "barrel_length": 240,
+      "nozzle_at": [
+        430,
+        250
+      ],
+      "held_by": "left_hand"
+    },
+    "flame": {
+      "origin": [
+        435,
+        245
+      ],
+      "direction_deg": 38,
+      "length": 150,
+      "base_color": "#3366FF",
+      "outer_color": "#66AAFF",
+      "inner_color": "#99CCFF",
+      "tip_color": "#FFFFFF",
+      "non_luminous": true
+    },
+    "tongs": {
+      "color": "#B8A020",
+      "highlight": "#E8D040",
+      "stroke": "#2E2E2E",
+      "stroke_width": 2,
+      "tip_at": [
+        560,
+        200
+      ],
+      "angle_deg": 35,
+      "held_by": "right_hand",
+      "holding_sample": true
+    },
+    "particle_stream": {
+      "color": "#CCCCCC",
+      "count": 18,
+      "from": [
+        470,
+        240
+      ],
+      "to": [
+        510,
+        470
+      ],
+      "spread": 26,
+      "fall": true
+    },
+    "dish": {
+      "fill": "#FFFFFF",
+      "inner_fill": "#F0F0F0",
+      "powder_fill": "#D8D8D8",
+      "stroke": "#2E2E2E",
+      "stroke_width": 2.5,
+      "center": [
+        560,
+        460
+      ],
+      "rx": 150,
+      "ry": 48,
+      "powder_at": [
+        500,
+        470
+      ],
+      "powder_size": 60
+    },
+    "hands": {
+      "skin_color": "#F5C5A0",
+      "outline": "#2E2E2E",
+      "left_hand": {
+        "at": [
+          300,
+          360
+        ],
+        "holds": "torch_collar"
+      },
+      "right_hand": {
+        "at": [
+          690,
+          150
+        ],
+        "holds": "tongs"
+      }
+    }
+  },
+  "render": {
+    "engine": "svg_chem_experiment",
+    "renderer_function": "render_chem_flame_test",
+    "size": [
+      900,
+      720
+    ],
+    "format": "svg"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "diagram": "chem_gas_collection_spoon",
+  "type": "chemistry_experiment",
+  "title": "Gas Collection with Deflagrating Spoon",
+  "canvas": {
+    "width": 700,
+    "height": 800,
+    "background": "#C8E6C9"
+  },
+  "stand": {
+    "base_color": "#B0B0B0",
+    "base_edge": "#808080",
+    "rod_color": "#A0A0A0",
+    "rod_edge": "#707070",
+    "clamp_color": "#888888"
+  },
+  "bunsen_burner": {
+    "tube_color": "#A8A8A8",
+    "tube_edge": "#707070",
+    "base_color": "#B0B0B0",
+    "air_hole_color": "#505050",
+    "flame_outer": "#FFD54F",
+    "flame_inner": "#FF8F00",
+    "flame_core": "#FFF9C4"
+  },
+  "gas_jar": {
+    "outline_color": "#555555",
+    "outline_width": 2.5,
+    "fill_color": "#ffffff",
+    "fill_opacity": 0.15,
+    "dome_top": true,
+    "fume_color": "#D4A0B0",
+    "fume_count": 3
+  },
+  "spoon": {
+    "handle_color": "#777777",
+    "handle_edge": "#555555",
+    "cup_color": "#888888",
+    "substance_color": "#F9A825",
+    "burning": true,
+    "flame_color": "#FFEB3B"
+  },
+  "tongs": {
+    "color": "#444444",
+    "edge_color": "#222222"
+  },
+  "hands": {
+    "skin_color": "#F5D0B0",
+    "skin_edge": "#D4A882",
+    "show": true
+  }
+}

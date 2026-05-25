@@ -1,0 +1,42 @@
+{
+  "diagram": "chem_heat_conduction",
+  "type": "chemistry_experiment",
+  "title": "Heat Conduction in Metals",
+  "canvas": {
+    "width": 800,
+    "height": 700,
+    "background": "#ffffff"
+  },
+  "stand": {
+    "base_color": "#E0E0E0",
+    "base_edge": "#333333",
+    "rod_color": "#D0D0D0",
+    "rod_edge": "#555555",
+    "clamp_color": "#2A2A2A"
+  },
+  "metal_rod": {
+    "color": "#C4CFCF",
+    "edge_color": "#333333",
+    "width": 400,
+    "height": 16
+  },
+  "bunsen_burner": {
+    "tube_color": "#C0C0C0",
+    "tube_edge": "#333333",
+    "base_color": "#808080",
+    "base_edge": "#333333",
+    "air_hole_color": "#444444",
+    "flame_outer": "#FF9800",
+    "flame_inner": "#FFC107",
+    "flame_core": "#FFEE58",
+    "offset_x": 80
+  },
+  "wax_pin": {
+    "wax_color": "#F5DEB3",
+    "wax_edge": "#D2B48C",
+    "pin_color": "#888888",
+    "pin_edge": "#222222",
+    "count": 1,
+    "position": "far_right"
+  }
+}

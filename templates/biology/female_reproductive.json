@@ -1,0 +1,527 @@
+{
+    "diagram": "female_reproductive",
+    "type": "biology",
+    "title": "Female Reproductive System",
+    "canvas": {
+        "width": 1000,
+        "height": 700
+    },
+    "parts": [
+        {
+            "id": "broad_ligament",
+            "name": "Broad Ligament",
+            "shape": "path",
+            "d": "M 350 250 C 300 200 250 250 250 300 C 250 380 300 420 350 420 L 650 420 C 700 420 750 380 750 300 C 750 250 700 200 650 250 Z",
+            "color": "#FDE8E8",
+            "stroke": "#D4A0A0",
+            "stroke_width": 1
+        },
+        {
+            "id": "myometrium",
+            "name": "Myometrium",
+            "shape": "path",
+            "d": "M 420 230 C 400 230 370 260 370 310 C 370 380 400 430 430 450 L 500 480 L 570 450 C 600 430 630 380 630 310 C 630 260 600 230 580 230 Z",
+            "color": "#F8BBD0",
+            "stroke": "#AD1457",
+            "stroke_width": 3
+        },
+        {
+            "id": "endometrium",
+            "name": "Endometrium",
+            "shape": "path",
+            "d": "M 440 260 C 430 265 410 290 410 320 C 410 370 430 410 450 430 L 500 450 L 550 430 C 570 410 590 370 590 320 C 590 290 570 265 560 260 Z",
+            "color": "#FCE4EC",
+            "stroke": "#E91E63",
+            "stroke_width": 2
+        },
+        {
+            "id": "uterine_cavity",
+            "name": "Uterine Cavity",
+            "shape": "path",
+            "d": "M 470 280 L 500 420 L 530 280 Z",
+            "color": "#FFFFFF",
+            "stroke": "#C2185B",
+            "stroke_width": 2
+        },
+        {
+            "id": "cervix",
+            "name": "Cervix",
+            "shape": "path",
+            "d": "M 475 475 C 470 490 468 510 470 530 C 472 545 485 555 500 555 C 515 555 528 545 530 530 C 532 510 530 490 525 475 Z",
+            "color": "#EF9A9A",
+            "stroke": "#C62828",
+            "stroke_width": 2
+        },
+        {
+            "id": "cervical_os",
+            "name": "Cervical Os",
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 545,
+            "rx": 8,
+            "ry": 4,
+            "color": "#FFFFFF",
+            "stroke": "#C62828",
+            "stroke_width": 2
+        },
+        {
+            "id": "vagina",
+            "name": "Vagina",
+            "shape": "path",
+            "d": "M 480 555 L 475 620 L 470 680 L 530 680 L 525 620 L 520 555 Z",
+            "color": "#FFCDD2",
+            "stroke": "#E53935",
+            "stroke_width": 2
+        },
+        {
+            "id": "rugae_1",
+            "name": "Rugae",
+            "shape": "path",
+            "d": "M 478 580 Q 500 575 522 580",
+            "color": "none",
+            "stroke": "#E57373",
+            "stroke_width": 1
+        },
+        {
+            "id": "rugae_2",
+            "name": "Rugae",
+            "shape": "path",
+            "d": "M 476 610 Q 500 605 524 610",
+            "color": "none",
+            "stroke": "#E57373",
+            "stroke_width": 1
+        },
+        {
+            "id": "rugae_3",
+            "name": "Rugae",
+            "shape": "path",
+            "d": "M 474 640 Q 500 635 526 640",
+            "color": "none",
+            "stroke": "#E57373",
+            "stroke_width": 1
+        },
+        {
+            "id": "rugae_4",
+            "name": "Rugae",
+            "shape": "path",
+            "d": "M 472 665 Q 500 660 528 665",
+            "color": "none",
+            "stroke": "#E57373",
+            "stroke_width": 1
+        },
+        {
+            "id": "fallopian_left",
+            "name": "Fallopian Tube",
+            "shape": "path",
+            "d": "M 420 250 C 400 240 370 220 340 210 C 310 200 280 200 260 210 C 240 220 225 240 220 260",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 3
+        },
+        {
+            "id": "fallopian_left_lumen",
+            "name": "Tube Lumen",
+            "shape": "path",
+            "d": "M 420 255 C 400 245 370 228 340 218 C 310 208 280 208 262 218 C 245 225 232 242 228 258",
+            "color": "none",
+            "stroke": "#F48FB1",
+            "stroke_width": 2
+        },
+        {
+            "id": "fallopian_right",
+            "name": "Fallopian Tube",
+            "shape": "path",
+            "d": "M 580 250 C 600 240 630 220 660 210 C 690 200 720 200 740 210 C 760 220 775 240 780 260",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 3
+        },
+        {
+            "id": "fallopian_right_lumen",
+            "name": "Tube Lumen",
+            "shape": "path",
+            "d": "M 580 255 C 600 245 630 228 660 218 C 690 208 720 208 738 218 C 755 225 768 242 772 258",
+            "color": "none",
+            "stroke": "#F48FB1",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_l_0",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 220 260 C 216 252 212 245 209 240",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_l_1",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 220 260 C 212 256 205 252 200 249",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_l_2",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 220 260 C 211 261 202 262 196 262",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_l_3",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 220 260 C 212 266 205 272 200 276",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_l_4",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 220 260 C 216 269 212 278 209 284",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_l_5",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 220 260 C 220 270 220 280 220 286",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_r_0",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 780 260 C 784 252 788 245 790 240",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_r_1",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 780 260 C 787 256 795 252 800 249",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_r_2",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 780 260 C 789 261 798 262 804 262",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_r_3",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 780 260 C 787 266 795 272 800 276",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_r_4",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 780 260 C 784 269 788 278 790 284",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "fimbria_r_5",
+            "name": "Fimbriae",
+            "shape": "path",
+            "d": "M 780 260 C 780 270 780 280 780 286",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "ovary_left",
+            "name": "Ovary",
+            "shape": "ellipse",
+            "cx": 210,
+            "cy": 310,
+            "rx": 40,
+            "ry": 25,
+            "color": "#CE93D8",
+            "stroke": "#6A1B9A",
+            "stroke_width": 3
+        },
+        {
+            "id": "follicle_l1",
+            "name": "Follicle",
+            "shape": "ellipse",
+            "cx": 195,
+            "cy": 300,
+            "rx": 6,
+            "ry": 6,
+            "color": "#E1BEE7",
+            "stroke": "#8E24AA",
+            "stroke_width": 1
+        },
+        {
+            "id": "follicle_l2",
+            "name": "Follicle",
+            "shape": "ellipse",
+            "cx": 215,
+            "cy": 295,
+            "rx": 8,
+            "ry": 8,
+            "color": "#E1BEE7",
+            "stroke": "#8E24AA",
+            "stroke_width": 1
+        },
+        {
+            "id": "follicle_l3",
+            "name": "Follicle",
+            "shape": "ellipse",
+            "cx": 225,
+            "cy": 315,
+            "rx": 5,
+            "ry": 5,
+            "color": "#E1BEE7",
+            "stroke": "#8E24AA",
+            "stroke_width": 1
+        },
+        {
+            "id": "follicle_l4",
+            "name": "Follicle",
+            "shape": "ellipse",
+            "cx": 200,
+            "cy": 320,
+            "rx": 7,
+            "ry": 7,
+            "color": "#E1BEE7",
+            "stroke": "#8E24AA",
+            "stroke_width": 1
+        },
+        {
+            "id": "ovary_right",
+            "name": "Ovary",
+            "shape": "ellipse",
+            "cx": 790,
+            "cy": 310,
+            "rx": 40,
+            "ry": 25,
+            "color": "#CE93D8",
+            "stroke": "#6A1B9A",
+            "stroke_width": 3
+        },
+        {
+            "id": "follicle_r1",
+            "name": "Follicle",
+            "shape": "ellipse",
+            "cx": 775,
+            "cy": 300,
+            "rx": 6,
+            "ry": 6,
+            "color": "#E1BEE7",
+            "stroke": "#8E24AA",
+            "stroke_width": 1
+        },
+        {
+            "id": "follicle_r2",
+            "name": "Follicle",
+            "shape": "ellipse",
+            "cx": 795,
+            "cy": 295,
+            "rx": 8,
+            "ry": 8,
+            "color": "#E1BEE7",
+            "stroke": "#8E24AA",
+            "stroke_width": 1
+        },
+        {
+            "id": "follicle_r3",
+            "name": "Follicle",
+            "shape": "ellipse",
+            "cx": 805,
+            "cy": 315,
+            "rx": 5,
+            "ry": 5,
+            "color": "#E1BEE7",
+            "stroke": "#8E24AA",
+            "stroke_width": 1
+        },
+        {
+            "id": "follicle_r4",
+            "name": "Follicle",
+            "shape": "ellipse",
+            "cx": 780,
+            "cy": 320,
+            "rx": 7,
+            "ry": 7,
+            "color": "#E1BEE7",
+            "stroke": "#8E24AA",
+            "stroke_width": 1
+        },
+        {
+            "id": "ovarian_lig_l",
+            "name": "Ovarian Ligament",
+            "shape": "path",
+            "d": "M 250 310 C 280 310 320 290 370 280",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "ovarian_lig_r",
+            "name": "Ovarian Ligament",
+            "shape": "path",
+            "d": "M 750 310 C 720 310 680 290 630 280",
+            "color": "none",
+            "stroke": "#AD1457",
+            "stroke_width": 2
+        },
+        {
+            "id": "round_lig_l",
+            "name": "Round Ligament",
+            "shape": "path",
+            "d": "M 400 260 C 350 250 300 280 270 340",
+            "color": "none",
+            "stroke": "#999",
+            "stroke_width": 2
+        },
+        {
+            "id": "round_lig_r",
+            "name": "Round Ligament",
+            "shape": "path",
+            "d": "M 600 260 C 650 250 700 280 730 340",
+            "color": "none",
+            "stroke": "#999",
+            "stroke_width": 2
+        }
+    ],
+    "labels": [
+        {
+            "part_id": "ovary_left",
+            "text": "Ovary",
+            "lx": 30,
+            "ly": 260,
+            "tx": 210,
+            "ty": 310
+        },
+        {
+            "part_id": "fimbria_l_0",
+            "text": "Fimbriae",
+            "lx": 30,
+            "ly": 210,
+            "tx": 215,
+            "ty": 255
+        },
+        {
+            "part_id": "fallopian_left",
+            "text": "Fallopian Tube",
+            "lx": 30,
+            "ly": 160,
+            "tx": 340,
+            "ty": 215
+        },
+        {
+            "part_id": "ovarian_lig_l",
+            "text": "Ovarian Ligament",
+            "lx": 30,
+            "ly": 310,
+            "tx": 300,
+            "ty": 300
+        },
+        {
+            "part_id": "vagina",
+            "text": "Vagina",
+            "lx": 30,
+            "ly": 620,
+            "tx": 475,
+            "ty": 640
+        },
+        {
+            "part_id": "cervix",
+            "text": "Cervix",
+            "lx": 30,
+            "ly": 530,
+            "tx": 472,
+            "ty": 530
+        },
+        {
+            "part_id": "myometrium",
+            "text": "Myometrium",
+            "lx": 750,
+            "ly": 240,
+            "tx": 630,
+            "ty": 310
+        },
+        {
+            "part_id": "endometrium",
+            "text": "Endometrium",
+            "lx": 750,
+            "ly": 290,
+            "tx": 590,
+            "ty": 320
+        },
+        {
+            "part_id": "uterine_cavity",
+            "text": "Uterine Cavity",
+            "lx": 750,
+            "ly": 340,
+            "tx": 530,
+            "ty": 350
+        },
+        {
+            "part_id": "fallopian_right",
+            "text": "Fallopian Tube",
+            "lx": 750,
+            "ly": 160,
+            "tx": 660,
+            "ty": 215
+        },
+        {
+            "part_id": "ovary_right",
+            "text": "Ovary",
+            "lx": 750,
+            "ly": 390,
+            "tx": 790,
+            "ty": 310
+        },
+        {
+            "part_id": "follicle_r2",
+            "text": "Follicles",
+            "lx": 750,
+            "ly": 440,
+            "tx": 795,
+            "ty": 295
+        },
+        {
+            "part_id": "cervical_os",
+            "text": "Cervical Os",
+            "lx": 750,
+            "ly": 540,
+            "tx": 530,
+            "ty": 545
+        },
+        {
+            "part_id": "broad_ligament",
+            "text": "Broad Ligament",
+            "lx": 750,
+            "ly": 490,
+            "tx": 680,
+            "ty": 400
+        }
+    ]
+}

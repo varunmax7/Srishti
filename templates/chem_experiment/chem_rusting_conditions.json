@@ -1,0 +1,56 @@
+{
+  "diagram": "chem_rusting_conditions",
+  "type": "chemistry_experiment",
+  "title": "Conditions for Rusting of Iron",
+  "canvas": {
+    "width": 800,
+    "height": 700,
+    "background": "#ffffff"
+  },
+  "test_tubes": {
+    "count": 3,
+    "width": 50,
+    "height": 400,
+    "gap": 150,
+    "outline_color": "#404040",
+    "cork_color": "#DDBE8F",
+    "cork_edge": "#5A3A22"
+  },
+  "tube_A": {
+    "label": "A",
+    "liquid_color": "#BCE3F5",
+    "liquid_level": 0.4,
+    "nails": {
+      "count": 2,
+      "rusted": true,
+      "color": "#B07040",
+      "rust_spots": "#8B4513"
+    }
+  },
+  "tube_B": {
+    "label": "B",
+    "liquid_color": "#BCE3F5",
+    "liquid_level": 0.6,
+    "oil_layer": true,
+    "oil_color": "#FFF59D",
+    "oil_thickness": 30,
+    "nails": {
+      "count": 2,
+      "rusted": false,
+      "color": "#C0C0C0"
+    }
+  },
+  "tube_C": {
+    "label": "C",
+    "liquid_color": "none",
+    "liquid_level": 0,
+    "pellets": true,
+    "pellets_color": "#FFFFFF",
+    "pellets_edge": "#808080",
+    "nails": {
+      "count": 2,
+      "rusted": false,
+      "color": "#C0C0C0"
+    }
+  }
+}

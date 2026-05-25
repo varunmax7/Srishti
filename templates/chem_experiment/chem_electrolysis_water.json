@@ -1,0 +1,38 @@
+{
+  "diagram": "chem_electrolysis_water",
+  "type": "chemistry_experiment",
+  "title": "Electrolysis of Water",
+  "canvas": {
+    "width": 900,
+    "height": 760,
+    "background": "#ffffff"
+  },
+  "tank": {
+    "fill_color": "#C5DEF5",
+    "outline_color": "#6B8EAD",
+    "stroke_width": 3.5,
+    "corner_radius": 18
+  },
+  "membrane": {
+    "width": 20,
+    "outline": "#555555"
+  },
+  "electrodes": {
+    "fill": "#DCDCDC",
+    "fill_dark": "#B8B8B8",
+    "outline": "#2E2E2E",
+    "stroke_width": 2
+  },
+  "ions": {
+    "cation_color": "#E53030",
+    "anion_color": "#3060E8",
+    "radius": 9
+  },
+  "circuit": {
+    "wire_color": "#CC2222",
+    "wire_width": 2.5,
+    "battery": {
+      "colors": ["#E8882A", "#AAAAAA", "#F0C040"]
+    }
+  }
+}
