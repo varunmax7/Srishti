@@ -1,48 +1,40 @@
 # 🎓 Srishti Shiksha — Scientific Diagram Export Engine
 
-> **Srishti Shiksha** is a Python-based educational diagram generation system that produces high-quality, scientifically accurate diagrams for Biology, Chemistry, and Physics — ready for use in textbooks, presentations, and educational applications.
+> **Srishti Shiksha** is a Python-based educational diagram generation system that produces high-quality, scientifically accurate diagrams for Biology, Chemistry, Physics, and Lab Experiments — ready for use in textbooks, presentations, and educational applications.
 
 ---
 
 ## 📸 Sample Outputs
 
-| Biology | Chemistry | Physics |
-|---|---|---|
-| Animal Cell | Benzene | Concave Mirror |
-| Plant Cell | Glucose | Electric Circuit |
-| Human Heart | Methane | Force Diagram |
-| Digestive System | Ethanol | Convex Lens |
+| Biology | Chemistry | Physics | Lab Experiments |
+|---|---|---|---|
+| Animal & Plant Cells | Benzene & Ethanol | Optics (Lens/Mirrors) | Gas Collection Setup |
+| Human Brain & Heart | Molecular Structures | Electric Circuits | Electrolysis of Water |
+| Endocrine System | Functional Groups | Force Diagrams | Thermal Decomposition |
+| Human Ear & Eye | Complex Molecules | Kinematic Graphs | Conductivity Tests |
 
 ---
 
 ## 🗂️ Project Structure
 
-```
+```text
 srishti/
-├── export.py                  # Main export runner — generates all 16 diagrams
+├── export.py                  # Main export runner — generates all system diagrams
 ├── engines/
 │   ├── label_engine.py        # PIL-based PNG renderer for biology diagrams
 │   ├── svg_biology.py         # SVG biology diagram parser & renderer
 │   ├── physics_vector.py      # SVG physics diagram generator (vectors, optics, circuits)
-│   └── rdkit_chemistry.py     # RDKit-powered molecular structure renderer
+│   ├── rdkit_chemistry.py     # RDKit-powered molecular structure renderer
+│   ├── svg_chem_experiment.py # Base SVG chemistry experiment setup renderer
+│   └── chem_experiment/       # Specialized modules for procedural chemistry setups (e.g. Test Tube Racks, Electrolysis, Flame Tests)
 ├── templates/
-│   ├── biology/
-│   │   ├── animal_cell.json   # Animal cell organelle definitions
-│   │   ├── plant_cell.json    # Plant cell organelle definitions
-│   │   ├── heart.json         # Human heart anatomy template
-│   │   └── digestive_system.json  # Digestive system organ template
-│   ├── chemistry/
-│   │   ├── methane.json
-│   │   ├── benzene.json
-│   │   └── glucose.json
-│   └── physics/
-│       ├── circuit.json
-│       ├── concave_mirror.json
-│       └── force_diagram.json
-└── output/                    # Generated diagrams saved here
-    ├── biology/
-    ├── chemistry/
-    └── physics/
+│   ├── biology/               # JSON templates for cells, organ systems, brain, ear, etc. 
+│   ├── chemistry/             # JSON definitions containing SMILES strings for molecules
+│   ├── physics/               # JSON configuration for physics vectors and optics
+│   └── chem_experiment/       # JSON configuration for complex lab experiment diagrams
+│
+├── scratch/                   # Generator scripts for creating experimental diagram templates
+└── output/                    # Generated diagrams saved here (biology, chemistry, physics, chem_experiment)
 ```
 
 ---
@@ -52,7 +44,7 @@ srishti/
 - Python **3.8+**
 - [RDKit](https://www.rdkit.org/) — for chemistry molecule rendering
 - [Pillow](https://pillow.readthedocs.io/) — for biology PNG generation
-- [svgwrite](https://svgwrite.readthedocs.io/) — for physics SVG diagrams
+- [svgwrite](https://svgwrite.readthedocs.io/) — for physics and chemistry experiment SVG diagrams
 
 ### Install dependencies
 
@@ -66,105 +58,58 @@ pip install -r requirements.txt
 > ```bash
 > conda install -c conda-forge rdkit
 > ```
-> Then install the remaining packages:
-> ```bash
-> pip install pillow svgwrite
-> ```
 
 ---
 
 ## 🚀 How to Run
 
-### Generate all 16 diagrams at once
+### Generate all diagrams at once
 
 ```bash
 python3 export.py
 ```
 
-This will produce all output files inside the `output/` directory:
+This will produce all output files inside the `output/` directory spanning Biology, Chemistry, Physics, and Lab Experiments. 
 
-```
+```text
 output/
 ├── biology/
-│   ├── animal_cell_labeled.png
-│   ├── plant_cell_labeled.png
-│   ├── heart_labeled.png
-│   └── digestive_system_labeled.png
 ├── chemistry/
-│   ├── methane.png
-│   ├── benzene.png
-│   ├── glucose.png
-│   └── ethanol.png
-└── physics/
-    ├── concave_mirror.svg
-    ├── circuit.svg
-    ├── force_diagram.svg
-    ├── convex_lens.svg
-    ├── distance_time.png
-    ├── velocity_time.png
-    ├── wave.png
-    └── motion.png
-```
-
-Expected console output:
-
-```
-==================================================
-  SRISHTI SHIKSHA — Export Layer Test
-==================================================
-✅  biology            plant_cell           → output/biology/plant_cell_labeled.png
-✅  biology            animal_cell          → output/biology/animal_cell_labeled.png
-✅  biology            heart                → output/biology/heart_labeled.png
-✅  biology            digestive_system     → output/biology/digestive_system_labeled.png
-...
-==================================================
-  16 passed   0 failed
-==================================================
+├── physics/
+└── chem_experiment/
 ```
 
 ---
 
 ## 🧬 Biology Diagrams
 
-Biology diagrams are defined as **JSON templates** in `templates/biology/` and rendered via the `label_engine.py` PIL renderer.
+Biology diagrams are defined as **JSON templates** in `templates/biology/` and rendered via the `label_engine.py` / `svg_biology.py` renderers.
 
-Each JSON template defines:
-- **Parts** — shapes (ellipse, rect, path) with colors and positions
-- **Labels** — text annotations with leader lines pointing to parts
+**Supported systems include:**
+- Cellular Level (Plant/Animal Cell)
+- Nervous System (Human Brain, Neuron)
+- Cardiovascular System (Heart)
+- Excretory & Respiratory System (Nephron, Alveoli)
+- Endocrine & Reproductive Systems
+- Sensory Organs (Eye, Ear)
 
-### Supported shape types
-
-| Shape | Description |
-|---|---|
-| `ellipse` | Circle or oval (cx, cy, rx, ry) |
-| `rect` | Rectangle (x, y, w, h) |
-| `path` | SVG path string (d) — supports M, L, Q, C, Z |
-
-### Scientific accuracy highlights
-
-- **Animal Cell**: Nucleus, nucleolus, mitochondria with cristae, Golgi apparatus (stacked sacs + vesicles), rough ER with attached ribosomes, lysosome, centriole pair, cytoplasm
-- **Plant Cell**: Cell wall, cell membrane, tonoplast, central vacuole, chloroplasts, mitochondria with cristae, Golgi, ER, plasmodesmata
-- **Human Heart**: 4 chambers (asymmetric LV > RV), aorta arch, pulmonary artery/vein, superior/inferior vena cava, tricuspid, mitral, aortic & pulmonary valves, septum
-- **Digestive System**: Mouth → esophagus → J-shaped stomach, liver (overlapping), gallbladder, pancreas, coiled small intestine, U-shaped large intestine, appendix, rectum, anus
+Each JSON template carefully defines SVG-like anatomical structures and accurate callout labels pointing strictly to the structures.
 
 ---
 
-## ⚗️ Chemistry Diagrams
+## ⚗️ Chemistry Diagrams & Lab Experiments
 
-Molecular structures are rendered using **RDKit** via `rdkit_chemistry.py`.
+### Molecular Structures
+Molecular structures are rendered using **RDKit** via `rdkit_chemistry.py`. Small molecules (≤4 heavy atoms) render with explicit hydrogens for pedagogical clarity. Dozens of everyday chemicals and NCERT organic compounds are included.
 
-Each molecule is defined in `templates/chemistry/<name>.json`:
+### Lab Experiments (New!)
+A specialized suite under `engines/chem_experiment/` leverages `svgwrite` to build procedural lab setups:
+- **Test Tube Racks** & **Flame Tests**
+- **Electrolysis of Water** & **Open Circuits**
+- **Gas Collection Setups** (Flasks, Delivery Tubes, Troughs)
+- **Evaporation** and **Thermal Decomposition** diagrams
 
-```json
-{
-  "name": "Benzene",
-  "formula": "C₆H₆",
-  "smiles": "c1ccccc1"
-}
-```
-
-- Small molecules (≤4 heavy atoms) render with **explicit hydrogens**
-- Carbon labels are force-shown for pedagogical clarity
+Templates in `templates/chem_experiment/` define properties such as equipment types, color configurations, liquid levels, and experimental annotations (like bubble generation for hydrogen gas tests).
 
 ---
 
@@ -175,16 +120,11 @@ Physics diagrams are generated programmatically as **SVG** via `physics_vector.p
 ### Diagram types
 | Diagram | Description |
 |---|---|
-| `concave_mirror` | Ray optics with mathematically accurate image convergence |
+| `concave_mirror` / `convex_lens` | Ray optics with mathematically accurate image convergence / refraction |
 | `circuit` | Closed electric circuit with battery, switch, resistor, bulb |
 | `force_diagram` | Free-body diagram with applied force, friction, normal, gravity |
-| `convex_lens` | Refraction ray diagram |
 
-Physics **graphs** (PNG) include:
-- Distance–Time graph
-- Velocity–Time graph
-- Wave diagram
-- Uniform motion
+Physics **graphs** include Distance–Time, Velocity–Time, wave motion, and uniform motion represented mathematically.
 
 ---
 
